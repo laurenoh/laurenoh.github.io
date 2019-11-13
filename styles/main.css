@@ -1,43 +1,135 @@
-header {
-  background: url(../images/Heroimage.jpg) center / cover;
-  height: 60vh;
-  justify-content: center;
+
+.info-section {
+  padding: 147px 20px 109px 20px;
   text-align: center;
+  background-image: url("../images/heroimage.JPG");
+  background-size: cover;
+  position: relative;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.08em;
 }
-h1 {
-   color: hsla(0, 0%, 100%, 0.9);
-   font-weight: bold;
- }
- .slogan {
-   color: hsla(0, 0%, 100%, 0.7);
-   font-weight: lighter;
-   font-size: 1.6rem;
- }
-main {
-  max-width: 900px;
+
+
+.intro-header {
+  margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #4d4d4d;
 }
-.project-description {
-  padding-left: 0;
+
+.intro-message {
+  margin-bottom: 60px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #303030;
+  letter-spacing: 0em;
 }
-.project img {
-  width: 100%;
+
+.highlighted-text {
+  color: #A48863;
 }
-body {
-  padding-bottom: 5rem;
+
+.primary-button {
+  background-color: #4D4D4D;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 15px 24px;
+  border-radius: 47px;
+  border: none;
+  letter-spacing: 0.08em;
 }
-footer.mdl-mini-footer {
-   bottom: 0;
-   padding: 0.5rem;
-   position: fixed;
-   width: 100%;
-   z-index: 1;
- }
-footer.mdl-mini-footer > ul {
-    margin: auto;
-    font-size: 2rem;
- }
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header{
-    display: flex;
-  }
+
+.arrow-box {
+  background-color: #A48863;
+  padding: 22px 28px;
+  border: none;
+
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile_backdrop {
+  background-image: url("../images/profile_backdrop.jpg");
+  background-size: cover;
+  height: 70vw;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.profile_picture {
+  background-image: url("../images/profile_picture.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 50vw;
+  margin-left: 25vw;
+}
+
+.about-me-button {
+  flex-grow: 1;
+  border-radius: 0px;
+  white-space:nowrap;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: sans-serif;
+}
+
+.about-me-arrow {
+  margin-left: 6px;
+}
+
+.skills_info {
+  background-color: #4d4d4d;
+  font-family: Roboto, sans-serif;
+  color: #c4c4c4;
+  padding: 90px 20px 90px 20px;
+}
+
+.skills_question {
+  color: #ffffff;
+  font-family: Playfair display;
+  font-weight: bold;
+  letter-spacing: .08em;
+  font-size: 25px;
+  margin: 0px;
+}
+
+.skills_sentences {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: .08em;
+}
+
+.skills_details {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  justify-content: space-around;
+}
+
+.skills_header {
+  font-size:10px;
+  color: #A48863;
+  margin: 0px;
+
+}
+
+.design_list {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.language_list {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 6px;
 }
