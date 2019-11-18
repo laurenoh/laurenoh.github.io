@@ -8,11 +8,25 @@
   src: url("../fonts/playfair-display-v15-latin-regular.woff");
 }
 
+h1, h2, h3, h4, h5, li {
+  font-weight: normal;
+}
+
 .section-container {
   padding: 40px 20px;
   font-family: Roboto, san-sans-serif;
   letter-spacing: 0.08em;
 }
+
+.available {
+  font-size: 10px;
+  color: #4d4d4d;
+}
+
+.fa-bars {
+  color: #4d4d4d;
+}
+
 
 .info-section {
   background-image: url("../images/heroimage.JPG");
@@ -50,6 +64,8 @@
   border: none;
   color: #ffffff;
   font-size: 10px;
+  font-weight: lighter;
+  letter-spacing: .08em;
   padding: 15px 24px;
 }
 
@@ -73,7 +89,6 @@
 }
 
 .profile-picture {
-  background-image: url("../images/profile-picture.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -117,6 +132,7 @@
 .skills-details {
   display: flex;
   flex-direction: row;
+
   justify-content: space-around;
   padding-top: 50px;
 }
