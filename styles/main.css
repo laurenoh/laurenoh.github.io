@@ -8,23 +8,44 @@
   src: url("../fonts/playfair-display-v15-latin-regular.woff");
 }
 
+h1, h2, h3, h4, li {
+  font-weight: normal;
+}
+
+.section-container {
+  padding: 20px 20px;
+  font-family: Roboto, san-sans-serif;
+  letter-spacing: 0.08em;
+}
+
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-.section-container {
-  padding: 40px 20px;
-  font-family: Roboto, san-sans-serif;
-  letter-spacing: 0.08em;
+.available-box {
+  display: flex;
+  align-items: center;
+}
+
+.available {
+  color: #4d4d4d;
+  font-size: 10px;
+  letter-spacing: 0em;
+  margin-left: 6px;
 }
 
 .info-section {
   background-image: url("../images/heroimage.JPG");
   background-size: cover;
-  padding-top: 147px;
   padding-bottom: 109px;
   position: relative;
   text-align: center;
@@ -36,6 +57,7 @@
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .intro-message {
@@ -158,10 +180,12 @@
   text-align: center;
   color: #4D4D4D;
   font-size: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .arrow-down {
-  padding: 12px 12px;
+  padding-top: 12px;
 }
 
 .case-study-box {
