@@ -8,6 +8,13 @@
   src: url("../fonts/playfair-display-v15-latin-regular.woff");
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
 .section-container {
   padding: 40px 20px;
   font-family: Roboto, san-sans-serif;
