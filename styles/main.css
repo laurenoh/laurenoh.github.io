@@ -25,22 +25,9 @@ h1, h2, h3, h4, li {
   justify-content: space-between;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.available-box {
-  display: flex;
-  align-items: center;
-}
-
-.available {
+.navbar-sections {
+  font-size: 12px;
   color: #4d4d4d;
-  font-size: 10px;
-  letter-spacing: 0em;
-  margin-left: 6px;
 }
 
 .info-section {
@@ -176,6 +163,33 @@ h1, h2, h3, h4, li {
   margin-bottom: 6px;
 }
 
+
+.mentor-box {
+  background-color: #C2B2A4;
+  background: rgba(194, 178, 164, 0.3);
+  color: #303030;
+  padding: 142.57px 20px;
+}
+
+.mentor-review {
+  color: #303030;
+  font-family: PlayfairDisplay;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.mentor-sentences {
+  letter-spacing: .08em;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.mentor-title {
+  text-align: center;
+  font-size: 12px;
+}
+
 .recent-work {
   text-align: center;
   color: #4D4D4D;
@@ -253,12 +267,15 @@ h1, h2, h3, h4, li {
 
 .thank-you-box {
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 
 .thank-you {
   color: #c4c4c4;
   font-size: 12px;
+  margin-bottom: 0px;
 }
 
 .work-together {
@@ -266,7 +283,11 @@ h1, h2, h3, h4, li {
   font-weight: bold;
   color: #303030;
   font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
+
+
 
 .footer {
   background-color: #303030;
@@ -275,19 +296,4 @@ h1, h2, h3, h4, li {
   text-align: right;
   line-height: 10px;
   padding: 20px 20px;
-}
-
-
-
-
-
-.about-arrow-box {
-  background-color: #A48863;
-  border: none;
-  bottom: -2770px;
-  font-size: 16px;
-  padding: 22px 28px;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
 }

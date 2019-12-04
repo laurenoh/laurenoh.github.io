@@ -8,32 +8,18 @@
    <!-- Custom Styles -->
    <link rel="stylesheet" href="styles/normalize.css">
    <link rel="stylesheet" href="styles/main.css">
-   <script>
-   window.onscroll = function() {myFunction()};
 
-   var navbar = document.getElementById("navbar");
-   var sticky = navbar.offsetTop;
-
-   function myFunction() {
-     if (window.pageYOffset >= sticky) {
-       navbar.classList.add("sticky")
-     } else {
-       navbar.classList.remove("sticky");
-     }
-   }
-   </script>
   </head>
   <body>
 
     <section class="section-container info-section">
       <nav>
         <div class="navbar">
-        <img src="images/logo.jpg" alt="logo" width="32" height="34">
-          <div class="available-box">
-          <img src="images/ellipse.jpg" alt="online" width="5" height="5">
-          <h1 class="available">Available for new projects</h1>
-          </div>
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <img src="images/logo.svg" alt="logo" width="32" height="34">
+        <p class="navbar-sections">work</p>
+        <p class="navbar-sections">about</p>
+        <p class="navbar-sections">resume</p>
+        <p class="navbar-sections">contact</p>
         </div>
       </nav>
 
@@ -76,6 +62,16 @@
       </div>
     </section>
 
+    <section class="section-container mentor-box">
+      <h1 class="mentor-review">People I've worked with</h1>
+      <p class="mentor-sentences">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer...</p>
+      <div class="mentor-title">
+      <img class="mentor-picture" src="images/mentor-picture.jpg" alt="mentor-picture">
+      <p>Mike Dekker<br>Senior UX Designer</p>
+      </div>
+    </section>
+
+
     <section class="section-container">
       <div class="recent-work">
         <div>Recent work</div>
@@ -112,54 +108,9 @@
       <button class="primary-button in-touch" type="button">Get in touch</button>
     </section>
 
-    <footer class="section-container footer">
-      <div><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh</div>
-    </footer>
-
-
-  <section>
-    <h1 class="small-header">I'M LAUREN OH.</h1>
-    <p class="large-header">About me</p>
-    <img class="profile-picture-about-me" src="images/profile-picture.jpg" alt="profile-picture">
-    <button class="about-arrow-box">
-      <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
-    </button>
-  </section>
-
-  <section>
-    <h1>The plunge</h1>
-      <p>My passion for UX Design slowly developed over the course of my life’s journey. This journey includes: art classes, an under-grad psychology degree, and working at a digital agency. All of these experiences have shaped me into the designer that I am today. A designer who is passionate about finding meaningful solutions for users by empathizing with them.</p>
-      <p>My last job as an agency Media Planner has taught me so much. As the media world is constantly changing, it pushed me to learn things quickly to not fall behind. Since many things are on a tight deadline, I was great at time management and balancing priorities. Teamwork, open communication and great client relationships were key to getting past the finish line. I always paid attention to detail, since the media buy placements and budgets were constantly changing. I needed a positive attitude, an open mind, and a desire to collaborate and learn. Asking questions got me the answers no one else knew, and in return saved me a lot of time.</p>
-      <p>Agency’s creative environment gave me the push I needed to make a career change. The role showed me the strategic planning side of launching ads, but my inner young self who used to be obsessed with art classes told me that it wasn’t enough. While I enjoyed what I was doing, I felt that my true passion was not there. I wanted to be the one creating the ads, not strategizing and managing them. The more I worked around the Creatives, the more I wanted to be involved. In my spare time, I worked on mini passion projects with the Creative Directors at the agency and had weekly review sessions. The entire process confirmed that that was the direction I wanted to go.</p>
-    <h1>Life experiences turned UX Lessons</h1>
-      <p>Each of the stops I took below taught me important lessons and gave invaluable experiences that ultimately lead me to UX Design and became the building blocks of how I approach design:</p>
-  </section>
-
-  <div>
-    <p><span class="bolded-text">Psychology</span> - Psychology helps you understand the behavior and mental processes of individuals - always asking interesting questions and attempting to answer them through all kinds of data-gathering methods. Working in research labs taught me to synthesize and communicate research findings to make informed decisions and build greater understanding of and empathy for the individuals.</p>
-    <p><span class="bolded-text">Barista/Waitress</span> - You have to create great experiences for customers by understanding their needs quickly while juggling multiple things at once . You anticipate the needs and find solutions meanwhile, effectively managing your time working with various teams: kitchen, servers, hostess, cleaners, etc. to make sure you deliver on time.</p>
-    <p><span class="bolded-text">Medical Assistant</span> - Since most of the patients came into the office with health problems, I learned to effectively get feedback and ensure that the patients got data-driven and user-centric solutions.</p>
-  </div>
-
-  <section>
-    <h1>How it came together</h1>
-      <p>Earliest memory of coming across any design was during pre-school. I got extremely excited to be working on the projects that when I started on an art piece, I had to see the end of it. Whatever world I wanted to create I could think it, draw it, and make it come to life. From there, I naturally begged my parents to enroll me in art classes throughout my elementary years. I was introduced to new mediums like watercolor, oil, gouache, etc. This fueled my interest and led me to join art portfolio classes in high school. Learning about art history taught me about the cultural differences that made each culture’s art distinct, but at the same time how it brought them all together because of it. My craving for the creative side confirmed that not only did I enjoy using my left brain (I was a nerd), but also loved exploring the right brain.</p>
-      <p>During and after college, I wanted to study science and go to dental school. I thought that it was the perfect good combination of science and art. I wanted to be in an industry where I created things. Dentistry was like working with miniature 3D sculptures. However, I soon realized that dentistry wasn’t for me. Fast forward a few years with some agency background, I knew that I wanted to get into graphic design. UX Design is a perfect combination of my passion for research, empathy and creativity. I strive to find meaningful solutions through empathic design, and relating to users through my life experiences.</p>
-      <div>line</div>
-  </section>
-
-  <section>
-    <h1>Thank you for stopping by</h1>
-    <h2>Let's work together!</h2>
-    <button>Get in touch</button>
-  </section>
-
-  <footer>
-    <div>icon</div>
-    <div>2019 Lauren Oh</div>
+  <footer class="section-container footer">
+    <div><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh</div>
   </footer>
-
-
 
 </body>
 

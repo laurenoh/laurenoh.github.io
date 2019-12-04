@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-v20-latin-regular.woff");
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url("../fonts/playfair-display-v15-latin-regular.woff");
+}
+
+h1, h2, h3, h4, li {
+  font-weight: normal;
+}
+
+.section-container {
+  padding: 20px 20px;
+  font-family: Roboto, san-sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-sections {
+  color: #4d4d4d;
+}
+
+.about-me-section {
+  padding-bottom: 109px;
+  position: relative;
+}
+
+.about-me-section::after {
+  content: "";
+  background-image: url("../images/about-profile-picture.JPG");
+  background-size: cover;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.small-header {
+  font-size: 10px;
+  color: #303030;
+  margin-top: 54px;
+}
+
+.large-header {
+  font-size: 25px;
+  font-family: PlayfairDisplay;
+  font-weight: bold;
+  margin-top: 6px;
+  margin-bottom:520px;
+}
+
+.arrow-box {
+  background-color: #A48863;
+  border: none;
+  bottom: -30px;
+  padding: 22px 28px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.plunge-paragraph {
+  padding-top: 54px;
+  padding-bottom: 20px;
+}
+
+.section-bold {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.about-paragraph {
+  line-height: 18px;
+}
+
+.job-section {
+  background-color: #C4C4C4;
+  line-height: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  Padding: 24px 36px;
+}
+
+.bolded-text {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.last-paragraph {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  line-height: 18px;
+}
+
+.line-padding {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.thank-you-box {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.thank-you {
+  color: #c4c4c4;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.work-together {
+  font-family: PlayfairDisplay;
+  font-weight: bold;
+  color: #303030;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #303030;
+  color: #c4c4c4;
+  font-size: 10px;
+  text-align: right;
+  line-height: 10px;
+  padding: 20px 20px;
+}
