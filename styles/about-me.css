@@ -12,7 +12,7 @@ h1, h2, h3, h4, li {
   font-weight: normal;
 }
 
-.section-container {
+.section-container2 {
   padding: 20px 20px;
   font-family: Roboto, san-sans-serif;
   font-size: 12px;
@@ -136,6 +136,11 @@ h1, h2, h3, h4, li {
   font-size: 25px;
   margin-top: 0px;
   margin-bottom: 30px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer {

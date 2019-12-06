@@ -63,6 +63,7 @@ h1, h2, h3, h4, li {
 .primary-button {
   background-color: #4D4D4D;
   border-radius: 47px;
+  letter-spacing: 0.08em;
   border: none;
   color: #ffffff;
   font-size: 10px;
@@ -207,7 +208,7 @@ h1, h2, h3, h4, li {
   margin-bottom: 18px;
   padding: 36px 20px;
   background-color: #f3f3f3;
-  background-image: url("../images/dashboard.jpg");
+  background-image: url("../images/cut-dashboard.svg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 150px 106px;
@@ -287,7 +288,10 @@ h1, h2, h3, h4, li {
   margin-bottom: 30px;
 }
 
-
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
 
 .footer {
   background-color: #303030;
