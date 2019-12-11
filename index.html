@@ -1,116 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head class="mdl-js">
-    <title>Product Designer | Lauren Oh</title>
-    <meta name="viewport" content="width=device-width, intial-scale=1">
-   <!-- Font Awesome -->
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-   <!-- Custom Styles -->
-   <link rel="stylesheet" href="styles/normalize.css">
-   <link rel="stylesheet" href="styles/main.css">
-   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body>
+<head class="mdl-js">
+  <title>Product Designer | Lauren Oh</title>
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<!--Font Sizes
+PARAGRAPH
+Mobile(10)/Desktop(16)-> text-xs md:text-base lg:text-base
+Mobile(12)/Desktop(20)-> text-xs md:text-xl lg:text-xl
+Mobile(16)/Desktop(25)-> text-base md:text-2xl lg:text-2xl
 
-    <section class="section-container info-section">
-      <nav>
-        <div class="navbar">
-        <img src="images/logo.svg" alt="logo" width="32" height="34">
-        <p class="navbar-sections">work</p>
-        <p class="navbar-sections">about</p>
-        <p class="navbar-sections">resume</p>
-        <p class="navbar-sections">contact</p>
-        </div>
-      </nav>
-
-      <h1 class="intro-header">H E L L O !</h1>
-      <p class="intro-message">My name is Lauren Oh, and I'm a <span class="highlighted-text">product designer</span> based in San Francisco. I strive to find <span class="highlighted-text">real</span> solutions while bridging the gap between <span class="highlighted-text">people and technology</span>.</p>
-      <button class="primary-button" type="button">View work<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
-      <button class="arrow-box">
-        <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
-      </button>
-    </section>
-
-    <div class="profile-backdrop">
-      <img class="profile-picture" src="images/profile-picture.jpg" alt="profile-picture">
-      <button class="primary-button about-me-button" type="button">About me<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
+HEADER
+Mobile(18)/Desktop(30)-> text-lg md:text-3xl lg:text-3xl
+Mobile(25)/Desktop(36)-> text-2xl md:text-4xl lg:text-4xl
+Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
+-->
+<body>
+  <nav>
+    <div class="navbar p-5">
+      <img src="images/logo.svg" alt="logo" width="32" height="34">
+      <div class="flex flex-row sm:justify-end md:justify-between">
+        <p class="navbar-sections text-sm md:text-xl lg:text-xl">work</p>
+        <p class="navbar-sections text-sm md:text-xl lg:text-xl">about</p>
+        <p class="navbar-sections text-sm md:text-xl lg:text-xl">resume</p>
+        <p class="navbar-sections text-sm md:text-xl lg:text-xl">contact</p>
+      </div>
     </div>
+  </nav>
+  <section class="section-container info-section flex justify-center items-center flex-col">
+    <h1 class="intro-header my-16 text-base">H E L L O !</h1>
+    <p class="intro-message mb-16 text-2xl md:text-4xl lg:text-4xl font-bold leading-relaxed max-w-sm md:max-w-xl">My name is Lauren Oh, and I'm a <span class="highlighted-text">product designer</span> based in San Francisco. I strive to find <span class="highlighted-text">real</span> solutions while bridging the gap between <span class="highlighted-text">people and technology</span>.</p>
+    <button class="primary-button mb-32 text-xs lg:text-sm py-4 px-6" type="button">View work<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></button>
+    <button class="arrow-box">
+      <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+    </button>
+  </section>
 
-    <section class="section-container skills-info">
-      <h1 class="skills-question">How can I help you?</h1>
-      <p class="skills-sentences">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer, deeply focused on data-driven and user-centric solutions.</p>
+  <div class="profile-backdrop">
+    <img class="profile-picture" src="images/profile-picture.jpg" alt="profile-picture">
+    <button class="primary-button text:xs lg:text-sm py-4 px-6 about-me-button" type="button">About me<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></button>
+  </div>
 
-      <div class="skills-details">
+  <section class="section-container skills-info py-24 px-5">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row help-width">
+      <div class="md:pr-48 flex-1">
+        <h1 class="skills-question font-bold text-2xl m-0">How can I help you?</h1><br>
+        <p class="skills-sentences text-base">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer, deeply focused on data-driven and user-centric solutions.</p>
+      </div>
+
+
+      <div class="skills-details flex flex-row justify-around flex-1 pt-10">
         <div>
-          <h2 class="skills-header">DESIGN</h2>
-          <ul class="no-indent">
-          <li class="design-list">Prototyping</li>
-          <li class="design-list"> Branding</li>
-          <li class="design-list"> User Research</li>
-          <li class="design-list"> Web Design</li>
+          <h2 class="skills-header text-xs">DESIGN</h2><br>
+          <ul class="pl-0">
+            <li class="design-list text-xs md:text-sm lg:text-sm">Prototyping</li>
+            <li class="design-list text-xs md:text-sm lg:text-sm"> Branding</li>
+            <li class="design-list text-xs md:text-sm lg:text-sm"> User Research</li>
+            <li class="design-list text-xs md:text-sm lg:text-sm"> Web Design</li>
           </ul>
         </div>
 
         <div>
-          <h2 class="skills-header">LANGUAGES</h2>
-          <ul class="no-indent">
-          <li class="language-list">HTML</li>
-          <li class="language-list">CSS</li>
-          <li class="language-list">Javascript</li>
+          <h2 class="skills-header text-xs">LANGUAGES</h2><br>
+          <ul class="pl-0">
+            <li class="language-list text-xs md:text-sm lg:text-sm">HTML</li>
+            <li class="language-list text-xs md:text-sm lg:text-sm">CSS</li>
+            <li class="language-list text-xs md:text-sm lg:text-sm">Javascript</li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section-container mentor-box">
-      <h1 class="mentor-review">People I've worked with</h1>
-      <p class="mentor-sentences">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer...</p>
-      <div class="mentor-title">
-      <img class="mentor-picture" src="images/mentor-picture.jpg" alt="mentor-picture">
-      <p>Mike Dekker<br>Senior UX Designer</p>
+  <section class="section-container mentor-box">
+    <div class="max-w-5xl mx-auto">
+      <h1 class="mentor-review font-bold text-2xl m-0">People I've worked with</h1><br>
+      <p class="mentor-sentences text-base">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer...</p>
+      <div class="my-10 text-xs text-center flex justify-center items-center flex-col">
+        <img class="mentor-picture mb-4" src="images/mentor-picture.jpg" alt="mentor-picture" width="70" height="70">
+        <p>Mike Dekker<br>Senior UX Designer</p>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <section class="section-container">
-      <div class="recent-work">
-        <div>Recent work</div>
-        <div><i class="fa fa-long-arrow-down arrow-down" aria-hidden="true"></i></div>
-      </div>
-      <div class="case-study-box">
+  <section class="section-container p-5">
+    <div class="recent-work text-center text-xs md:text-base lg:text-lg pt-20 pb-4">
+      <div>Recent work</div>
+      <div><i class="fa fa-long-arrow-down pt-3" aria-hidden="true"></i></div>
+    </div>
+    <div> <!-- class="flex flex-col md:flex-row help-width" -->
+      <div class="case-study-box max-w-xs mx-auto">
         <div>
-          <h1 class="case-study">Case Study</h1>
-          <h2 class="case-study-name">Bridge</h2>
-          <p class="case-study-type1">Branding/<br>Prototyping</p>
+          <h1 class="case-study">Case Study</h1><br>
+          <h2 class="case-study-name">Bridge</h2><br>
+          <p class="case-study-type1">Branding/<br>Prototyping</p><br>
           <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
         </div>
         <div class="view-work">
           <p>View Work</p>
         </div>
       </div>
-      <div class="case-study-box">
+      <div class="case-study-box max-w-xs mx-auto">
         <div>
-        <h1 class="case-study">Case Study<br>(Coming Soon!)</h1>
-        <h2 class="case-study-name">Solo Project</h2>
-        <p class="case-study-type2">Branding/<br> Prototyping</p>
-        <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
+          <h1 class="case-study">Case Study<br>(Coming Soon!)</h1><br>
+          <h2 class="case-study-name">Solo Project</h2><br>
+          <p class="case-study-type2">Branding/<br> Prototyping</p><br>
+          <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
         </div>
         <div class="view-work">
           <p>View Work</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <hr class="line-padding">
+  </section>
 
-    <section class="section-container thank-you-box">
-      <h1 class="thank-you">Thank you for stopping by</h1>
-      <h2 class="work-together">Let's <span class="highlighted-text">work</span> together!</h2>
-      <button class="primary-button in-touch" type="button">Get in touch</button>
-    </section>
+  <hr class="mx-5">
 
-  <footer class="section-container footer">
-    <div class="footer-flex">
+  <section class="section-container text-center py-10 lg:py-20">
+    <h1 class="thank-you text-xs md:text-sm lg:text-lg mb-0">Thank you for stopping by</h1>
+    <h2 class="work-together font-bold text-2xl md:text-3xl lg:text-4xl">Let's <span class="highlighted-text">work</span> together!</h2>
+    <button class="primary-button text-xs lg:text-sm py-4 px-6" type="button">Get in touch</button>
+  </section>
+
+  <footer class="section-container p-5 footer text-xs lg:text-sm text-right">
+    <div class="flex justify-between items-baseline">
       <img src="images/social_logo.svg" alt="social_logo">
       <div><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh</div>
     </div>

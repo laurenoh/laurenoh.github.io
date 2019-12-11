@@ -12,28 +12,26 @@ h1, h2, h3, h4, li {
   font-weight: normal;
 }
 
-.section-container {
-  padding: 20px 20px;
-  font-family: Roboto, san-sans-serif;
-  letter-spacing: 0.08em;
-}
-
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+
+.section-container {
+  font-family: Roboto, san-sans-serif;
+  letter-spacing: 0.08em;
+  padding: 1.25rem .5rem;
+}
+
 .navbar-sections {
-  font-size: 12px;
   color: #4d4d4d;
 }
 
 .info-section {
   background-image: url("../images/heroimage.JPG");
   background-size: cover;
-  padding-bottom: 109px;
   position: relative;
   text-align: center;
 }
@@ -41,19 +39,11 @@ h1, h2, h3, h4, li {
 
 .intro-header {
   color: #4d4d4d;
-  font-size: 15px;
-  line-height: 25px;
-  margin-bottom: 60px;
-  margin-top: 60px;
 }
 
 .intro-message {
   color: #303030;
-  font-size: 25px;
-  font-weight: 500;
   letter-spacing: 0em;
-  line-height: 35px;
-  margin-bottom: 60px;
 }
 
 .highlighted-text {
@@ -61,20 +51,19 @@ h1, h2, h3, h4, li {
 }
 
 .primary-button {
-  background-color: #4D4D4D;
-  border-radius: 47px;
+  background-color: #4d4d4d;
+  border-radius: 2.9375rem;
   letter-spacing: 0.08em;
   border: none;
   color: #ffffff;
-  font-size: 10px;
-  padding: 15px 24px;
+
 }
 
 .arrow-box {
   background-color: #A48863;
   border: none;
   bottom: -30px;
-  padding: 22px 28px;
+  padding: 1.375rem 1.75rem;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
@@ -99,69 +88,46 @@ h1, h2, h3, h4, li {
 }
 
 .about-me-button {
-  border-radius: 0px;
+  border-radius: 0rem;
   font-family: sans-serif;
   flex-grow: 1;
-  padding-left: 4px;
-  padding-right: 4px;
+  font-size: .625rem;
   white-space:nowrap;
-}
-
-.about-me-arrow {
-  margin-left: 6px;
 }
 
 .skills-info {
   background-color: #4d4d4d;
   color: #c4c4c4;
-  padding: 90px 20px;
+}
+
+.help-width {
+  max-width: 31.25rem;
 }
 
 .skills-question {
   color: #ffffff;
   font-family: PlayfairDisplay;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 0px;
 }
 
 .skills-sentences {
-  font-size: 15px;
   letter-spacing: .08em;
-  line-height: 25px;
-}
-
-.skills-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 50px;
 }
 
 .skills-header {
   color: #A48863;
-  font-size:10px;
-  margin: 0px;
 }
 
-.no-indent {
-  padding-left: 0px;
-}
 
 .design-list {
   color: #ffffff;
   display: block;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 6px;
+  margin-bottom: .375rem;
 }
 
 .language-list {
   color: #ffffff;
   display: block;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 6px;
+  margin-bottom: .375rem;
 }
 
 
@@ -169,53 +135,34 @@ h1, h2, h3, h4, li {
   background-color: #C2B2A4;
   background: rgba(194, 178, 164, 0.3);
   color: #303030;
-  padding: 142.57px 20px;
+  padding: 8.911rem 1.25rem;
 }
+
 
 .mentor-review {
   color: #303030;
   font-family: PlayfairDisplay;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 0px;
 }
 
 .mentor-sentences {
   letter-spacing: .08em;
-  line-height: 25px;
-  font-size: 15px;
-}
-
-.mentor-title {
-  text-align: center;
-  font-size: 12px;
 }
 
 .recent-work {
-  text-align: center;
-  color: #4D4D4D;
-  font-size: 12px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-.arrow-down {
-  padding-top: 12px;
+  color: #4d4d4d;
 }
 
 .case-study-box {
-  margin-top: 18px;
-  margin-bottom: 18px;
-  padding: 36px 20px;
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
+  padding: 2rem 2rem;
   background-color: #f3f3f3;
   background-image: url("../images/cut-dashboard.svg");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 150px 106px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .case-study-box > div {
@@ -224,30 +171,30 @@ h1, h2, h3, h4, li {
 
 .case-study {
   color: #4d4d4d;
-  font-size: 12px;
+  font-size: .75rem;
 }
 
 .case-study-name {
   color: #303030;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
 .case-study-type1 {
   color: #76956C;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .case-study-type2 {
   color: #A27870;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .arrow-right {
   color: #c4c4c4;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .view-work {
@@ -257,47 +204,18 @@ h1, h2, h3, h4, li {
   align-items: flex-end;
 }
 
-.view-work > p {
-  margin: 0px;
-}
-
-.line-padding {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.thank-you-box {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-
 .thank-you {
   color: #c4c4c4;
-  font-size: 12px;
-  margin-bottom: 0px;
 }
 
 .work-together {
   font-family: PlayfairDisplay;
-  font-weight: bold;
   color: #303030;
-  font-size: 25px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-}
-
-.footer-flex {
-  display: flex;
-  justify-content: space-between;
+  margin-top: 0rem;
+  margin-bottom: 1.875rem;
 }
 
 .footer {
   background-color: #303030;
   color: #c4c4c4;
-  font-size: 10px;
-  text-align: right;
-  line-height: 10px;
-  padding: 20px 20px;
 }
