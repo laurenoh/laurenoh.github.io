@@ -3,479 +3,502 @@
   <head class="mdl-js">
     <title>Case Study | Lauren Oh</title>
     <meta name="viewport" content="width=device-width, intial-scale=1">
-   <!-- Font Awesome -->
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-   <!-- Custom Styles -->
-   <link rel="stylesheet" href="styles/normalize.css">
-   <link rel="stylesheet" href="styles/main.css">
-   <link rel="stylesheet" href="styles/project.css">
-</head>
-<body>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about-me.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+    <!--Font Sizes
+    PARAGRAPH
+    Mobile(10)/Desktop(16)-> text-xs md:text-base lg:text-base
+    Mobile(12)/Desktop(20)-> text-xs md:text-xl lg:text-xl
+    Mobile(16)/Desktop(25)-> text-base md:text-2xl lg:text-2xl
 
-  <section class="section-container3 cs-top-box">
+    HEADER
+    Mobile(18)/Desktop(30)-> text-lg md:text-3xl lg:text-3xl
+    Mobile(25)/Desktop(36)-> text-2xl md:text-4xl lg:text-4xl
+    Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
+    -->
+  <body>
+
     <nav>
-      <div class="navbar">
-      <img src="images/logo.svg" alt="logo" width="32" height="34">
-      <p class="navbar-sections">work</p>
-      <p class="navbar-sections">about</p>
-      <p class="navbar-sections">resume</p>
-      <p class="navbar-sections">contact</p>
+      <div class="navbar p-5">
+        <img src="images/logo.svg" alt="logo" width="32" height="34">
+        <div> <!--class="flex flex-row sm:justify-end md:justify-between"-->
+          <p class="navbar-sections text-sm md:text-xl lg:text-xl">work</p>
+          <p class="navbar-sections text-sm md:text-xl lg:text-xl">about</p>
+          <p class="navbar-sections text-sm md:text-xl lg:text-xl">resume</p>
+          <p class="navbar-sections text-sm md:text-xl lg:text-xl">contact</p>
+        </div>
       </div>
     </nav>
 
-    <div class="bridge-dashboard">
-      <div>
-        <h1 class="small-header">CASE STUDY</h1>
-        <p class="large-header">Bridge<p>
+    <section class="main-container cs-top-box relative py-24 px-5">
+      <div class="max-w-3xl flex flex-row justify-between items-start top-width mx-auto">
+        <div>
+          <h1 class="small-header text-xs md:text-xs lg:text-base">CASE STUDY</h1>
+          <p class="large-header font-bold text-2xl md:text-2xl lg:text-4xl">Bridge<p>
+        </div>
+        <img src="images/dashboard.svg" alt="dashboard">
       </div>
-      <img src="images/dashboard.svg" alt="dashboard">
-    </div>
 
-    <h1 class="small-header">SUMMARY</h1>
-      <p class="font15">There are endless amounts of cloud storages out in the current market. Having too many options makes it difficult to keep things organized and simplified. Bridge is here to help consolidate all cloud storages in one place to keep things synchronized, simplified, organized and shareable.</p>
-      <div class="button-spacing">
-        <button class="secondary-button" type="button">View mobile<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
-        <button class="secondary-button" type="button">View desktop<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
+      <div class="py-10 max-w-3xl mx-auto">
+        <h1 class="small-header text-xs md:text-xs lg:text-base">SUMMARY</h1>
+        <br>
+        <p class="text-base lg:text-xl">There are endless amounts of cloud storages out in the current market. Having too many options makes it difficult to keep things organized and simplified. Bridge is here to help consolidate all cloud storages in one place to keep things synchronized, simplified, organized and shareable.</p>
+      </div>
+
+      <div class="flex flex-row justify-around max-w-3xl mx-auto">
+        <button class="secondary-button text-xs lg:text-sm py-4 px-6" type="button">View mobile<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
+        <button class="secondary-button text-xs lg:text-sm py-4 px-6" type="button">View desktop<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
       </div>
       <button class="arrow-box">
         <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
       </button>
-  </section>
+    </section>
 
-  <section class="section-container3 roles-deliverables-tools">
-    <img src="images/design_role_icon.jpg" alt="face" width="24" height="24">
-      <h1 class="small-header">DESIGN ROLES</h1>
-      <ul class="remove-bullet font15">
-        <li>UX Design</li>
-        <li>Visual Design</li>
-        <li>Branding & Identity</li>
-      </ul>
-      <br>
-    <img src="images/deliverables_icon.jpg" alt="smiley face" width="24" height="24">
-      <h1 class="small-header">DELIVERABLES</h1>
-      <ul class="remove-bullet font15">
-        <li>User Surveys</li>
-        <li>Personas</li>
-        <li>User Stories and Flows</li>
-        <li>Competitive Analysis</li>
-        <li>Paper Prototype</li>
-        <li>Wireframes</li>
-        <li>User Testing</li>
-        <li>Visual Design</li>
-      </ul>
-      <br>
-    <img src="images/tools_icon.jpg" alt="tools" width="24" height="24">
-      <h1 class="small-header">TOOLS</h1>
-      <ul class="remove-bullet font15">
-        <li>Illustrator</li>
-        <li>Photoshop</li>
-        <li>Whimsical</li>
-        <li>InVision</li>
-        <li>Usability Hub</li>
-      </ul>
-  </section>
-
-  <section class="section-container3">
-    <h1 class="design-process-sections">Overview</h1>
-    <img src="images/problem_icon.jpg" alt="hand" width="24" height="24">
-      <p class="cs-bolded font15">PROBLEMS</h2>
-      <ul class="problems-list remove-bullet font15">
-        <li>Easy export to other cloud system</li>
-        <li>Organization/easier navigation</li>
-        <li>Security when sharing</li>
-        <li>Collaborating</li>
-      </ul>
-      <br>
-    <img src="images/insight_icon.jpg" alt="lens" width="24" height="24">
-      <p class="cs-bolded font15">INSIGHT</h2>
-      <ul class="insight-list remove-bullet font15">
-        <li>Our users are familiar with several cloud storages and use more than one</li>
-      </ul>
-      <br>
-    <img src="images/solution_icon.jpg" alt="lightbulb" width="24" height="24">
-      <p class="cs-bolded font15">SOLUTIONS</h2>
-      <ul class="solutions-list remove-bullet font15">
-        <li>Add capability to sync multiple cloud storages</li>
-        <li>Create categories with images to inspire organization</li>
-        <li>Show who’s sharing the file with profile icons and add sharing options</li>
-        <li>Share with other using links and collaborate real-time</li>
-      </ul>
-      <br>
-    <img class="landing_page" src="images/landing_page.svg" alt="landing_page">
-  </section>
-
-  <section class="section-container3 data-background">
-    <h1 class="design-process-sections">Discovery</h1>
-      <h2 class="small-header">USER RESEARCH</h2>
-        <div class="data-section">
-          <div class="data-section-row">
-            <div class="data-section-item">
-              <h3 class="percentage">95.2%</h3>
-              <p class="research-details">use cloud storage services like Dropbox, Google Drive, iCloud, etc., showing the <span class="bolded-text">prevalence and importance</span></p>
-            </div>
-            <div class="data-section-item">
-              <h3 class="percentage">85%</h3>
-              <p class="research-details">use it for <span class="bolded-text">personal</span> use while 60% used it for <span class="bolded-text">work</span></p>
-            </div>
-          </div>
-
-          <div class="data-section-row">
-            <div class="data-section-item">
-              <h3 class="percentage">75%</h3>
-              <p class="research-details">of the participants use <span class="bolded-text">Google Drive the most,</span> followed by iCloud and Dropbox</p>
-            </div>
-            <div class="data-section-item">
-              <h3 class="percentage">80%</h3>
-              <p class="research-details">responded that <span class="bolded-text">sharing content and storing file</span> was the most important</p>
-            </div>
-          </div>
-
-          <div class="data-section-row">
-            <div class="data-section-item">
-              <h3 class="percentage">50%</h3>
-              <p class="research-details">of the respondents said that they were <span class="bolded-text">creating new content</span> (notes, documents, etc.)</p>
-            </div>
-            <div class="data-section-item">
-              <h3 class="percentage">19%</h3>
-              <p class="research-details">said it was <span class="bolded-text">easy to use</span></p>
-              <p class="research-details italicized">*Percentage based on 21 respondents</p>
-            </div>
-          </div>
-        </div>
-
-      <h2 class="small-header spacing">COMPETITIVE ANALYSIS</h2>
-        <p>In order to determine the direction for Bridge, I needed to deep dive into the market and perform a competitive analysis and SWOT analysis on the competitors. In the survey, I asked the participants which storages they used the most. Google Drive, iCloud, and Dropbox were the top three. But since I wanted to create a more creative cloud storage product for the creatives, I conducted a competitive analysis on Google Drive, Pinterest and Dropbox.</p>
-        <div class="button-spacing">
-          <button class="secondary-button" type="button">SWOT analysis<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
-          <button class="secondary-button" type="button">Competitive analysis<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
-        </div>
-      <h2 class="small-header spacing">FINDINGS</h2>
-        <p>From the analysis, we determined that a new cloud storage and organizer with the following traits would be a great competitor:</p>
-        <ul class="remove-bullet">
-          <li>1. Accessible anytime and anywhere with real-time updates on multiple devices</li>
-          <li>2. Strong cloud security features (ex: various sharing modes)</li>
-          <li>3. Stores all types of files: images, videos, creative docs, etc.</li>
-          <li>4. Intuitive and clear functionality</li>
-          <li>5. Fast sync/upload</li>
-          <li>6. Own creation apps</li>
-          <li>7. Accurate visual search</li>
-          <li>8. Flexible cost and plan</li>
+    <section class="project-container pt-20 text-center">
+      <img class="mx-auto" src="images/design_role_icon.jpg" alt="face" width="24" height="24">
+        <h1 class="py-2 small-header text-xs md:text-xs lg:text-base">DESIGN ROLES</h1>
+        <ul class="remove-bullet small-header text-base md:text-base lg:text-xl">
+          <li>UX Design</li>
+          <li>Visual Design</li>
+          <li>Branding & Identity</li>
         </ul>
-        <div class="logo-spacing">
-          <img src="images/google_drive.svg" alt="google" width="32" height="32">
-          <img src="images/pinterest.svg" alt="pinterest" width="25" height="25">
-          <img src="images/dropbox.svg" alt="dropbox" width="26" height="24">
-        </div>
-  </section>
+        <br>
+      <img class="mx-auto" src="images/deliverables_icon.jpg" alt="smiley face" width="24" height="24">
+        <h1 class="py-2 small-header text-xs md:text-xs lg:text-base">DELIVERABLES</h1>
+        <ul class="remove-bullet small-header text-base md:text-base lg:text-xl">
+          <li>User Surveys</li>
+          <li>Personas</li>
+          <li>User Stories and Flows</li>
+          <li>Competitive Analysis</li>
+          <li>Paper Prototype</li>
+          <li>Wireframes</li>
+          <li>User Testing</li>
+          <li>Visual Design</li>
+        </ul>
+        <br>
+      <img class="mx-auto" src="images/tools_icon.jpg" alt="tools" width="24" height="24">
+        <h1 class="py-2 small-header text-xs md:text-xs lg:text-base">TOOLS</h1>
+        <ul class="remove-bullet small-header text-base md:text-base lg:text-xl">
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>Whimsical</li>
+          <li>InVision</li>
+          <li>Usability Hub</li>
+        </ul>
+    </section>
 
-  <section class="section-container3">
-    <h1 class="design-process-sections">Information<br>Architecture</h1>
-      <h2 class="small-header">USER PERSONAS</h2>
-        <div class="personas information-architecture">
-          <div class="daniel-section">
-            <div class="persona-section-row">
-              <img src="images/daniel.svg" alt="daniel">
-              <div>
-                <div class="data-section-item">
-                  <h3 class="persona-name">Daniel</h3>
-                  <p class="bolded-text persona-spacing">26 UX Design Student<br>from San Francisco, CA</p>
-                </div>
-                <div class="data-section-item">
-                  <h4 class="bolded-text margin0">Frustrations</h4>
-                  <ul class="remove-bullet">
-                    <li>Limited creative doc functions</li>
-                    <li>Too many different softwares</li>
-                    <li>Slow upload time</li>
-                  </ul>
-                </div>
+    <section class="project-container">
+      <h1 class="design-process-sections">Overview</h1><br>
+      <img class="py-2" src="images/problem_icon.jpg" alt="hand" width="24" height="24">
+        <p class="cs-bolded font15">PROBLEMS</h2>
+        <ul class="problems-list remove-bullet font15">
+          <li>Easy export to other cloud system</li>
+          <li>Organization/easier navigation</li>
+          <li>Security when sharing</li>
+          <li>Collaborating</li>
+        </ul>
+        <br>
+      <img class="py-2" src="images/insight_icon.jpg" alt="lens" width="24" height="24">
+        <p class="cs-bolded font15">INSIGHT</h2>
+        <ul class="insight-list remove-bullet font15">
+          <li>Our users are familiar with several cloud storages and use more than one</li>
+        </ul>
+        <br>
+      <img class="py-2" src="images/solution_icon.jpg" alt="lightbulb" width="24" height="24">
+        <p class="cs-bolded font15">SOLUTIONS</h2>
+        <ul class="solutions-list remove-bullet font15">
+          <li>Add capability to sync multiple cloud storages</li>
+          <li>Create categories with images to inspire organization</li>
+          <li>Show who’s sharing the file with profile icons and add sharing options</li>
+          <li>Share with other using links and collaborate real-time</li>
+        </ul>
+        <br>
+      <img class="landing_page" src="images/landing_page.svg" alt="landing_page">
+    </section>
+
+    <section class="project-container data-background">
+      <h1 class="design-process-sections">Discovery</h1>
+        <h2 class="small-header">USER RESEARCH</h2>
+          <div class="data-section">
+            <div class="data-section-row">
+              <div class="data-section-item">
+                <h3 class="percentage">95.2%</h3>
+                <p class="research-details">use cloud storage services like Dropbox, Google Drive, iCloud, etc., showing the <span class="bolded-text">prevalence and importance</span></p>
+              </div>
+              <div class="data-section-item">
+                <h3 class="percentage">85%</h3>
+                <p class="research-details">use it for <span class="bolded-text">personal</span> use while 60% used it for <span class="bolded-text">work</span></p>
               </div>
             </div>
 
-            <div class="persona-section-row quote-line">
-              <img src="images/line1.svg">
-              <p class="quote-margin">“If there was a wider range of various creative documents I can create on the cloud, it would save me so much time and streamline the creative process.”</p>
-            </div>
-          </div>
-
-          <div class="david-section">
-            <div class="persona-section-row">
-              <img src="images/david.svg" alt="david">
-              <div>
-                <div class="data-section-item">
-                  <h3 class="persona-name">David</h3>
-                  <p class="bolded-text persona-spacing">28 Software Engineer<br>from San Diego, CA</p>
-                </div>
-                <div class="data-section-item">
-                  <h4 class="bolded-text margin0">Frustrations</h4>
-                  <ul class="remove-bullet">
-                    <li>Slow upload time</li>
-                    <li>Unintuitive user interface</li>
-                    <li>Staying connected with others</li>
-                  </ul>
-                </div>
+            <div class="data-section-row">
+              <div class="data-section-item">
+                <h3 class="percentage">75%</h3>
+                <p class="research-details">of the participants use <span class="bolded-text">Google Drive the most,</span> followed by iCloud and Dropbox</p>
+              </div>
+              <div class="data-section-item">
+                <h3 class="percentage">80%</h3>
+                <p class="research-details">responded that <span class="bolded-text">sharing content and storing file</span> was the most important</p>
               </div>
             </div>
-            <div class="persona-section-row quote-line">
-              <img src="images/line2.svg">
-              <p class="quote-margin">“Cloud storage could be more unified, synchronized, shareable and encrypted.”</p>
+
+            <div class="data-section-row">
+              <div class="data-section-item">
+                <h3 class="percentage">50%</h3>
+                <p class="research-details">of the respondents said that they were <span class="bolded-text">creating new content</span> (notes, documents, etc.)</p>
+              </div>
+              <div class="data-section-item">
+                <h3 class="percentage">19%</h3>
+                <p class="research-details">said it was <span class="bolded-text">easy to use</span></p>
+                <p class="research-details italicized">*Percentage based on 21 respondents</p>
+              </div>
             </div>
           </div>
-        </div>
 
-      <h2 class="small-header header-gap">USER STORIES</h2>
-        <p>From the information gathered from market research and competitive analysis, I created a user story to prioritize the main features of the product. Then I created the user flows in Whimsical to illustrate how a user will go through the app to accomplish those goals.</p>
-          <div class="font10">
-            <p class="bolded-text">As a new user</p>
-              <ul class="remove-bullet">
-                <li>I want to create my account.</li>
-                <li>I want to change my security access.</li>
-                <li>I want to see storage space options.</li>
-              </ul>
-            <p class="bolded-text">As a returning user</p>
-              <ul class="remove-bullet">
-                <li>I want to sign into my account.</li>
-                <li>I want to change my password.</li>
-                <li>I want to share files safely.</li>
-                <li>I want to collaborate within the creative docs with live updates.</li>
-                <li>I want to organize my folders.</li>
-                <li>I want to change my settings.</li>
-                <li>I want to access the files anywhere.</li>
-                <li>I want to access the files at any time.</li>
-                <li>I want to access the files on any device.</li>
-                <li>I want to link various cloud storages.</li>
-                <li>I want to create surveys.</li>
-                <li>I want to use photoshop.</li>
-                <li>I want to use illustrator.</li>
-                <li>I want to quickly upload files/folders.</li>
-                <li>I want to back up files.</li>
-              </ul>
-            <p class="bolded-text">As an administrator</p>
-              <ul class="remove-bullet">
-                <li>I want to monitor cloud security.</li>
-                <li>I want to monitor and plan cloud capacity.</li>
-                <li>I want to approve/deny extra lcoud resources, keeping budget in mind.</li>
-              </ul>
+        <h2 class="small-header text-xs md:text-xs lg:text-base spacing">COMPETITIVE ANALYSIS</h2>
+          <p>In order to determine the direction for Bridge, I needed to deep dive into the market and perform a competitive analysis and SWOT analysis on the competitors. In the survey, I asked the participants which storages they used the most. Google Drive, iCloud, and Dropbox were the top three. But since I wanted to create a more creative cloud storage product for the creatives, I conducted a competitive analysis on Google Drive, Pinterest and Dropbox.</p>
+          <div class="button-spacing">
+            <button class="secondary-button" type="button">SWOT analysis<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
+            <button class="secondary-button" type="button">Competitive analysis<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
           </div>
-      <h2 class="small-header header-gap">USER FLOWS</h2>
-        <p class="font10 bolded-text">Sharing/collaboratign documents</p>
-        <img src="images/user_flow.svg" alt="user_flow">
-        <div class="primary-button-align">
-          <button class="primary-button" type="button">User flows<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
-        </div><br>
-        <hr class="line-padding">
-  </section>
+        <h2 class="small-header text-xs md:text-xs lg:text-base spacing">FINDINGS</h2>
+          <p>From the analysis, we determined that a new cloud storage and organizer with the following traits would be a great competitor:</p>
+          <ul class="remove-bullet">
+            <li>1. Accessible anytime and anywhere with real-time updates on multiple devices</li>
+            <li>2. Strong cloud security features (ex: various sharing modes)</li>
+            <li>3. Stores all types of files: images, videos, creative docs, etc.</li>
+            <li>4. Intuitive and clear functionality</li>
+            <li>5. Fast sync/upload</li>
+            <li>6. Own creation apps</li>
+            <li>7. Accurate visual search</li>
+            <li>8. Flexible cost and plan</li>
+          </ul>
+          <div class="logo-spacing">
+            <img src="images/google_drive.svg" alt="google" width="32" height="32">
+            <img src="images/pinterest.svg" alt="pinterest" width="25" height="25">
+            <img src="images/dropbox.svg" alt="dropbox" width="26" height="24">
+          </div>
+    </section>
 
-  <section class="section-container3">
-    <h1 class="design-process-sections">Branding & Identity</h1>
-    <p>Bridge was chosen as the name of the storage because it accurately depicts what the product does. Not only does the product act as a Bridge <span class="bolded-text">connecting the various cloud storages</span> in one place, but it also <span class="bolded-text">bridges the gaps and spaces</span> and <span class="bolded-text">connects users</span> by allowing the files to be accessed and shared from anywhere.</p>
-    <h2 class="small-header header-gap">LOGOS</h2>
-    <img src="images/logo_sketches.svg" alt="logo_sketches">
-    <br>
-    <br>
-    <img src="images/logo_vector.svg" alt="logo_vector">
-    <h2 class="small-header header-gap">MIND MAPPING & LIST MAKING</h2>
-    <img src="images/mindmapping.svg" alt="mindmapping">
-    <br><br>
-    <img src="images/listmaking.svg" alt="listmaking">
-    <h2 class="small-header header-gap">MOODBOARD</h2>
-    <img src="images/moodboard.svg" alt="moodboard">
+    <section class="project-container">
+      <h1 class="design-process-sections">Information<br>Architecture</h1>
+        <h2 class="small-header text-xs md:text-xs lg:text-base">USER PERSONAS</h2>
+          <div class="personas information-architecture">
+            <div class="daniel-section">
+              <div class="persona-section-row">
+                <img src="images/daniel.svg" alt="daniel">
+                <div>
+                  <div class="data-section-item">
+                    <h3 class="persona-name">Daniel</h3>
+                    <p class="bolded-text persona-spacing">26 UX Design Student<br>from San Francisco, CA</p>
+                  </div>
+                  <div class="data-section-item">
+                    <h4 class="bolded-text margin0">Frustrations</h4>
+                    <ul class="remove-bullet">
+                      <li>Limited creative doc functions</li>
+                      <li>Too many different softwares</li>
+                      <li>Slow upload time</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-    <h2 class="small-header header-gap">FONTS</h2>
-    <div>
-      <img src="images/fonts.svg" alt="fonts">
-    </div>
+              <div class="persona-section-row quote-line">
+                <img src="images/line1.svg">
+                <p class="quote-margin">“If there was a wider range of various creative documents I can create on the cloud, it would save me so much time and streamline the creative process.”</p>
+              </div>
+            </div>
 
-    <h2 class="small-header header-gap">COLOR PALETTE</h2>
+            <div class="david-section">
+              <div class="persona-section-row">
+                <img src="images/david.svg" alt="david">
+                <div>
+                  <div class="data-section-item">
+                    <h3 class="persona-name">David</h3>
+                    <p class="bolded-text persona-spacing">28 Software Engineer<br>from San Diego, CA</p>
+                  </div>
+                  <div class="data-section-item">
+                    <h4 class="bolded-text margin0">Frustrations</h4>
+                    <ul class="remove-bullet">
+                      <li>Slow upload time</li>
+                      <li>Unintuitive user interface</li>
+                      <li>Staying connected with others</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="persona-section-row quote-line">
+                <img src="images/line2.svg">
+                <p class="quote-margin">“Cloud storage could be more unified, synchronized, shareable and encrypted.”</p>
+              </div>
+            </div>
+          </div>
+
+        <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">USER STORIES</h2>
+          <p>From the information gathered from market research and competitive analysis, I created a user story to prioritize the main features of the product. Then I created the user flows in Whimsical to illustrate how a user will go through the app to accomplish those goals.</p>
+            <div class="font10">
+              <p class="bolded-text">As a new user</p>
+                <ul class="remove-bullet">
+                  <li>I want to create my account.</li>
+                  <li>I want to change my security access.</li>
+                  <li>I want to see storage space options.</li>
+                </ul>
+              <p class="bolded-text">As a returning user</p>
+                <ul class="remove-bullet">
+                  <li>I want to sign into my account.</li>
+                  <li>I want to change my password.</li>
+                  <li>I want to share files safely.</li>
+                  <li>I want to collaborate within the creative docs with live updates.</li>
+                  <li>I want to organize my folders.</li>
+                  <li>I want to change my settings.</li>
+                  <li>I want to access the files anywhere.</li>
+                  <li>I want to access the files at any time.</li>
+                  <li>I want to access the files on any device.</li>
+                  <li>I want to link various cloud storages.</li>
+                  <li>I want to create surveys.</li>
+                  <li>I want to use photoshop.</li>
+                  <li>I want to use illustrator.</li>
+                  <li>I want to quickly upload files/folders.</li>
+                  <li>I want to back up files.</li>
+                </ul>
+              <p class="bolded-text">As an administrator</p>
+                <ul class="remove-bullet">
+                  <li>I want to monitor cloud security.</li>
+                  <li>I want to monitor and plan cloud capacity.</li>
+                  <li>I want to approve/deny extra lcoud resources, keeping budget in mind.</li>
+                </ul>
+            </div>
+        <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">USER FLOWS</h2>
+          <p class="font10 bolded-text">Sharing/collaboratign documents</p>
+          <img src="images/user_flow.svg" alt="user_flow">
+          <div class="primary-button-align">
+            <button class="primary-button" type="button">User flows<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
+          </div><br>
+          <hr class="line-padding">
+    </section>
+
+    <section class="project-container">
+      <h1 class="design-process-sections">Branding & Identity</h1>
+      <p>Bridge was chosen as the name of the storage because it accurately depicts what the product does. Not only does the product act as a Bridge <span class="bolded-text">connecting the various cloud storages</span> in one place, but it also <span class="bolded-text">bridges the gaps and spaces</span> and <span class="bolded-text">connects users</span> by allowing the files to be accessed and shared from anywhere.</p>
+      <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">LOGOS</h2>
+      <img src="images/logo_sketches.svg" alt="logo_sketches">
+      <br>
+      <br>
+      <img src="images/logo_vector.svg" alt="logo_vector">
+      <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">MIND MAPPING & LIST MAKING</h2>
+      <img src="images/mindmapping.svg" alt="mindmapping">
+      <br><br>
+      <img src="images/listmaking.svg" alt="listmaking">
+      <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">MOODBOARD</h2>
+      <img src="images/moodboard.svg" alt="moodboard">
+
+      <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">FONTS</h2>
       <div>
-        <img src="images/color_palette.svg" alt="color_palette">
+        <img src="images/fonts.svg" alt="fonts">
+      </div>
+
+      <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">COLOR PALETTE</h2>
+        <div>
+          <img src="images/color_palette.svg" alt="color_palette">
+        </div>
+        <br>
+        <hr class="line-padding">
+    </section>
+
+    <section class="project-container">
+      <h1 class="design-process-sections">Visual Design</h1>
+      <h2 class="small-header text-xs md:text-xs lg:text-base">WIREFRAMES - LO-FI</h2>
+      <img src="images/wireframes.svg" alt="wireframes">
+      <br><br>
+      <div class="primary-button-align">
+        <button class="primary-button" type="button">Wireframes<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
       </div>
       <br>
       <hr class="line-padding">
-  </section>
-
-  <section class="section-container3">
-    <h1 class="design-process-sections">Visual Design</h1>
-    <h2 class="small-header">WIREFRAMES - LO-FI</h2>
-    <img src="images/wireframes.svg" alt="wireframes">
-    <br><br>
-    <div class="primary-button-align">
-      <button class="primary-button" type="button">Wireframes<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
-    </div>
-    <br>
-    <hr class="line-padding">
-  </section>
-
-  <section class="section-container3">
-    <h1 class="design-process-sections">Development</h1>
-    <h2 class="small-header">USABILITY TESTING</h2>
-    <p>Once I was done creating my wireframes, I performed the Usability Testing to get some feedback. Participants had confusion around the CTA button labeled as Bridge Now on the Landing Page, so I updated that to Get Started.</p>
-
-    <div class="participants-section">
-      <h3 class="font15 bolded-text margin0">Participant 1</h3>
-        <h4 class="occupation font10 margin0">Software Engineer</h4>
-        <p>Confusion: Two options to sign up on Landing Page (Sign Up and Get Started)</p>
-        <br>
-      <h3 class="font15 bolded-text margin0">Participant 2</h3>
-        <h4 class="occupation font10 margin0">Marketing Manager</h4>
-        <p>Confusion: Organizing a file vs Sharing<br>Benefit: Clear icons</p>
-        <br>
-      <h3 class="font15 bolded-text margin0">Participant 3</h3>
-        <h4 class="occupation font10 margin0">Media Planner</h4>
-        <p>Confusion: Organizing a file vs Sharing </p>
-    </div>
-
-
-    <h2 class="small-header">A & B TESTING</h2>
-    <p class="bolded-text">Test 1 - Which cancel button do you prefer?</p>
-    <p>I had 13 participants who participated in the test. 100% of the group preferred the blue CTA button. Some of the reasons listed were: easy to tell, consistent with iOS guidelines, stands out more, etc. This helped me to be confident in my decision to keep the CTA button blue.</p>
-    <p class="playfair font15 bolded-text">| A</p>
-    <img src="images/regular_cancel.svg" alt="normal cancel">
-    <p class="playfair font15 bolded-text">| B</p>
-    <img src="images/iOScancel.svg" alt="iOScancel">
-    <br><br>
-
-    <p class="bolded-text">Test 2 - Do you prefer to have the 'Bridge Helps You...' section on the screen or not?</p>
-    <p>I had 12 participants in the test. 58% preferred taking out the section over the 42% who preferred to leave it. My biggest worry is being redundant, but the section seems like a good short summary for users who won’t be scrolling all the way down the webpage. The results may be more statistically significant if I had more participants, but since it’s not, I have decided to leave it as is and keep the ‘Bridge Helps You..’ section on the webpage.</p>
-    <p class="playfair font15 bolded-text">| A</p>
-    <img class="landing_page" src="images/no_summary.svg" alt="no_summary">
-    <p class="playfair font15 bolded-text">| B</p>
-    <img class="landing_page" src="images/with_summary.svg" alt="with_summary">
-    <br>
-
-    <p class="bolded-text">Test 3 - Which logo (on top left) do you prefer? Filled or outlined?</p>
-    <p>I had 14 participants who took the test. 14% preferred the filled logo vs the outline (86%)</p>
-    <h3 class="playfair font15 bolded-text">| A</h3>
-    <img src="images/filled_logo.svg" alt="filled_logo">
-    <h3 class="playfair font15 bolded-text">| B</h3>
-    <img src="images/outlined_logo.svg" alt="outlined">
-
-    <h2 class="small-header header-gap">USER TESTING</h2>
-    <p class="font15 bolded-text margin0">Landing page alignment & shapes</p>
-    <p>I had 16 participants in the test. 69% preferred the center-alignment over the 31% (left). Some of the reasons being: less crowded, better use of space, etc.</p>
-    <div class="twocolumns-container">
-      <img src="images/normal_pg_alignment.jpg" alt="normal_pg_alignment">
-      <img class="twocolumns-items" src="images/center_pg_alignment.jpg" alt="center_pg_alignment">
-    </div>
-
-    <br>
-    <p>I had 18 participants in the test. 56% preferred making the Recently Viewed files/folders a different size vs 44% who wanted to keep it the same as others.</p>
-    <div class="twocolumns-container">
-      <img src="images/large_folder.jpg" alt="large_folder">
-      <img class="twocolumns-items" src="images/small_folder.jpg" alt="small_folder">
-    </div>
-
-    <h2 class="small-header header-gap">MOCKUPS</h2>
-    <p class="font15 bolded-text margin0">CTA buttons</p>
-    <p>I had 15 participants in the test. 53% preferred keep the CTA buttons colored vs 47%.</p>
-    <p><span class="bolded-text">Old</span> | Rectangular and colored</p>
-    <img src="images/pink_buttons.svg" alt="pink_buttons">
-    <p><span class="bolded-text">New</span> | Rounded corners with shadow</p>
-    <img src="images/shadow_buttons.svg" alt="shadow_buttons">
-    <br><br>
-
-    <p class="font15 bolded-text margin0">Text under icons</p>
-    <p>I had 17 participants in the test. 71% preferred the icons with labels vs 29% who wanted to leave it out.</p>
-    <p><span class="bolded-text">Old</span> | No text under icons</p>
-    <img src="images/only_icon.svg" alt="only_icon">
-    <p><span class="bolded-text">New</span> | With text</p>
-    <img src="images/icon_text.svg" alt="icon_text">
-    <br><br>
-
-    <p class="font15 bolded-text margin0">Text color</p>
-    <div class="twocolumns-container">
-      <div class="top-bottom">
-        <p><span class="bolded-text">Old</span> | Black</p>
-        <img src="images/black_text.svg" alt="black_text">
-      </div>
-
-      <div class="twocolumns-items top-bottom">
-        <p><span class="bolded-text">New</span> | Gray</p>
-        <img src="images/grey_text.svg" alt="grey_text">
-      </div>
-    </div>
-    <br>
-    <hr class="line-padding">
-  </section>
-
-
-  <section class="section-container3">
-    <h1 class="design-process-sections">Final Product</h1>
-    <div class="twocolumns-container">
-      <div class="top-bottom">
-        <h2 class="small-header">MOBILE</h2>
-        <button class="secondary-button" type="button">View prototype<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
-      </div>
-      <div class="top-bottom prototype-spacing">
-        <h2 class="small-header">DESKTOP</h2>
-        <button class="secondary-button" type="button">View prototype<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
-      </div>
-    </div>
-
-    <br><br><br>
-    <hr class="line-padding">
-  </section>
-
-  <section class="section-container3">
-    <h1 class="design-process-sections">Conclusion</h1>
-    <h2 class="small-header margin0">WHAT I LEARNED</h2>
-
-    <div>
-      <br>
-      <hr class="line-padding grey-line">
-      <p class="bolded-text">What worked?</p>
-      <p>Clear icons, label<br>Easy export to other cloud system<br>Organization/Easier navigation<br>Security when sharing<br>Collaborating</p>
-    </div>
-
-    <div>
-      <hr class="line-padding grey-line">
-        <p class="bolded-text">What didn't</p>
-        <p>Need to explore more color logo options / + button location</p>
-    </div>
-
-    <div>
-      <hr class="line-padding grey-line">
-        <p class="bolded-text">What were your doubts going into the project?</p>
-        <p>How would mine stand out in the saturated cloud storages market?</p>
-    </div>
-
-    <div>
-      <hr class="line-padding grey-line">
-        <p class="bolded-text">What surprised you the most?</p>
-        <p>“Get Started button” This sometimes hinders users from scrolling down and reading the rest of the landing page information. Users click the Get Started button immediately instead.</p>
-    </div>
-
-    <div>
-      <hr class="line-padding grey-line">
-        <p class="bolded-text">What would you have done differently if given more time?</p>
-        <p>I would do A&B Testing on the “Get Started’ button specifically and on more variety of users.</p>
-    </div>
-
-    <div>
-      <hr class="line-padding grey-line">
-        <p class="bolded-text">What did you learn while doing this project?</p>
-        <p>Testing is key!! Style guide may change once A&B Testing kicks in (my font color, icons, etc.).</p>
-    </div>
-
-    <div>
-      <hr class="line-padding grey-line">
-        <p class="bolded-text">How will you use that information in the future?</p>
-        <p>Learn to trust the research process. Sometimes you may have a strong opinion about a design, but it won’t work ultimately. You need to learn to let it go (ex: landing page layout; Get Started CTA button).</p>
-      <hr class="line-padding grey-line">
-    </div>
-  </section>
-
-    <br><br>
-    <hr class="line-padding2 header-gap">
-    <section class="section-container3 thank-you-box">
-      <h1 class="thank-you">Thank you for stopping by</h1>
-      <h2 class="work-together">Let's <span class="highlighted-text">work</span> together!</h2>
-      <button class="primary-button in-touch" type="button">Get in touch</button>
     </section>
 
-    <footer class="section-container footer">
-      <div class="footer-flex">
-        <img src="images/social_logo.svg" alt="social_logo">
-        <div><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh</div>
+    <section class="project-container">
+      <h1 class="design-process-sections">Development</h1>
+      <h2 class="small-header text-xs md:text-xs lg:text-base">USABILITY TESTING</h2>
+      <p>Once I was done creating my wireframes, I performed the Usability Testing to get some feedback. Participants had confusion around the CTA button labeled as Bridge Now on the Landing Page, so I updated that to Get Started.</p>
+
+      <div class="participants-section">
+        <h3 class="font15 bolded-text margin0">Participant 1</h3>
+          <h4 class="occupation font10 margin0">Software Engineer</h4>
+          <p>Confusion: Two options to sign up on Landing Page (Sign Up and Get Started)</p>
+          <br>
+        <h3 class="font15 bolded-text margin0">Participant 2</h3>
+          <h4 class="occupation font10 margin0">Marketing Manager</h4>
+          <p>Confusion: Organizing a file vs Sharing<br>Benefit: Clear icons</p>
+          <br>
+        <h3 class="font15 bolded-text margin0">Participant 3</h3>
+          <h4 class="occupation font10 margin0">Media Planner</h4>
+          <p>Confusion: Organizing a file vs Sharing </p>
       </div>
-    </footer>
-</body>
+
+
+      <h2 class="small-header text-xs md:text-xs lg:text-base">A & B TESTING</h2>
+      <p class="bolded-text">Test 1 - Which cancel button do you prefer?</p>
+      <p>I had 13 participants who participated in the test. 100% of the group preferred the blue CTA button. Some of the reasons listed were: easy to tell, consistent with iOS guidelines, stands out more, etc. This helped me to be confident in my decision to keep the CTA button blue.</p>
+      <p class="playfair font15 bolded-text">| A</p>
+      <img src="images/regular_cancel.svg" alt="normal cancel">
+      <p class="playfair font15 bolded-text">| B</p>
+      <img src="images/iOScancel.svg" alt="iOScancel">
+      <br><br>
+
+      <p class="bolded-text">Test 2 - Do you prefer to have the 'Bridge Helps You...' section on the screen or not?</p>
+      <p>I had 12 participants in the test. 58% preferred taking out the section over the 42% who preferred to leave it. My biggest worry is being redundant, but the section seems like a good short summary for users who won’t be scrolling all the way down the webpage. The results may be more statistically significant if I had more participants, but since it’s not, I have decided to leave it as is and keep the ‘Bridge Helps You..’ section on the webpage.</p>
+      <p class="playfair font15 bolded-text">| A</p>
+      <img class="landing_page" src="images/no_summary.svg" alt="no_summary">
+      <p class="playfair font15 bolded-text">| B</p>
+      <img class="landing_page" src="images/with_summary.svg" alt="with_summary">
+      <br>
+
+      <p class="bolded-text">Test 3 - Which logo (on top left) do you prefer? Filled or outlined?</p>
+      <p>I had 14 participants who took the test. 14% preferred the filled logo vs the outline (86%)</p>
+      <h3 class="playfair font15 bolded-text">| A</h3>
+      <img src="images/filled_logo.svg" alt="filled_logo">
+      <h3 class="playfair font15 bolded-text">| B</h3>
+      <img src="images/outlined_logo.svg" alt="outlined">
+
+      <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">USER TESTING</h2>
+      <p class="font15 bolded-text margin0">Landing page alignment & shapes</p>
+      <p>I had 16 participants in the test. 69% preferred the center-alignment over the 31% (left). Some of the reasons being: less crowded, better use of space, etc.</p>
+      <div class="twocolumns-container">
+        <img src="images/normal_pg_alignment.jpg" alt="normal_pg_alignment">
+        <img class="twocolumns-items" src="images/center_pg_alignment.jpg" alt="center_pg_alignment">
+      </div>
+
+      <br>
+      <p>I had 18 participants in the test. 56% preferred making the Recently Viewed files/folders a different size vs 44% who wanted to keep it the same as others.</p>
+      <div class="twocolumns-container">
+        <img src="images/large_folder.jpg" alt="large_folder">
+        <img class="twocolumns-items" src="images/small_folder.jpg" alt="small_folder">
+      </div>
+
+      <h2 class="small-header text-xs md:text-xs lg:text-base header-gap">MOCKUPS</h2>
+      <p class="font15 bolded-text margin0">CTA buttons</p>
+      <p>I had 15 participants in the test. 53% preferred keep the CTA buttons colored vs 47%.</p>
+      <p><span class="bolded-text">Old</span> | Rectangular and colored</p>
+      <img src="images/pink_buttons.svg" alt="pink_buttons">
+      <p><span class="bolded-text">New</span> | Rounded corners with shadow</p>
+      <img src="images/shadow_buttons.svg" alt="shadow_buttons">
+      <br><br>
+
+      <p class="font15 bolded-text margin0">Text under icons</p>
+      <p>I had 17 participants in the test. 71% preferred the icons with labels vs 29% who wanted to leave it out.</p>
+      <p><span class="bolded-text">Old</span> | No text under icons</p>
+      <img src="images/only_icon.svg" alt="only_icon">
+      <p><span class="bolded-text">New</span> | With text</p>
+      <img src="images/icon_text.svg" alt="icon_text">
+      <br><br>
+
+      <p class="font15 bolded-text margin0">Text color</p>
+      <div class="twocolumns-container">
+        <div class="top-bottom">
+          <p><span class="bolded-text">Old</span> | Black</p>
+          <img src="images/black_text.svg" alt="black_text">
+        </div>
+
+        <div class="twocolumns-items top-bottom">
+          <p><span class="bolded-text">New</span> | Gray</p>
+          <img src="images/grey_text.svg" alt="grey_text">
+        </div>
+      </div>
+      <br>
+      <hr class="line-padding">
+    </section>
+
+
+    <section class="project-container">
+      <h1 class="design-process-sections">Final Product</h1>
+      <div class="twocolumns-container">
+        <div class="top-bottom">
+          <h2 class="small-header text-xs md:text-xs lg:text-base">MOBILE</h2>
+          <button class="secondary-button" type="button">View prototype<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
+        </div>
+        <div class="top-bottom prototype-spacing">
+          <h2 class="small-header text-xs md:text-xs lg:text-base">DESKTOP</h2>
+          <button class="secondary-button" type="button">View prototype<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <br><br><br>
+      <hr class="line-padding">
+    </section>
+
+    <section class="project-container">
+      <h1 class="design-process-sections">Conclusion</h1>
+      <h2 class="small-header text-xs md:text-xs lg:text-base margin0">WHAT I LEARNED</h2>
+
+      <div>
+        <br>
+        <hr class="line-padding grey-line">
+        <p class="bolded-text">What worked?</p>
+        <p>Clear icons, label<br>Easy export to other cloud system<br>Organization/Easier navigation<br>Security when sharing<br>Collaborating</p>
+      </div>
+
+      <div>
+        <hr class="line-padding grey-line">
+          <p class="bolded-text">What didn't</p>
+          <p>Need to explore more color logo options / + button location</p>
+      </div>
+
+      <div>
+        <hr class="line-padding grey-line">
+          <p class="bolded-text">What were your doubts going into the project?</p>
+          <p>How would mine stand out in the saturated cloud storages market?</p>
+      </div>
+
+      <div>
+        <hr class="line-padding grey-line">
+          <p class="bolded-text">What surprised you the most?</p>
+          <p>“Get Started button” This sometimes hinders users from scrolling down and reading the rest of the landing page information. Users click the Get Started button immediately instead.</p>
+      </div>
+
+      <div>
+        <hr class="line-padding grey-line">
+          <p class="bolded-text">What would you have done differently if given more time?</p>
+          <p>I would do A&B Testing on the “Get Started’ button specifically and on more variety of users.</p>
+      </div>
+
+      <div>
+        <hr class="line-padding grey-line">
+          <p class="bolded-text">What did you learn while doing this project?</p>
+          <p>Testing is key!! Style guide may change once A&B Testing kicks in (my font color, icons, etc.).</p>
+      </div>
+
+      <div>
+        <hr class="line-padding grey-line">
+          <p class="bolded-text">How will you use that information in the future?</p>
+          <p>Learn to trust the research process. Sometimes you may have a strong opinion about a design, but it won’t work ultimately. You need to learn to let it go (ex: landing page layout; Get Started CTA button).</p>
+        <hr class="line-padding grey-line">
+      </div>
+    </section>
+
+      <br><br>
+      <hr class="line-padding2 header-gap">
+
+      <hr class="line-padding">
+      <section class="main-container text-center py-10 lg:py-20">
+        <h1 class="thank-you text-xs md:text-sm lg:text-lg mb-0">Thank you for stopping by</h1>
+        <h2 class="work-together font-bold text-2xl md:text-3xl lg:text-4xl">Let's <span class="highlighted-text">work</span> together!</h2>
+        <button class="primary-button text-xs lg:text-sm py-4 px-6" type="button">Get in touch</button>
+      </section>
+
+      <footer class="main-container p-5 footer text-xs lg:text-sm text-right">
+        <div class="flex justify-between items-baseline">
+          <img src="images/social_logo.svg" alt="social_logo">
+          <div><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh</div>
+        </div>
+      </footer>
+
+    </body>
+</html>

@@ -12,13 +12,6 @@ h1, h2, h3, h4, li {
   font-weight: normal;
 }
 
-.section-container2 {
-  padding: 20px 20px;
-  font-family: Roboto, san-sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-}
-
 
 .navbar {
   display: flex;
@@ -30,15 +23,19 @@ h1, h2, h3, h4, li {
   color: #4d4d4d;
 }
 
-.about-me-section {
-  padding-bottom: 109px;
-  position: relative;
+.about-container {
+  font-family: Roboto, san-sans-serif;
+  letter-spacing: 0.08em;
+  padding: 1.25rem;
+  font-size: .75rem;
+  max-width: 90rem;
 }
 
 .about-me-section::after {
   content: "";
-  background-image: url("../images/about-profile-picture.JPG");
+  background-image: url("../images/about-profile-picture2.svg");
   background-size: cover;
+  background-position: center;
   opacity: 0.7;
   top: 0;
   left: 0;
@@ -48,72 +45,47 @@ h1, h2, h3, h4, li {
   z-index: -1;
 }
 
+.top-width {
+  max-width: 90rem;
+}
+
+
 .small-header {
-  font-size: 10px;
   color: #303030;
-  margin-top: 54px;
+  margin-top: 3.375rem;
 }
 
 .large-header {
-  font-size: 25px;
   font-family: PlayfairDisplay;
-  font-weight: bold;
-  margin-top: 6px;
-  margin-bottom:520px;
+  margin-top: .375rem;
+  margin-bottom: 32.5rem;
 }
 
 .arrow-box {
   background-color: #A48863;
   border: none;
   bottom: -30px;
-  padding: 22px 28px;
+  padding: 1.375rem 1.75rem;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
 }
 
 .plunge-paragraph {
-  padding-top: 54px;
-  padding-bottom: 20px;
-}
-
-.section-bold {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.about-paragraph {
-  line-height: 18px;
+  padding-top: 3.375rem;
+  padding-bottom: 1.25rem;
 }
 
 .job-section {
   background-color: #C4C4C4;
-  line-height: 18px;
   margin-left: 20px;
   margin-right: 20px;
   Padding: 24px 36px;
 }
 
-.bolded-text {
-  font-weight: bold;
-}
-
-
-
-
-
-
-
-
 .last-paragraph {
   font-size: 12px;
   letter-spacing: 0.08em;
-  line-height: 18px;
-}
-
-.line-padding {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .thank-you-box {
