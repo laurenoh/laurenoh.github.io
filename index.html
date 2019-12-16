@@ -24,10 +24,10 @@ Mobile(25)/Desktop(36)-> text-2xl md:text-4xl lg:text-4xl
 Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
 -->
 <body>
-  <nav>
-    <div class="navbar p-5">
+  <nav class="navbar-position">
+    <div class="flex flex-row items-center p-5 max-w-5xl mx-auto">
       <img src="images/logo.svg" alt="logo" width="32" height="34">
-      <div class="flex flex-row sm:justify-end md:justify-between">
+      <div class="flex flex-row justify-between flex-1 ml-5 md:ml-64">
         <p class="navbar-sections text-sm md:text-xl lg:text-xl">work</p>
         <p class="navbar-sections text-sm md:text-xl lg:text-xl">about</p>
         <p class="navbar-sections text-sm md:text-xl lg:text-xl">resume</p>
@@ -81,12 +81,16 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
   </section>
 
   <section class="main-container mentor-box">
-    <div class="max-w-5xl mx-auto">
-      <h1 class="mentor-review font-bold text-2xl m-0">People I've worked with</h1><br>
-      <p class="mentor-sentences text-base">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer...</p>
-      <div class="my-10 text-xs text-center flex justify-center items-center flex-col">
-        <img class="mentor-picture mb-4" src="images/mentor-picture.jpg" alt="mentor-picture" width="70" height="70">
-        <p>Mike Dekker<br>Senior UX Designer</p>
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row help-width">
+      <div class="md:pr-48 flex-1">
+        <h1 class="mentor-review font-bold text-2xl m-0">People I've worked with</h1><br>
+        <p class="mentor-sentences text-base">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer...</p>
+      </div>
+      <div class="flex justify-around flex-1">
+        <div class="my-10 text-xs text-center flex justify-center items-center flex-col">
+          <img class="mentor-picture mb-4" src="images/mentor-picture.jpg" alt="mentor-picture" width="70" height="70">
+          <p>Mike Dekker<br>Senior UX Designer</p>
+        </div>
       </div>
     </div>
   </section>
@@ -97,7 +101,7 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
       <div>Recent work</div>
       <div><i class="fa fa-long-arrow-down pt-3" aria-hidden="true"></i></div>
     </div>
-    <div> <!-- class="flex flex-col md:flex-row help-width" -->
+    <div class="flex flex-col md:flex-row max-w-5xl mx-auto">
       <div class="case-study-box max-w-xs mx-auto">
         <div>
           <h1 class="case-study">Case Study</h1><br>
@@ -105,7 +109,7 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
           <p class="case-study-type1">Branding/<br>Prototyping</p><br>
           <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
         </div>
-        <div class="view-work">
+        <div class="view-work flex justify-end items-end">
           <p>View Work</p>
         </div>
       </div>
@@ -116,7 +120,7 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
           <p class="case-study-type2">Branding/<br> Prototyping</p><br>
           <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
         </div>
-        <div class="view-work">
+        <div class="view-work flex justify-end items-end">
           <p>View Work</p>
         </div>
       </div>

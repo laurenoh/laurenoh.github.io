@@ -12,13 +12,51 @@ h1, h2, h3, h4, li {
   font-weight: normal;
 }
 
+.item-a {
+  grid-area: cs-name;
+}
+
+.item-b {
+  grid-area: dashboard;
+}
+
+.item-c {
+  grid-area: summary;
+}
+
+.item-d {
+  grid-area: buttons;
+}
+
+.cs-grid-layout  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .5fr 2fr .5fr;
+  grid-template-areas:
+  "cs-name dashboard"
+  "summary summary"
+  "buttons buttons"
+}
+
+
+@media only screen and (min-width: 768px) {
+  .cs-grid-layout  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 1fr .5fr;
+    grid-template-areas:
+    "cs-name ."
+    "summary dashboard"
+    "summary buttons"
+  }
+}
+
 .project-container {
   color: #303030;
-  padding: 1.25rem;
+  padding: 5rem 1.25rem;
   font-family: Roboto, san-sans-serif;
   font-size: .75rem;
   letter-spacing: 0.08em;
-  /*line-height: 18px;*/
 }
 
 .navbar {
@@ -44,37 +82,30 @@ h1, h2, h3, h4, li {
   z-index: -1;
 }
 
-.small-header {
+.light-gray-font {
   color: #4d4d4d;
   margin-top: 0rem;
 }
 
-.large-header {
+.bridge-header {
   color: #303030;
   font-family: PlayfairDisplay;
   margin-top: .375rem;
   margin-bottom: 0rem;
 }
 
-.font15 {
-  font-size: 15px;
-  line-height: 30px;
-}
-
 .secondary-button {
   background-color: #ffffff;
-  border-radius: 47px;
-  border: 1px solid black;
+  border-radius: 2.9375rem;
+  border: .0625rem solid black;
   color: #303030;
-  font-size: 10px;
-  padding: .9375rem 1.5rem;
   letter-spacing: 0.08em;
 }
 
 .arrow-box {
   background-color: #A48863;
   border: none;
-  bottom: -30px;
+  bottom: -1.875rem;
   padding: 1.375rem 1.75rem;
   left: 50%;
   position: absolute;
@@ -88,43 +119,19 @@ h1, h2, h3, h4, li {
   padding: 0rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .side-borders {
+    border-left: .0625rem solid gray;
+    border-right: .0625rem solid gray;
+  }
+}
 
-
-
-
-
-
-
-.design-process-sections {
+.dark-gray-font {
   font-family: PlayfairDisplay;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 35px;
-  padding-top: 42px;
 }
 
-.cs-bolded {
-  font-weight: bold;
-  line-height: 30px;
-  margin: 0px;
-}
-
-.problems-list {
-    line-height: 30px;
-}
-
-.insight-list {
-    line-height: 30px;
-}
-
-.solutions-list {
-    line-height: 30px;
-}
-
-.landing_page {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.list-height {
+    line-height: 1.875rem;
 }
 
 .data-background {
@@ -133,104 +140,96 @@ h1, h2, h3, h4, li {
 
 .data-section {
   background-color: #FFFFFF;
-  padding: 20px 0px 20px 20px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0em;
 }
 
-.data-section-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.item-1 {
+  grid-area: prevalence;
 }
 
-.data-section-item {
-  flex: 1;
+.item-2 {
+  grid-area: personal;
 }
 
-.percentage {
-  font-size: 25px;
-  font-weight: bold;
+.item-3 {
+  grid-area: most;
 }
 
-.research-details {
-  margin-right: 20px;
+.item-4 {
+  grid-area: sharing;
 }
 
-.bolded-text {
-  font-weight: bold;
+.item-5 {
+  grid-area: creating;
 }
 
-.italicized {
-  font-style: italic;
+.item-6 {
+  grid-area: ease;
 }
 
-.spacing {
-  padding-top: 54px;
+@media only screen and (min-width: 0px) {
+  .data-grid-layout  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-template-areas:
+    "prevalence personal"
+    "most sharing"
+    "creating ease"
+  }
 }
 
-.logo-spacing {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.information-architecture {
-  letter-spacing: 0em;
-  line-height: 18px;
-}
-
-.personas {
-  margin-left: 22px;
-  margin-right: 22px;
-  font-size: 12px;
+@media only screen and (min-width: 768px) {
+  .data-grid-layout  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-template-areas:
+    "prevalence personal most"
+    "sharing creating ease"
+  }
 }
 
 .persona-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px;
   letter-spacing: 0.08em;
-}
-
-.persona-section-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .margin0 {
   margin: 0px;
-  line-height: 18px;
-}
-
-.persona-spacing {
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-.quote-margin {
-  margin-left: 12px;
+  line-height: 1.125rem;
 }
 
 .header-gap {
-  margin-top: 36px;
+  margin-top: 2.25rem;
 }
 
-.font10 {
-  font-size: 10px;
-  line-height: 15px;
+.left-border {
+    border-left: .0625rem solid gray;
 }
 
-.primary-button-align {
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .occupation {
   color: #4d4d4d;

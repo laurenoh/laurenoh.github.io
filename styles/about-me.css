@@ -12,6 +12,13 @@ h1, h2, h3, h4, li {
   font-weight: normal;
 }
 
+.navbar-position {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: rgba(243, 243, 243, 0.95);
+  z-index:1;
+}
 
 .navbar {
   display: flex;

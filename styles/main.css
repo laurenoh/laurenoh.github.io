@@ -12,11 +12,7 @@ h1, h2, h3, h4, li {
   font-weight: normal;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 
 .main-container {
@@ -92,7 +88,7 @@ h1, h2, h3, h4, li {
   font-family: sans-serif;
   flex-grow: 1;
   font-size: .625rem;
-  white-space:nowrap;
+  white-space: normal;
 }
 
 .skills-info {
@@ -160,14 +156,10 @@ h1, h2, h3, h4, li {
   background-image: url("../images/cut-dashboard.svg");
   background-position: right;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 100%
 }
 
-.case-study-box > div {
-  flex-grow: 1;
-}
+
 
 .case-study {
   color: #4d4d4d;
@@ -199,9 +191,7 @@ h1, h2, h3, h4, li {
 
 .view-work {
   color: #4d4d4d;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+
 }
 
 .thank-you {
