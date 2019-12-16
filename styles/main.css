@@ -21,6 +21,14 @@ h1, h2, h3, h4, li {
   padding: 1.25rem .5rem;
 }
 
+.navbar-position {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: rgba(243, 243, 243, 0.95);
+  z-index:1;
+}
+
 .navbar-sections {
   color: #4d4d4d;
 }

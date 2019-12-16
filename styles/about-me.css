@@ -12,24 +12,6 @@ h1, h2, h3, h4, li {
   font-weight: normal;
 }
 
-.navbar-position {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  background-color: rgba(243, 243, 243, 0.95);
-  z-index:1;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar-sections {
-  color: #4d4d4d;
-}
-
 .about-container {
   font-family: Roboto, san-sans-serif;
   letter-spacing: 0.08em;
