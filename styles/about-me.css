@@ -22,7 +22,7 @@ h1, h2, h3, h4, li {
 
 .about-me-section::after {
   content: "";
-  background-image: url("../images/about-profile-picture2.svg");
+  background-image: url("../images/about-profile-picture.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.7;
@@ -40,7 +40,12 @@ h1, h2, h3, h4, li {
 
 
 .small-header {
-  color: #303030;
+  color: #b2b2b2;
+  margin-top: 3.375rem;
+}
+
+.small-header2 {
+  color: #4d4d4d;
   margin-top: 3.375rem;
 }
 
@@ -75,40 +80,4 @@ h1, h2, h3, h4, li {
 .last-paragraph {
   font-size: 12px;
   letter-spacing: 0.08em;
-}
-
-.thank-you-box {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-
-.thank-you {
-  color: #c4c4c4;
-  font-size: 12px;
-  margin-bottom: 0px;
-}
-
-.work-together {
-  font-family: PlayfairDisplay;
-  font-weight: bold;
-  color: #303030;
-  font-size: 25px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-}
-
-.footer-flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer {
-  background-color: #303030;
-  color: #c4c4c4;
-  font-size: 10px;
-  text-align: right;
-  line-height: 10px;
-  padding: 20px 20px;
 }
