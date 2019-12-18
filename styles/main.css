@@ -40,6 +40,25 @@ h1, h2, h3, h4, li {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .info-section {
+    background-image: url("../images/heroimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .info-section {
+    background-image: url("../images/heroimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+
 
 .intro-header {
   color: #4d4d4d;
