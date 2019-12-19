@@ -34,7 +34,7 @@ h1, h2, h3, h4, li {
 }
 
 .info-section {
-  background-image: url("../images/heroimage.JPG");
+  background-image: url("../images/heroimage.png");
   background-size: cover;
   position: relative;
   text-align: center;

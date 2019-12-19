@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class="mdl-js">
-  <title>Product Designer | Lauren Oh</title>
-  <meta name="viewport" content="width=device-width, intial-scale=1">
-  <!-- Font Awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Custom Styles -->
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-  <nav class="flex items-center justify-between p-5">
-    <img src="images/logo.svg" alt="logo" width="32" height="34">
-    <p class="navbar-sections">work</p>
-    <p class="navbar-sections">about</p>
-    <p class="navbar-sections">resume</p>
-    <p class="navbar-sections">contact</p>
-  </nav>
+  <head class="mdl-js">
+    <title>Case Study | Lauren Oh</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about-me.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+    <!--Font Sizes
+    PARAGRAPH
+    Mobile(10)/Desktop(16)-> text-xs md:text-base lg:text-base
+    Mobile(12)/Desktop(20)-> text-xs md:text-xl lg:text-xl
+    Mobile(16)/Desktop(25)-> text-base md:text-2xl lg:text-2xl
 
-  <section class="bg-gray-200 px-5">
-    yo contact me here
-  </section>
+    HEADER
+    Mobile(18)/Desktop(30)-> text-lg md:text-3xl lg:text-3xl
+    Mobile(25)/Desktop(36)-> text-2xl md:text-4xl lg:text-4xl
+    Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
+    -->
+  <body>
+
+    <nav class="navbar-position">
+      <div class="flex flex-row items-center p-5 max-w-5xl mx-auto">
+        <a href="/index.html"><img src="images/logo.png" alt="logo" width="32" height="34"></a>
+        <div class="flex flex-row justify-between flex-1 ml-5 md:ml-64">
+          <a href="/project.html" class="navbar-sections text-sm md:text-xl lg:text-xl">work</a>
+          <a href="/about-me.html" class="navbar-sections text-sm md:text-xl lg:text-xl">about</a>
+          <a href="/project.html" class="navbar-sections text-sm md:text-xl lg:text-xl">resume</a>
+          <a href="/contact.html" class="navbar-sections text-sm md:text-xl lg:text-xl">contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-gray-200 px-5">
+      contact me here
+    </section>
 
 </body>
 
