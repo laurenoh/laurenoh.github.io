@@ -199,6 +199,8 @@ h1, h2, h3, h4, li {
 .flow-image {
     background-image: url("../images/user_flow.svg");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     Height: 300px;
 }
 
