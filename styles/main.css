@@ -42,7 +42,7 @@ h1, h2, h3, h4, li {
 
 @media only screen and (min-width: 768px) {
   .info-section {
-    background-image: url("../images/heroimage.jpg");
+    background-image: url("../images/heroimage.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +50,7 @@ h1, h2, h3, h4, li {
 }
 @media only screen and (min-width: 1024px) {
   .info-section {
-    background-image: url("../images/heroimage.jpg");
+    background-image: url("../images/heroimage.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
