@@ -230,7 +230,7 @@ h1, h2, h3, h4, li {
 }
 
 .wireframe-image {
-  background-image: url("../images/wireframes.svg");
+  background-image: url("../images/wireframes.png");
   background-size: contain;
   height: 255px;
   background-repeat: no-repeat;
@@ -240,7 +240,7 @@ h1, h2, h3, h4, li {
 
 @media only screen and (min-width: 768px) {
   .wireframe-image {
-    background-image: url("../images/wireframes.svg");
+    background-image: url("../images/wireframes.png");
     background-size: contain;
     height: 750px;
     background-repeat: no-repeat;
