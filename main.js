@@ -1,17 +1,4 @@
-
-/*const workLink = document.querySelector(".navbar-work")
-workLink.addEventListener("click", function(event) {
-  event.preventDefault();
-  const recentWorkContainer = document.querySelector(".recent-work-padding")
-  const scrollToLocaton = recentWorkContainer.getBoundingClientRect().y
-  window.scrollTo({
-    top: scrollToLocaton,
-    behavior: 'smooth',
-  });
-})
-*/
-
-
+// from work page, clicking on work makes the pg scroll to recent work //
   const workLink = document.querySelector('a[href^="#work"]')
   let target = document.querySelector(".recent-work-padding")
 
@@ -23,11 +10,13 @@ workLink.addEventListener("click", function(event) {
         behavior: 'smooth',
         block: 'start'
     })
+// adds to history stack when you go back and forth between windows//
+
     history.pushState(null,null,hashval)
     e.preventDefault()
   })
 
-
+// from non-work pgs, scrolls down to recent work due to #work from URL//
 window.onload = () => {
   if (window.location.hash === "#work") {
     target.scrollIntoView({
