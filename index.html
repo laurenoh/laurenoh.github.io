@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head class="mdl-js">
+  <link rel="icon"
+      type="image/png"
+      href="images/logo_1.png">
   <title>Product Designer | Lauren Oh</title>
   <meta name="viewport" content="width=device-width, intial-scale=1">
   <!-- Font Awesome -->
@@ -12,6 +15,7 @@
   <link rel="stylesheet" href="styles/project.css">
   <link rel="stylesheet" href="styles/utilities.css">
 </head>
+
 <!--Font Sizes
 PARAGRAPH
 Mobile(10)/Desktop(16)-> text-xs md:text-base lg:text-base
@@ -24,65 +28,107 @@ Mobile(25)/Desktop(36)-> text-2xl md:text-4xl lg:text-4xl
 Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
 -->
 <body>
-  <nav class="navbar-position">
-    <div class="flex flex-row items-center p-5 max-w-5xl mx-auto">
+  <nav class="#navbar-position">
+    <div class="navbar-container">
       <a href="/index.html"><img src="images/logo_1.png" alt="logo" width="32" height="34"></a>
-      <div class="flex flex-row justify-between flex-1 ml-5 md:ml-64">
-        <a href="/project.html" class="navbar-sections text-sm md:text-xl lg:text-xl">work</a>
-        <a href="/about-me.html" class="navbar-sections text-sm md:text-xl lg:text-xl">about</a>
-        <a href="https://drive.google.com/file/d/1gZjAOkP_7k6shuqKEt2wgfoZ7Yxs1G2h/view?usp=sharing" class="navbar-sections text-sm md:text-xl lg:text-xl">resume</a>
-        <a href="/contact.html" class="navbar-sections text-sm md:text-xl lg:text-xl">contact</a>
+      <div class="navbar-section">
+        <a href="/project.html" class="navbar-word navbar-work">work</a>
+        <a href="/about-me.html" class="navbar-word">about</a>
+        <a href="https://drive.google.com/file/d/1gZjAOkP_7k6shuqKEt2wgfoZ7Yxs1G2h/view?usp=sharing" class="navbar-word">resume</a>
+        <a href="/contact.html" class="navbar-word">contact</a>
       </div>
     </div>
   </nav>
-  <section class="main-container info-section flex justify-center items-center flex-col">
-    <h1 class="intro-header my-16 text-base">H E L L O !</h1>
-    <p class="intro-message mb-16 text-2xl md:text-4xl lg:text-4xl font-bold leading-relaxed max-w-sm md:max-w-xl">My name is Lauren Oh, and I'm a <span class="highlighted-text">product designer</span> based in San Francisco. I strive to find <span class="highlighted-text">real</span> solutions while bridging the gap between <span class="highlighted-text">people and technology</span>.</p>
-    <a href="/project.html"><button class="primary-button mb-32 text-xs lg:text-sm py-4 px-6" type="button">View work<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></button></a>
+  <section class="main-container info-section">
+    <h1 class="intro-header">H E L L O !</h1>
+    <p class="intro-message">My name is   <a href="/about-me.html"><span class="highlighted-text">Lauren Oh</span></a>, and I'm a product designer based in San Francisco. I strive to find user-centric <span class="highlighted-text">solutions</span> while bridging the gap between <span class="highlighted-text">people and technology</span>.</p>
+    <a href="/project.html"><button class="primary-button" type="button">View work<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></button></a>
     <button class="arrow-box">
       <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
     </button>
   </section>
 
+
+<!--Font Sizes
   <div class="profile-backdrop">
     <img class="profile-picture" src="images/profile-picture.jpg" alt="profile-picture">
     <a href="/about-me.html"><button class="primary-button text-xs lg:text-sm py-4 px-6 about-me-button" type="button">About me<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></button></a>
   </div>
+-->
 
-  <section class="main-container skills-info py-24 px-5">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row help-width">
-      <div class="md:pr-48 flex-1">
-        <h1 class="skills-question font-bold text-2xl m-0">How can I help you?</h1><br>
-        <p class="skills-sentences text-base">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer, deeply focused on data-driven and user-centric solutions.</p>
+<section class="main-container recent-work-padding">
+  <div class="recent-work">
+    <div>Recent work</div>
+    <div><i class="fa fa-long-arrow-down recent-arrow" aria-hidden="true"></i></div>
+  </div>
+  <div class="case-study-container">
+    <div class="case-study-box">
+      <div>
+        <h1 class="case-study">Case Study</h1><br>
+        <h2 class="case-study-name">Bridge</h2><br>
+        <p class="case-study-type1">Branding/<br>Prototyping</p><br>
+        <div class="view-work">
+          <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
+          <a href="/project.html">View Work</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="case-study-box">
+      <div>
+        <h1 class="case-study">Case Study (Coming Soon!)</h1><br>
+        <h2 class="case-study-name">PWR</h2><br>
+        <p class="case-study-type2">Branding/<br> Prototyping</p><br>
+        <div class="view-work">
+          <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="main-container skills-container skills-info">
+    <div class="skills-box">
+      <div class="skills-text-alignment">
+        <h1 class="skills-question">How can I help you?</h1><br>
+        <p class="skills-sentences">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer, deeply focused on data-driven and user-centric solutions.</p>
       </div>
 
 
-      <div class="skills-details flex flex-row justify-around flex-1 pt-10">
+
+    <div class="skills-list-placement">
+      <div class="skills-paragraph">
+        <h2 class="skills-header">SKILLS</h2><br>
+        <p class="skills-list">Survey design, competitive analysis, ideation, user stories and flows, creating personas, conducting user interviews and observations, sketching, wireframing, prototyping, user testing & analysis</p>
+      </div>
+      <div class="skills-details">
         <div>
-          <h2 class="skills-header text-xs">DESIGN</h2><br>
-          <ul class="pl-0">
-            <li class="design-list text-xs md:text-sm lg:text-sm">Prototyping</li>
-            <li class="design-list text-xs md:text-sm lg:text-sm"> Branding</li>
-            <li class="design-list text-xs md:text-sm lg:text-sm"> User Research</li>
-            <li class="design-list text-xs md:text-sm lg:text-sm"> Web Design</li>
+          <h2 class="skills-header">DESIGN</h2><br>
+          <ul class="skills-list-padding">
+            <li class="design-list">Prototyping</li>
+            <li class="design-list"> Branding</li>
+            <li class="design-list"> User Research</li>
+            <li class="design-list"> Web Design</li>
           </ul>
         </div>
 
-        <div>
-          <h2 class="skills-header text-xs">LANGUAGES</h2><br>
-          <ul class="pl-0">
-            <li class="language-list text-xs md:text-sm lg:text-sm">HTML</li>
-            <li class="language-list text-xs md:text-sm lg:text-sm">CSS</li>
-            <li class="language-list text-xs md:text-sm lg:text-sm">Javascript</li>
+        <div class="language">
+          <h2 class="skills-header">LANGUAGES</h2><br>
+          <ul class="skills-list-padding">
+            <li class="language-list">HTML</li>
+            <li class="language-list">CSS</li>
+            <li class="language-list">Javascript</li>
           </ul>
         </div>
       </div>
     </div>
+    </div>
   </section>
 
-  <section class="main-container mentor-box">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row help-width">
-      <div class="md:pr-48 flex-1">
+  <section class="main-container mentor-container">
+    <div class="mentor-box">
+      <div class="mentor-text-alignment">
         <h1 class="mentor-review font-bold text-2xl m-0">People I've worked with</h1><br>
         <p class="mentor-sentences text-base">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer...</p>
       </div>
@@ -96,53 +142,22 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
   </section>
 
 
-  <section class="main-container p-5">
-    <div class="recent-work text-center text-xs md:text-base lg:text-lg pt-20 pb-4">
-      <div>Recent work</div>
-      <div><i class="fa fa-long-arrow-down pt-3" aria-hidden="true"></i></div>
-    </div>
-    <div class="flex flex-col md:flex-row max-w-5xl mx-auto">
-      <div class="case-study-box max-w-xs mx-auto">
-        <div>
-          <h1 class="case-study">Case Study</h1><br>
-          <h2 class="case-study-name">Bridge</h2><br>
-          <p class="case-study-type1">Branding/<br>Prototyping</p><br>
-          <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
-        </div>
-        <div class="view-work flex justify-end items-end">
-          <a href="/project.html">View Work</a>
-        </div>
-      </div>
-      <div class="case-study-box max-w-xs mx-auto">
-        <div>
-          <h1 class="case-study">Case Study<br>(Coming Soon!)</h1><br>
-          <h2 class="case-study-name">Solo Project</h2><br>
-          <p class="case-study-type2">Branding/<br> Prototyping</p><br>
-          <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
-        </div>
-        <div class="view-work flex justify-end items-end">
 
-        </div>
-      </div>
-    </div>
+  <hr class="line-margin">
 
-  </section>
-
-  <hr class="mx-5">
-
-  <section class="main-container text-center py-10 lg:py-20">
+  <section class="main-container footer-container">
     <h1 class="thank-you text-xs md:text-sm lg:text-lg mb-0">Thank you for stopping by</h1>
     <h2 class="work-together font-bold text-2xl md:text-3xl lg:text-4xl">Let's <span class="highlighted-text">work</span> together!</h2>
     <a href="mailto:yjo0101@gmail.com"><button class="primary-button text-xs lg:text-sm py-4 px-6" type="button">Get in touch</button></a>
   </section>
 
-  <footer class="main-container p-5 footer text-xs lg:text-sm text-right">
+  <footer class="main-container footer text-xs lg:text-sm text-right">
     <div class="flex flex-row justify-between items-center p-5 max-w-5xl mx-auto">
       <div class="flex flex-row justify-between items-center max-w-xs flex-1">
-        <a href="https://www.instagram.com/laurenoh/"><img src="images/instagram.svg" alt="instagram" width="20" height="20"></a>
-        <a href="https://github.com/laurenoh"><img src="images/github.svg" alt="github" width="20" height="20"></a>
-        <a href="https://www.linkedin.com/in/laurenyoh/"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
-        <a href="mailto:yjo0101@gmail.com"><img src="images/email.svg" alt="email" width="27" height="27"></a>
+        <a href="https://www.instagram.com/laurenoh/" target="_blank"><img src="images/instagram.svg" alt="instagram" width="20" height="20"></a>
+        <a href="https://github.com/laurenoh" target="_blank"><img src="images/github.svg" alt="github" width="20" height="20"></a>
+        <a href="https://www.linkedin.com/in/laurenyoh/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
+        <a href="mailto:yjo0101@gmail.com" target="_blank"><img src="images/email.svg" alt="email" width="27" height="27"></a>
       </div>
       <div>
         <i class="ml-10 fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh
@@ -151,7 +166,7 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
     </div>
   </footer>
 
-
+  <script type="text/javascript" src="./main.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFFGH9ZVQP"></script>

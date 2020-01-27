@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="mdl-js">
-    <title>Case Study | Lauren Oh</title>
+    <link rel="icon"
+        type="image/png"
+        href="images/logo_1.png">
+    <title>Contact | Lauren Oh</title>
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -10,7 +13,6 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about-me.css">
     <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/utilities.css">
 
   </head>
     <!--Font Sizes
@@ -38,8 +40,24 @@
       </div>
     </nav>
 
-    <section class="bg-gray-200 px-5">
-      contact me here
+    <section class="form_shell">
+      <form action="https://formspree.io/moqeoeba" method="POST" class="contact_form">
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" id:"name"="" name:"user_name"="" placeholder="Enter your name">
+        </div>
+        <div>
+          <label for="mail">E-mail</label>
+          <input type="email" id:"mail"="" name:"user_mail"="" placeholder="username@email.com">
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <textarea id:"msg"="" name:"user_message"=""></textarea>
+        </div>
+        <div class="button">
+          <button type="submit" class="form_btn primary_btn btn">Send Message</button>
+        </div>
+      </form>
     </section>
 
     <section class="main-container text-center py-10 lg:py-20">
@@ -51,10 +69,10 @@
     <footer class="main-container p-5 footer text-xs lg:text-sm text-right">
       <div class="flex flex-row justify-between items-center p-5 max-w-5xl mx-auto">
         <div class="flex flex-row justify-between items-center max-w-xs flex-1">
-          <a href="https://www.instagram.com/laurenoh/"><img src="images/instagram.svg" alt="instagram" width="20" height="20"></a>
-          <a href="https://github.com/laurenoh"><img src="images/github.svg" alt="github" width="20" height="20"></a>
-          <a href="https://www.linkedin.com/in/laurenyoh/"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
-          <a href="mailto:yjo0101@gmail.com"><img src="images/email.svg" alt="email" width="27" height="27"></a>
+          <a href="https://www.instagram.com/laurenoh/" target="_blank"><img src="images/instagram.svg" alt="instagram" width="20" height="20"></a>
+          <a href="https://github.com/laurenoh" target="_blank"><img src="images/github.svg" alt="github" width="20" height="20"></a>
+          <a href="https://www.linkedin.com/in/laurenyoh/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
+          <a href="mailto:yjo0101@gmail.com" target="_blank"><img src="images/email.svg" alt="email" width="27" height="27"></a>
         </div>
         <div>
           <i class="ml-10 fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh
