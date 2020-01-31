@@ -502,6 +502,10 @@ h1, h2, h3, h4, li {
  margin-bottom: 1.25rem;
 }
 
+.persona-button-spacing {
+  margin-bottom: 5rem;
+}
+
 .persona-padding {
   padding-left: 1.25rem;
 }
@@ -565,18 +569,17 @@ h1, h2, h3, h4, li {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    Height: 300px;
+    height: 20rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
 
-
 @media only screen and (min-width: 768px) {
   .flow-image {
-    background-image: url("../images/large_user_flow.svg");
-    border: 1px solid black;
+    height: 50rem;
   }
 }
+
 
 .flow-button {
   display: flex;
@@ -648,13 +651,12 @@ h1, h2, h3, h4, li {
 
 .color-image {
   margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-position: center;
   margin-bottom: 5rem;
+  background-position: center;
 }
 
 .wireframe-image {
-  background-image: url("../images/wireframes.png");
+  background-image: url("../images/wireframes_2.png");
   background-size: contain;
   height: 255px;
   background-repeat: no-repeat;
@@ -665,9 +667,9 @@ h1, h2, h3, h4, li {
 
 @media only screen and (min-width: 768px) {
   .wireframe-image {
-    background-image: url("../images/wireframes.png");
+    background-image: url("../images/wireframes_2.png");
     background-size: contain;
-    height: 750px;
+    height: 500px;
     background-repeat: no-repeat;
     background-position: center;
   }
