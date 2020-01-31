@@ -284,6 +284,8 @@ h1, h2, h3, h4, li {
 @media only screen and (min-width: 768px) {
   .landing-pg {
     margin-right: 0rem;
+    margin-left: 3rem;
+    max-height: 60rem;
   }
 }
 
