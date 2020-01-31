@@ -13,53 +13,42 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about-me.css">
     <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/contact.css">
   </head>
-    <!--Font Sizes
-    PARAGRAPH
-    Mobile(10)/Desktop(16)-> text-xs md:text-base lg:text-base
-    Mobile(12)/Desktop(20)-> text-xs md:text-xl lg:text-xl
-    Mobile(16)/Desktop(25)-> text-base md:text-2xl lg:text-2xl
 
-    HEADER
-    Mobile(18)/Desktop(30)-> text-lg md:text-3xl lg:text-3xl
-    Mobile(25)/Desktop(36)-> text-2xl md:text-4xl lg:text-4xl
-    Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
-    -->
   <body>
 
     <nav class="navbar-position">
-      <div class="flex flex-row items-center p-5 max-w-5xl mx-auto">
+      <div class="navbar-container">
         <a href="/index.html"><img src="images/logo_1.png" alt="logo" width="32" height="34"></a>
-        <div class="flex flex-row justify-between flex-1 ml-5 md:ml-64">
-          <a href="/index.html#work" class="navbar-sections text-sm md:text-xl lg:text-xl">work</a>
-          <a href="/about-me.html" class="navbar-sections text-sm md:text-xl lg:text-xl">about</a>
-          <a href="https://drive.google.com/file/d/1gZjAOkP_7k6shuqKEt2wgfoZ7Yxs1G2h/view?usp=sharing" class="navbar-sections text-sm md:text-xl lg:text-xl">resume</a>
-          <a href="/contact.html" class="navbar-sections text-sm md:text-xl lg:text-xl">contact</a>
+        <div class="navbar-section">
+          <a href="#work" class="navbar-word navbar-work">work</a>
+          <a href="/about-me.html" class="navbar-word">about</a>
+          <a href="https://drive.google.com/file/d/1gZjAOkP_7k6shuqKEt2wgfoZ7Yxs1G2h/view?usp=sharing" target="_blank" class="navbar-word">resume</a>
+          <a href="/contact.html" class="navbar-word">contact</a>
         </div>
       </div>
     </nav>
 
-    <section class="main-container cs-top-box relative py-24 px-5 m-auto">
-      <div class="max-w-5xl cs-grid-layout mx-auto">
+    <section class="main-container cs-top-box">
+      <div class="cs-grid-layout">
         <div class="item-a">
-          <h1 class="light-gray-font text-xs md:text-sm lg:text-base">CASE STUDY</h1>
-          <p class="bridge-header font-bold text-2xl md:text-3xl lg:text-4xl">Bridge<p>
+          <h1 class="light-gray-font small-font">CASE STUDY</h1>
+          <p class="dark-gray-font larger-font">Bridge<p>
         </div>
-        <div class="item-b m-auto">
+        <div class="item-b dashboard-margin">
           <img src="images/dashboard.png" alt="dashboard">
         </div>
 
 
-      <div class="pt-10 md:pt-0 item-c">
-        <h1 class="light-gray-font text-xs md:text-sm lg:text-base">SUMMARY</h1>
-        <br>
-        <p class="text-base lg:text-xl">There are endless amounts of cloud storages out in the current market. Having too many options makes it difficult to keep things organized and simplified. Bridge is here to help consolidate all cloud storages in one place to keep things synchronized, simplified, organized and shareable.</p>
+      <div class="summary-spacing item-c">
+        <h1 class="light-gray-font small-font small-font">SUMMARY</h1>
+        <p class="summary-text">There are endless amounts of cloud storages out in the current market. Having too many options makes it difficult to keep things organized and simplified. Bridge is here to help consolidate all cloud storages in one place to keep things synchronized, simplified, organized and shareable.</p>
       </div>
 
-      <div class="flex flex-row max-w-3xl m-auto item-d">
-        <a href="/index.html"> <button class="secondary-button text-xs lg:text-sm py-4 px-6 mr-3" type="button">View mobile<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button></a>
-        <a href="/index.html"> <button class="secondary-button text-xs lg:text-sm py-4 px-6 ml-3" type="button">View desktop<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button></a>
+      <div class="prototype-buttons item-d">
+        <a href="https://invis.io/36SUPVKPE7A" target="_blank"> <button class="secondary-button mr-3" type="button">View mobile<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></a>
+        <a href="https://invis.io/MJSUPVFW4D2" target="_blank"> <button class="secondary-button ml-3" type="button">View desktop<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></a>
       </div>
       <button class="arrow-box">
         <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
@@ -67,66 +56,69 @@
     </div>
     </section>
 
-    <section class="project-container pt-32 m-auto text-center flex flex-col md:flex-row max-w-5xl">
+    <section class="project-container column-container">
       <div class="flex-1">
         <img class="mx-auto" src="images/design_role_icon.jpg" alt="face" width="24" height="24">
-          <h1 class="py-2 light-gray-font text-xs md:text-sm lg:text-base">DESIGN ROLES</h1>
-          <ul class="remove-bullet text-base md:text-base lg:text-xl">
+          <h1 class="column-heading light-gray-font small-font">DESIGN ROLES</h1>
+          <ul class="remove-bullet summary-text">
             <li>UX Design</li>
             <li>Visual Design</li>
             <li>Branding & Identity</li>
+            <li>Prototyping</li>
           </ul>
           <br>
       </div>
       <div class="flex-1 side-borders">
         <img class="mx-auto" src="images/deliverables_icon.jpg" alt="smiley face" width="24" height="24">
-          <h1 class="py-2 light-gray-font text-xs md:text-sm lg:text-base">DELIVERABLES</h1>
-          <ul class="remove-bullet text-base md:text-base lg:text-xl">
+          <h1 class="column-heading light-gray-font small-font">DELIVERABLES</h1>
+          <ul class="remove-bullet summary-text">
             <li>User Surveys</li>
+            <li>Competitive Analysis</li>
             <li>Personas</li>
             <li>User Stories and Flows</li>
-            <li>Competitive Analysis</li>
-            <li>Paper Prototype</li>
+            <li>User Interviews</li>
             <li>Wireframes</li>
-            <li>User Testing</li>
-            <li>Visual Design</li>
+            <li>Prototypes</li>
+            <li>User Testing & Analysis</li>
           </ul>
         <br>
       </div>
       <div class="flex-1">
         <img class="mx-auto" src="images/tools_icon.jpg" alt="tools" width="24" height="24">
-          <h1 class="py-2 light-gray-font text-xs md:text-sm lg:text-base">TOOLS</h1>
-          <ul class="remove-bullet text-base md:text-base lg:text-xl">
-            <li>Illustrator</li>
-            <li>Photoshop</li>
+          <h1 class="column-heading light-gray-font small-font">TOOLS</h1>
+          <ul class="remove-bullet summary-text">
+            <li>Figma</li>
+            <li>Balsamiq</li>
             <li>Whimsical</li>
             <li>InVision</li>
             <li>Usability Hub</li>
+            <li>Adobe Creative Suite</li>
+            <li>HTML/CSS/JS/jQuery</li>
           </ul>
       </div>
     </section>
 
-    <section class="project-container mx-auto max-w-5xl flex flex-col md:flex-row">
-      <div class="flex-2">
-        <h1 class="dark-gray-font  font-bold text-2xl md:text-3xl lg:text-4xl">Overview</h1><br>
-        <img class="py-2" src="images/problem_icon.jpg" alt="hand" width="24" height="24">
-          <p class="font-bold text-base lg:text-xl">PROBLEMS</h2>
-          <ul class="list-height remove-bullet text-sm lg:text-base">
+    <section class="project-container overview-container mx-auto">
+      <div>
+        <h1 class="dark-gray-font larger-font">Overview</h1><br>
+        <img class="column-heading" src="images/problem_icon.jpg" alt="hand" width="24" height="24">
+          <p class="heading-bold summary-text">PROBLEMS</h2>
+          <ul class="list-height remove-bullet medium-font">
             <li>Easy export to other cloud system</li>
             <li>Organization/easier navigation</li>
             <li>Security when sharing</li>
             <li>Collaborating</li>
           </ul>
           <br>
-        <img class="py-2" src="images/insight_icon.jpg" alt="lens" width="24" height="24">
-          <p class="font-bold text-base lg:text-xl">INSIGHT</h2>
-          <ul class="list-height remove-bullet text-sm lg:text-base">
+        <img class="column-heading" src="images/insight_icon.jpg" alt="lens" width="24" height="24">
+          <p class="heading-bold summary-text">INSIGHT</h2>
+          <ul class="list-height remove-bullet medium-font">
             <li>Our users are familiar with several cloud storages and use more than one</li>
           </ul>
           <br>
-        <img class="py-2" src="images/solution_icon.jpg" alt="lightbulb" width="24" height="24">
-          <p class="font-bold text-base lg:text-xl">SOLUTIONS</h2>
-          <ul class="list-height remove-bullet text-sm lg:text-base">
+        <img class="column-heading" src="images/solution_icon.jpg" alt="lightbulb" width="24" height="24">
+          <p class="heading-bold summary-text">SOLUTIONS</h2>
+          <ul class="list-height remove-bullet medium-font">
             <li>Add capability to sync multiple cloud storages</li>
             <li>Create categories with images to inspire organization</li>
             <li>Show who’s sharing the file with profile icons and add sharing options</li>
@@ -134,69 +126,62 @@
           </ul>
           <br>
       </div>
-      <div class="flex-1 mb-20">
-        <img class="md:mr-0 block mx-auto" src="images/landing_page.png" alt="landing_page">
+      <div class="flex-1 landing-pg-container">
+        <img class="landing-pg" src="images/landing_page.png" alt="landing_page">
       </div>
     </section>
 
-    <section class="project-container data-background">
-      <div class="max-w-5xl mx-auto">
-        <h1 class="dark-gray-font font-bold text-2xl md:text-3xl lg:text-4xl">Discovery</h1>
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">USER RESEARCH</h2>
-            <div class="data-section data-grid-layout text-xs md:text-sm lg:text-base my-5 p-5 md:p-10 tracking-normal">
+    <section class="data-background">
+      <div class="project-container mx-auto">
+        <h1 class="dark-gray-font larger-font">Discovery</h1>
+          <h2 class="light-gray-font small-font">USER RESEARCH</h2>
+            <div class="data-section data-grid-layout">
 
               <div class="item-1">
-                <h3 class="font-bold text-2xl md:text-3xl lg:text-5xl">95.2%</h3>
-                <p class="text-xs md:text-base lg:text-xl">use cloud storage services like Dropbox, Google Drive, iCloud, etc., showing the <span class="font-bold">prevalence and importance</span></p>
+                <h3 class="percentage">95.2%</h3>
+                <p class="paragraph-text">use cloud storage services like Dropbox, Google Drive, iCloud, etc., showing the <span class="font-bold">prevalence and importance</span></p>
               </div>
 
               <div class="item-2">
-                <h3 class="font-bold text-2xl md:text-3xl lg:text-5xl">85%</h3>
-                <p class="text-xs md:text-base lg:text-xl">use it for <span class="font-bold">personal</span> use while 60% used it for <span class="font-bold">work</span></p>
+                <h3 class="percentage">85%</h3>
+                <p class="paragraph-text">use it for <span class="font-bold">personal</span> use while 60% used it for <span class="font-bold">work</span></p>
               </div>
 
               <div class="item-3">
-                <h3 class="font-bold text-2xl md:text-3xl lg:text-5xl">75%</h3>
-                <p class="text-xs md:text-base lg:text-xl">of the participants use <span class="font-bold">Google Drive the most,</span> followed by iCloud and Dropbox</p>
+                <h3 class="percentage">75%</h3>
+                <p class="paragraph-text">of the participants use <span class="font-bold">Google Drive the most,</span> followed by iCloud and Dropbox</p>
               </div>
 
               <div class="item-4">
-                <h3 class="font-bold text-2xl md:text-3xl lg:text-5xl">80%</h3>
-                <p class="text-xs md:text-base lg:text-xl">responded that <span class="font-bold">sharing content and storing file</span> was the most important</p>
+                <h3 class="percentage">80%</h3>
+                <p class="paragraph-text">responded that <span class="font-bold">sharing content and storing file</span> was the most important</p>
               </div>
 
               <div class="item-5">
-                <h3 class="font-bold text-2xl md:text-3xl lg:text-5xl">50%</h3>
-                <p class="text-xs md:text-base lg:text-xl">of the respondents said that they were <span class="font-bold">creating new content</span> (notes, documents, etc.)</p>
+                <h3 class="percentage">50%</h3>
+                <p class="paragraph-text">of the respondents said that they were <span class="font-bold">creating new content</span> (notes, documents, etc.)</p>
               </div>
 
               <div class="item-6">
-                <h3 class="font-bold text-2xl md:text-3xl lg:text-5xl">19%</h3>
-                <p class="text-xs md:text-base lg:text-xl">said it was <span class="font-bold">easy to use</span></p><br>
-                <p class="text-xs md:text-base lg:text-xl italicized">*Percentage based on 21 respondents</p>
+                <h3 class="percentage">19%</h3>
+                <p class="paragraph-text">said it was <span class="font-bold">easy to use</span></p><br>
+                <p class="paragraph-text italicized">*Percentage based on 21 respondents</p>
               </div>
             </div>
 
-          <div class="py-20">
-            <h2 class="light-gray-font text-xs md:text-sm lg:text-base">COMPETITIVE ANALYSIS</h2>
-              <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">In order to determine the direction for Bridge, I needed to deep dive into the market and perform a competitive analysis and SWOT analysis on the competitors. In the survey, I asked the participants which storages they used the most. Google Drive, iCloud, and Dropbox were the top three. But since I wanted to create a more creative cloud storage product for the creatives, I conducted a competitive analysis on Google Drive, Pinterest and Dropbox.</p>
-              <!-- <div class="flex flex-col md:flex-row md:justify-end">
-                <div class="flex justify-end">
-                <button class="secondary-button text-xs lg:text-sm py-4 px-6 mr-0 md:mr-5" type="button">SWOT analysis<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
-                </div>
-                <div class="flex justify-end">
-                <button class=" secondary-button text-xs lg:text-sm py-4 px-6 mt-5 md:mt-0" type="button">Competitive analysis<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
-                </div>
-              </div> -->
-              <div class="flex flex-col md:flex-row md:justify-end">
-                <button class="self-end md:self-auto secondary-button text-xs lg:text-sm py-4 px-6 mr-0 md:mr-5" type="button">SWOT analysis<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
-                <button class="self-end md:self-auto secondary-button text-xs lg:text-sm py-4 px-6 mt-5 md:mt-0" type="button">Competitive analysis<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
+          <div class="competitive-analysis-container">
+            <h2 class="light-gray-font small-font">COMPETITIVE ANALYSIS</h2>
+              <p class="paragraph-text paragraph-padding">In order to determine the direction for Bridge, I needed to deep dive into the market and perform a competitive analysis and SWOT analysis on the competitors. In the survey, I asked the participants which storages they used the most. Google Drive, iCloud, and Dropbox were the top three. But since I wanted to create a more creative cloud storage product for the creatives, I conducted a competitive analysis on Google Drive, Pinterest and Dropbox.</p>
+
+              <div class="button-container">
+                <button class="button-items swot-spacing secondary-button" type="button">SWOT analysis<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <button class="button-items analysis-spacing secondary-button" type="button">Competitive analysis<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
               </div>
           </div>
 
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base pt-12">FINDINGS</h2>
-            <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">From the analysis, we determined that a new cloud storage and organizer with the following traits would be a great competitor:</p>
-            <ul class="remove-bullet text-xs md:text-base lg:text-xl">
+          <h2 class="light-gray-font small-font">FINDINGS</h2>
+            <p class="paragraph-text paragraph-padding">From the analysis, we determined that a new cloud storage and organizer with the following traits would be a great competitor:</p>
+            <ul class="remove-bullet paragraph-text">
               <li>1. Accessible anytime and anywhere with real-time updates on multiple devices</li>
               <li>2. Strong cloud security features (ex: various sharing modes)</li>
               <li>3. Stores all types of files: images, videos, creative docs, etc.</li>
@@ -206,26 +191,35 @@
               <li>7. Accurate visual search</li>
               <li>8. Flexible cost and plan</li>
             </ul>
-            <div class="flex flex-row align-center justify-around pt-8 max-x-sm">
-              <img class="mb-20" src="images/google_drive.png" alt="google" width="42" height="36">
-              <img class="mb-20" src="images/pinterest.png" alt="pinterest" width="39" height="39">
-              <img class="mb-20" src="images/dropbox.png" alt="dropbox" width="42" height="36.61">
+            <div class="cloud-container">
+              <div class="cloud-flex">
+                <p class="paragraph-text">Google Drive</p>
+                <img class="icon-spacing" src="images/google_drive.png" alt="google" width="32" height="36">
+              </div>
+              <div class="cloud-flex">
+                <p class="paragraph-text">Pinterest</p>
+                <img class="icon-spacing" src="images/pinterest.png" alt="pinterest" width="33" height="33">
+              </div>
+              <div class="cloud-flex">
+                <p class="paragraph-text">Dropbox</p>
+                <img class="icon-spacing" src="images/dropbox.png" alt="dropbox" width="32" height="36.61">
+              </div>
             </div>
           </div>
     </section>
 
-    <section class="project-container max-w-5xl mx-auto">
-      <h1 class="dark-gray-font font-bold text-2xl md:text-3xl lg:text-4xl">Information<br>Architecture</h1>
-        <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap md:mt-20">USER PERSONAS</h2>
-          <div class="m-5 tracking-normal flex flex-col md:flex-row md: justify-around text-xs md:text-sm lg:text-base">
+    <section class="project-container mx-auto">
+      <h1 class="dark-gray-font larger-font">Information<br>Architecture</h1>
+        <h2 class="light-gray-font small-font">USER PERSONAS</h2>
+          <div class="user-persona-container small-font">
 
-            <div class="max-w-xs lg:max-w-sm">
-              <div class="flex flex-row justify-between">
-                <img src="images/daniel.png" alt="daniel">
-                <div class="ml-5">
+            <div class="persona-box">
+              <div class="persona-items">
+                <img src="images/daniel.png" alt="daniel" width="164px" height="220px">
+                <div class="persona-padding">
                   <div class="data-section-item">
-                    <h3 class="font-bold text-lg md:text-xl lg:text-3xl m-0 persona-name">Daniel</h3>
-                    <p class="font-bold my-2">26 UX Design Student<br>from San Francisco, CA</p>
+                    <h3 class="persona-name">Daniel</h3>
+                    <p class="persona-text">26 UX Design Student<br>from San Francisco, CA</p>
                   </div>
                   <div class="data-section-item">
                     <h4 class="font-bold">Frustrations</h4>
@@ -238,18 +232,18 @@
                 </div>
               </div>
 
-              <div class="flex flex-row justify-between quote-line my-5 left-border">
-                <p class="ml-5">“If there was a wider range of various creative documents I can create on the cloud, it would save me so much time and streamline the creative process.”</p>
+              <div class="persona-quote">
+                <p class="left-border persona-padding">“If there was a wider range of various creative documents I can create on the cloud, it would save me so much time and streamline the creative process.”</p>
               </div>
             </div>
 
-            <div class="max-w-xs lg:max-w-sm">
-              <div class="flex flex-row justify-between">
-                <img src="images/david.png" alt="david">
-                <div class="ml-5">
+            <div class="persona-box david-box">
+              <div class="persona-items">
+                <img src="images/david.png" alt="david" width="164px" height="220px">
+                <div class="persona-padding">
                   <div class="data-section-item">
-                    <h3 class="font-bold text-lg md:text-xl lg:text-3xl m-0 persona-name">David</h3>
-                    <p class="font-bold my-2">28 Software Engineer<br>from San Diego, CA</p>
+                    <h3 class="persona-name">David</h3>
+                    <p class="persona-text">28 Software Engineer<br>from San Diego, CA</p>
                   </div>
                   <div class="data-section-item">
                     <h4 class="font-bold">Frustrations</h4>
@@ -262,16 +256,17 @@
                 </div>
               </div>
 
-              <div class="flex flex-row justify-between quote-line my-5 left-border">
-                <p class="ml-5">“Cloud storage could be more unified, synchronized, shareable and encrypted.”</p>
+              <div class="persona-quote">
+                <p class="left-border persona-padding">“Cloud storage could be more unified, synchronized, shareable and encrypted.”</p>
               </div>
             </div>
           </div>
-        <div class="md:py-20">
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">USER STORIES</h2>
-          <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">From the information gathered from market research and competitive analysis, I created a user story to prioritize the main features of the product. Then I created the user flows in Whimsical to illustrate how a user will go through the app to accomplish those goals.</p>
-            <div class="mx-auto text-xs md:text-sm lg:text-base">
-              <div class="max-w-lg mx-auto">
+
+        <div class="mdpy20">
+          <h2 class="light-gray-font small-font">USER STORIES</h2>
+          <p class="paragraph-text paragraph-padding">From the information gathered from market research and competitive analysis, I created a user story to prioritize the main features of the product. Then I created the user flows in Whimsical to illustrate how a user will go through the app to accomplish those goals.</p>
+            <div class="mx-auto small-font">
+              <div class="user-story-content mx-auto">
                 <p class="font-bold">As a new user</p>
                   <ul class="remove-bullet">
                     <li>I want to create my account.</li>
@@ -305,297 +300,295 @@
               </div>
             </div>
           </div>
-        <div class="pb-20">
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">USER FLOWS</h2>
 
-            <p class="text-xs md:text-sm lg:text-base font-bold pt-2">Sharing/collaborating documents</p>
-            <div class="flow-image my-5">
+        <div class="user-flow-container">
+          <h2 class="light-gray-font small-font">USER FLOWS</h2>
+            <p class="small-font sharing">Sharing/collaborating documents</p>
+            <div class="flow-image">
             </div>
 
-
-          <div class="flex justify-end content-end">
-            <button class="primary-button text-xs lg:text-sm py-4 px-6" type="button">User flows<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
+          <div class="flow-button">
+            <button class="primary-button" type="button">User flows<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
           </div>
         </div>
-      <hr class="line-padding">
+      <hr class="line-padding grey-line">
     </section>
 
-    <section class="project-container max-w-5xl mx-auto">
-      <h1 class="dark-gray-font font-bold text-2xl md:text-3xl lg:text-4xl">Branding & Identity</h1>
-      <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">Bridge was chosen as the name of the storage because it accurately depicts what the product does. Not only does the product act as a Bridge <span class="font-bold">connecting the various cloud storages</span> in one place, but it also <span class="font-bold">bridges the gaps and spaces</span> and <span class="font-bold">connects users</span> by allowing the files to be accessed and shared from anywhere.</p>
+    <section class="project-container mx-auto">
+      <h1 class="dark-gray-font larger-font">Branding & Identity</h1>
+      <p class="paragraph-text paragraph-padding">Bridge was chosen as the name of the storage because it accurately depicts what the product does. Not only does the product act as a Bridge <span class="font-bold">connecting the various cloud storages</span> in one place, but it also <span class="font-bold">bridges the gaps and spaces</span> and <span class="font-bold">connects users</span> by allowing the files to be accessed and shared from anywhere.</p>
 
-      <div class="md:my-20">
-        <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">LOGOS</h2>
-        <div class="mt-8 flex flex-col md:flex-row justify-around">
+      <div class="mdpy20">
+        <h2 class="light-gray-font small-font">LOGOS</h2>
+        <div class="logos-list-spacing">
           <img class="mx-auto" src="images/logo_sketches.png" alt="logo_sketches">
-          <img class="mx-auto mt-8 md:mt-0" src="images/logo_vector.png" alt="logo_vector">
+          <img class="mx-auto logos-list-image-spacing" src="images/logo_vector.png" alt="logo_vector">
         </div>
       </div>
-      <div class="md:my-20">
-        <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">MIND MAPPING & LIST MAKING</h2>
-        <div class="flex flex-col md:flex-row justify-around mt-8">
+      <div class="mdpy20">
+        <h2 class="light-gray-font small-font header-gap">MIND MAPPING & LIST MAKING</h2>
+        <div class="logos-list-spacing">
           <img class="mx-auto" src="images/mindmapping.svg" alt="mindmapping">
-          <img class="mx-auto mt-8 md:mt-0" src="images/listmaking.png" alt="listmaking">
+          <img class="mx-auto logos-list-image-spacing" src="images/listmaking.png" alt="listmaking">
         </div>
       </div>
-      <div class="md:my-20">
-        <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">MOODBOARD</h2>
-        <div class="moodboard-image mt-8">
+      <div class="mdpy20">
+        <h2 class="light-gray-font small-font header-gap">MOODBOARD</h2>
+        <div class="moodboard-image">
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row md:my-20">
+      <div class="font-flex">
         <div class="flex-1">
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">FONTS</h2>
+          <h2 class="light-gray-font small-font header-gap">FONTS</h2>
           <div>
-            <img class="mx-auto my-8 bg-center" src="images/fonts_1.png" alt="fonts">
+            <img class="mx-auto font-image" src="images/fonts_1.png" alt="fonts">
           </div>
         </div>
         <div class="flex-1">
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">COLOR PALETTE</h2>
+          <h2 class="light-gray-font small-font header-gap">COLOR PALETTE</h2>
           <div>
-            <img class="mx-auto my-8 bg-center mb-20" src="images/color_palette.svg" alt="color_palette">
+            <img class="mx-auto color-image" src="images/color_palette.svg" alt="color_palette">
           </div>
         </div>
       </div>
-        <hr class="line-padding">
+        <hr class="line-padding grey-line">
     </section>
 
-    <section class="project-container max-w-5xl mx-auto">
-      <h1 class="dark-gray-font font-bold text-2xl md:text-3xl lg:text-4xl">Visual Design</h1>
-      <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">WIREFRAMES - LO-FI</h2>
-      <div class="wireframe-image my-8">
+    <section class="project-container mx-auto">
+      <h1 class="dark-gray-font larger-font">Visual Design</h1>
+      <h2 class="light-gray-font small-font header-gap">WIREFRAMES - LO-FI</h2>
+      <div class="wireframe-image">
       </div>
-      <div class="flex justify-end content-end pb-20">
-        <button class="primary-button text-xs lg:text-sm py-4 px-6" type="button">Wireframes<i class="fa fa-long-arrow-right about-me-arrow" aria-hidden="true"></i></button>
+      <div class="wireframe-button">
+        <button class="primary-button" type="button">Wireframes<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
       </div>
       <br>
-      <hr class="line-padding">
+      <hr class="line-padding grey-line">
     </section>
 
-    <section class="project-container max-w-5xl mx-auto">
-      <h1 class="dark-gray-font font-bold text-2xl md:text-3xl lg:text-4xl">Development</h1>
-      <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">USABILITY TESTING</h2>
-      <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">Once I was done creating my wireframes, I performed the Usability Testing to get some feedback. Participants had confusion around the CTA button labeled as Bridge Now on the Landing Page, so I updated that to Get Started.</p>
+    <section class="project-container mx-auto">
+      <h1 class="dark-gray-font larger-font">Development</h1>
+      <h2 class="light-gray-font small-font header-gap">USABILITY TESTING</h2>
+      <p class="paragraph-text paragraph-padding">Once I was done creating my wireframes, I performed the Usability Testing to get some feedback. Participants had confusion around the CTA button labeled as Bridge Now on the Landing Page, so I updated that to Get Started.</p>
 
-      <div class="max-w-2xl mx-auto">
+      <div class="participant-width mx-auto">
         <div>
-          <h3 class="mt-5 text-xs md:text-base lg:text-xl font-bold">Participant 1</h3>
-          <h4 class="occupation text-xs md:text-sm lg:text-base">Software Engineer</h4>
-          <p class="text-xs md:text-base lg:text-xl mt-2">Confusion: Two options to sign up on Landing Page (Sign Up and Get Started)</p>
+          <h3 class="participant1 paragraph-text font-bold">Participant 1</h3>
+          <h4 class="occupation small-font">Software Engineer</h4>
+          <p class="paragraph-text confusion-margin">Confusion: Two options to sign up on Landing Page (Sign Up and Get Started)</p>
         </div>
-        <div class="my-8">
-          <h3 class="text-xs md:text-base lg:text-xl font-bold">Participant 2</h3>
-          <h4 class="occupation text-xs md:text-sm lg:text-base">Marketing Manager</h4>
-          <p class="text-sm md:text-base lg:text-xl mt-2">Confusion: Organizing a file vs Sharing<br>Benefit: Clear icons</p>
+        <div class="participant2">
+          <h3 class="paragraph-text font-bold">Participant 2</h3>
+          <h4 class="occupation small-font">Marketing Manager</h4>
+          <p class="paragraph-text confusion-margin">Confusion: Organizing a file vs Sharing<br>Benefit: Clear icons</p>
         </div>
         <div>
-          <h3 class="text-xs md:text-base lg:text-xl font-bold">Participant 3</h3>
-          <h4 class="occupation text-xs md:text-sm lg:text-base">Media Planner</h4>
-          <p class="text-sm md:text-base lg:text-xl mt-2">Confusion: Organizing a file vs Sharing </p>
+          <h3 class="paragraph-text font-bold">Participant 3</h3>
+          <h4 class="occupation small-font">Media Planner</h4>
+          <p class="paragraph-text confusion-margin">Confusion: Organizing a file vs Sharing </p>
         </div>
       </div>
 
-      <div class="md:my-20">
-        <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">A & B TESTING</h2>
-          <p class="font-bold text-xs md:text-base lg:text-xl pt-2">Test 1 - Which cancel button do you prefer?</p>
-          <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">I had 13 participants who participated in the test. 100% of the group preferred the blue CTA button. Some of the reasons listed were: easy to tell, consistent with iOS guidelines, stands out more, etc. This helped me to be confident in my decision to keep the CTA button blue.</p>
-          <div class="flex flex-col md:flex-row mt-5 lg:mt-10">
-            <div class="flex flex-col flex-1">
-              <p class="playfair text-xs md:text-base lg:text-xl font-bold">| A</p>
+      <div class="user-story-container">
+        <h2 class="light-gray-font small-font header-gap">A & B TESTING</h2>
+          <p class="font-bold paragraph-text test1">Test 1 - Which cancel button do you prefer?</p>
+          <p class="paragraph-text paragraph-padding">I had 13 participants who participated in the test. 100% of the group preferred the blue CTA button. Some of the reasons listed were: easy to tell, consistent with iOS guidelines, stands out more, etc. This helped me to be confident in my decision to keep the CTA button blue.</p>
+          <div class="alphabet-container">
+            <div class="a-items flex-1">
+              <p class="playfair paragraph-text font-bold">| A</p>
               <img src="images/regular_cancel.svg" alt="normal cancel">
             </div>
 
-            <div class="flex flex-col flex-1 mt-8 md:mt-0">
-              <p class="playfair text-xs md:text-base lg:text-xl font-bold">| B</p>
+            <div class="a-items flex-1">
+              <p class="playfair paragraph-text font-bold">| B</p>
               <img src="images/iOScancel.svg" alt="iOScancel">
             </div>
           </div>
 
-        <p class="font-bold text-xs md:text-base lg:text-xl pt-20">Test 2 - Do you prefer to have the 'Bridge Helps You...' section on the screen or not?</p>
-        <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">I had 12 participants in the test. 58% preferred taking out the section over the 42% who preferred to leave it. My biggest worry is being redundant, but the section seems like a good short summary for users who won’t be scrolling all the way down the webpage. The results may be more statistically significant if I had more participants, but since it’s not, I have decided to leave it as is and keep the ‘Bridge Helps You..’ section on the webpage.</p>
-        <div class="flex flex-col md:flex-row mt-5 lg:mt-10">
-          <div class="flex flex-col flex-1">
-            <p class="playfair text-xs md:text-base lg:text-xl font-bold">| A</p>
+        <p class="font-bold paragraph-text test2">Test 2 - Do you prefer to have the 'Bridge Helps You...' section on the screen or not?</p>
+        <p class="paragraph-text paragraph-padding">I had 12 participants in the test. 58% preferred taking out the section over the 42% who preferred to leave it. My biggest worry is being redundant, but the section seems like a good short summary for users who won’t be scrolling all the way down the webpage. The results may be more statistically significant if I had more participants, but since it’s not, I have decided to leave it as is and keep the ‘Bridge Helps You..’ section on the webpage.</p>
+        <div class="alphabet-container">
+          <div class="a-items flex-1">
+            <p class="playfair paragraph-text font-bold">| A</p>
             <img class="block mx-auto" src="images/no_summary.svg" alt="no_summary">
           </div>
-          <div class="flex flex-col flex-1">
-            <p class="playfair text-xs md:text-base lg:text-xl font-bold mt-8 md:mt-0">| B</p>
+          <div class="a-items flex-1">
+            <p class="playfair paragraph-text font-bold">| B</p>
             <img class="block mx-auto" src="images/with_summary.svg" alt="with_summary">
           </div>
         </div>
 
-        <p class="font-bold text-xs md:text-base lg:text-xl pt-20">Test 3 - Which logo (on top left) do you prefer? Filled or outlined?</p>
-        <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">I had 14 participants who took the test. 14% preferred the filled logo vs the outline (86%)</p>
-        <div class="flex flex-col md:flex-row mt-5 lg:mt-10">
-          <div class="flex flex-col flex-1">
-            <h3 class="playfair text-xs md:text-base lg:text-xl font-bold">| A</h3>
+        <p class="font-bold paragraph-text test3">Test 3 - Which logo (on top left) do you prefer? Filled or outlined?</p>
+        <p class="paragraph-text paragraph-padding">I had 14 participants who took the test. 14% preferred the filled logo vs the outline (86%)</p>
+        <div class="alphabet-container">
+          <div class="a-items flex-1">
+            <h3 class="playfair paragraph-text font-bold">| A</h3>
             <img src="images/filled_logo.svg" alt="filled_logo">
           </div>
-          <div class="flex flex-col flex-1">
-            <h3 class="playfair text-xs md:text-base lg:text-xl font-bold mt-8 md:mt-0">| B</h3>
+          <div class="a-items flex-1">
+            <h3 class="playfair paragraph-text font-bold">| B</h3>
             <img src="images/outlined_logo.svg" alt="outlined">
           </div>
         </div>
       </div>
 
-      <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap lg:mt-20">USER TESTING</h2>
-      <p class="text-base lg:text-xl font-bold pt-2">Landing page alignment & shapes</p>
-      <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">I had 16 participants in the test. 69% preferred the center-alignment over the 31% (left). Some of the reasons being: less crowded, better use of space, etc.</p>
-        <div class="flex flex-col md:flex-row mt-5 lg:mt-10">
-          <img class="flex-1 md:mr-10" src="images/normal_pg_alignment.jpg" alt="normal_pg_alignment">
-          <img class="flex-1 mt-8 md:mt-0 md:ml-10" src="images/center_pg_alignment.jpg" alt="center_pg_alignment">
+      <h2 class="light-gray-font small-font header-gap lg-mt20">USER TESTING</h2>
+      <p class="summary-text font-bold landing-pg-heading">Landing page alignment & shapes</p>
+      <p class="paragraph-text paragraph-padding">I had 16 participants in the test. 69% preferred the center-alignment over the 31% (left). Some of the reasons being: less crowded, better use of space, etc.</p>
+        <div class="alphabet-container">
+          <img class="flex-1 normal-alignment" src="images/normal_pg_alignment.jpg" alt="normal_pg_alignment">
+          <img class="flex-1 center-alignement" src="images/center_pg_alignment.jpg" alt="center_pg_alignment">
+        </div>
+      <p class="paragraph-text paragraph-padding pt20">I had 18 participants in the test. 56% preferred making the Recently Viewed files/folders a different size vs 44% who wanted to keep it the same as others.</p>
+        <div class="alphabet-container">
+          <img class="flex-1 normal-alignment" src="images/large_folder.png" alt="large_folder">
+          <img class="center-alignement flex-1" src="images/small_folder.png" alt="small_folder">
         </div>
 
-
-      <p class="text-xs md:text-base lg:text-xl pt-10 lg:pt-20 pb-5">I had 18 participants in the test. 56% preferred making the Recently Viewed files/folders a different size vs 44% who wanted to keep it the same as others.</p>
-      <div class="flex flex-col md:flex-row mt-5 md:mt-10">
-        <img class="flex-1 md:mr-10" src="images/large_folder.png" alt="large_folder">
-        <img class="mt-8 md:mt-0 flex-1 md:ml-10" src="images/small_folder.png" alt="small_folder">
-      </div>
-
-
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap lg:mt-20">MOCKUPS</h2>
-      <div class="md:flex">
+      <h2 class="light-gray-font small-font header-gap lg-mt20">MOCKUPS</h2>
+      <div class="mockup-flex">
         <div class="flex-1">
-          <p class="text-base lg:text-xl font-bold pt-2">CTA buttons</p>
-          <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">I had 15 participants in the test. 53% preferred keep the CTA buttons colored vs 47%.</p>
-          <div class="flex flex-col md:flex-row mt-5 lg:mt-10">
-            <div class="flex flex-col flex-1">
-              <p class="text-xs md:text-sm lg:text-sm"><span class="font-bold">Old</span> | Rectangular and colored</p>
-              <img class="mt-2 lg:mt-5" src="images/pink_buttons.png" alt="pink_buttons">
-              <p class="text-xs mt-8 md:text-sm lg:text-sm"><span class="font-bold">New</span> | Rounded corners with shadow</p>
-              <img class="mt-2 lg:mt-5" src="images/shadow_buttons.png" alt="shadow_buttons">
+          <p class="summary-text font-bold cta-padding">CTA buttons</p>
+          <p class="paragraph-text paragraph-padding">I had 15 participants in the test. 53% preferred keep the CTA buttons colored vs 47%.</p>
+          <div class="alphabet-container">
+            <div class="before-after-container flex-1">
+              <p class="before-text"><span class="font-bold">Before</span> | Rectangular and colored</p>
+              <img class="before-after-spacing" src="images/pink_buttons.png" alt="pink_buttons">
+              <p class="after-text"><span class="font-bold">After</span> | Rounded corners with shadow</p>
+              <img class="before-after-spacing" src="images/shadow_buttons.png" alt="shadow_buttons">
             </div>
           </div>
         </div>
 
-        <div class="flex-1 md:mx-20">
-          <p class="text-base lg:text-xl font-bold header-gap md:mt-0">Text under icons</p>
-          <p class="text-xs md:text-base lg:text-xl pt-2 pb-5">I had 17 participants in the test. 71% preferred the icons with labels vs 29% who wanted to leave it out.</p>
-          <div class="flex flex-col md:flex-row mt-5 lg:mt-10">
-            <div class="flex flex-col flex-1">
-              <p class="text-xs md:text-sm lg:text-sm"><span class="font-bold">Old</span> | No text under icons</p>
-              <img class="mt-2 lg:mt-5" src="images/only_icon.svg" alt="only_icon">
-              <p class="text-xs mt-8 md:text-sm lg:text-sm"><span class="font-bold">New</span> | With text</p>
-              <img class="mt-2 lg:mt-5" src="images/icon_text.svg" alt="icon_text">
+        <div class="flex-1 text-test-spacing">
+          <p class="summary-text font-bold header-gap text-spacing">Text under icons</p>
+          <p class="paragraph-text paragraph-padding">I had 17 participants in the test. 71% preferred the icons with labels vs 29% who wanted to leave it out.</p>
+          <div class="alphabet-container">
+            <div class="before-after-container flex-1">
+              <p class="before-text"><span class="font-bold">Before</span> | No text under icons</p>
+              <img class="before-after-spacing" src="images/only_icon.svg" alt="only_icon">
+              <p class="after-text"><span class="font-bold">After</span> | With text</p>
+              <img class="before-after-spacing" src="images/icon_text.svg" alt="icon_text">
             </div>
           </div>
         </div>
 
         <div class="flex-1">
-          <p class="text-base lg:text-xl font-bold header-gap md:mt-0">Text color</p>
-          <div class="flex flex-row mt-5 lg:mt-10">
-            <div class="flex flex-row md:flex-col flex-1">
+          <p class="summary-text font-bold header-gap text-color-spacing">Text color</p>
+          <div class="alphabet-container">
+            <div class="overview-container flex-1">
               <div class="flex-1">
-              <div class="flex flex-col flex-1">
-                <p class="text-xs md:text-sm lg:text-sm"><span class="font-bold">Old</span> | Black</p>
-                <img class="pt-2 lg:pt-5" src="images/black_text.png" alt="black_text">
+              <div class="before-after-container flex-1">
+                <p class="before-text"><span class="font-bold">Before</span> | Black</p>
+                <img class="before-after-spacing" src="images/black_text.png" alt="black_text">
               </div>
-              <div class="flex flex-col flex-1">
-                <p class="text-xs md:mt-8 md:text-sm lg:text-sm"><span class="font-bold">New</span> | Gray</p>
-                <img class="pt-2 lg:pt-5" src="images/grey_text.png" alt="grey_text">
+              <div class="before-after-container flex-1">
+                <p class="after-text"><span class="font-bold">After</span> | Gray</p>
+                <img class="before-after-spacing" src="images/grey_text.png" alt="grey_text">
               </div>
             </div>
           </div>
         </div>
       </div>
       <br>
-      <hr class="line-padding">
+      <hr class="line-padding grey-line">
     </section>
 
-
-    <section class="project-container max-w-5xl mx-auto">
-      <h1 class="dark-gray-font  font-bold text-2xl md:text-3xl lg:text-4xl">Final Product</h1>
-      <div class="flex flex-row">
-        <div class="flex-1 mr-5">
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap lg:mt-10">MOBILE</h2>
-          <div class="mt-3 final-mobile"></div>
-          <button class="mt-2 lg:mt-5 secondary-button text-xs lg:text-sm py-4 px-6" type="button">View prototype<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
+    <section class="project-container mx-auto">
+      <h1 class="dark-gray-font font-bold larger-font">Final Product</h1>
+      <div class="final-product-flex">
+        <div>
+          <h2 class="prototype-text-spacing light-gray-font small-font header-gap lg:mt-10">MOBILE</h2>
+          <div class="final-mobile"></div>
+          <button class="prototype-button secondary-button" type="button">View prototype<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
         </div>
-        <div class="flex-1 ml-5">
-          <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap lg:mt-10">DESKTOP</h2>
-          <div class="mt-3 final-desktop"></div>
-          <button class="mt-2 lg:mt-5 secondary-button text-xs lg:text-sm py-4 px-6" type="button">View prototype<i class="fa fa-long-arrow-right about-me-arrow ml-2" aria-hidden="true"></i></button>
+        <div>
+          <h2 class="prototype-text-spacing light-gray-font small-font header-gap lg:mt-10">DESKTOP</h2>
+          <div class="final-desktop"></div>
+          <button class="prototype-button secondary-button" type="button">View prototype<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
         </div>
       </div>
-      <hr class="line-padding mt-20">
+      <hr class="grey-line final-line">
     </section>
 
-    <section class="project-container max-w-5xl mx-auto">
-      <h1 class="dark-gray-font font-bold text-2xl md:text-3xl lg:text-4xl">Conclusion</h1>
-      <h2 class="light-gray-font text-xs md:text-sm lg:text-base header-gap">WHAT I LEARNED</h2>
-      <div class="max-w-2xl mx-auto text-xs md:text-sm lg:text-base">
+    <section class="project-container mx-auto">
+      <h1 class="dark-gray-font larger-font">Conclusion</h1>
+      <h2 class="light-gray-font small-font header-gap">WHAT I LEARNED</h2>
+      <div class="conclusion-width mx-auto small-font">
         <div>
           <br>
-          <hr class="line-padding grey-line">
-          <p class="my-5 font-bold">What worked?</p>
-          <p class="mb-5">Clear icons, label<br>Easy export to other cloud system<br>Organization/Easier navigation<br>Security when sharing<br>Collaborating</p>
+          <p class="conclusion-header-margin font-bold">What worked?</p>
+          <p class="conclusion-sentence-margin">Clear icons, label<br>Easy export to other cloud system<br>Organization/Easier navigation<br>Security when sharing<br>Collaborating</p>
         </div>
 
         <div>
-          <hr class="line-padding grey-line">
-            <p class="my-5 font-bold">What didn't</p>
-            <p class="mb-5">Need to explore more color logo options / + button location</p>
+          <hr class="grey-line">
+            <p class="conclusion-header-margin font-bold">What didn't</p>
+            <p class="conclusion-sentence-margin">Need to explore more color logo options / + button location</p>
         </div>
 
         <div>
-          <hr class="line-padding grey-line">
-            <p class="my-5 font-bold">What were your doubts going into the project?</p>
-            <p class="mb-5">How would mine stand out in the saturated cloud storages market?</p>
+          <hr class="grey-line">
+            <p class="conclusion-header-margin font-bold">What were your doubts going into the project?</p>
+            <p class="conclusion-sentence-margin">How would mine stand out in the saturated cloud storages market?</p>
         </div>
 
         <div>
-          <hr class="line-padding grey-line">
-            <p class="my-5 font-bold">What surprised you the most?</p>
-            <p class="mb-5">“Get Started button” This sometimes hinders users from scrolling down and reading the rest of the landing page information. Users click the Get Started button immediately instead.</p>
+          <hr class="grey-line">
+            <p class="conclusion-header-margin font-bold">What surprised you the most?</p>
+            <p class="conclusion-sentence-margin">“Get Started button” This sometimes hinders users from scrolling down and reading the rest of the landing page information. Users click the Get Started button immediately instead.</p>
         </div>
 
         <div>
-          <hr class="line-padding grey-line">
-            <p class="my-5 font-bold">What would you have done differently if given more time?</p>
-            <p class="mb-5">I would do A&B Testing on the “Get Started’ button specifically and on more variety of users.</p>
+          <hr class="grey-line">
+            <p class="conclusion-header-margin font-bold">What would you have done differently if given more time?</p>
+            <p class="conclusion-sentence-margin">I would do A&B Testing on the “Get Started’ button specifically and on more variety of users.</p>
         </div>
 
         <div>
-          <hr class="line-padding grey-line">
-            <p class="my-5 font-bold">What did you learn while doing this project?</p>
-            <p class="mb-5">Testing is key!! Style guide may change once A&B Testing kicks in (my font color, icons, etc.).</p>
+          <hr class="grey-line">
+            <p class="conclusion-header-margin font-bold">What did you learn while doing this project?</p>
+            <p class="conclusion-sentence-margin">Testing is key!! Style guide may change once A&B Testing kicks in (my font color, icons, etc.).</p>
         </div>
 
         <div>
-          <hr class="line-padding grey-line">
-            <p class="my-5 font-bold">How will you use that information in the future?</p>
-            <p class="mb-5">Learn to trust the research process. Sometimes you may have a strong opinion about a design, but it won’t work ultimately. You need to learn to let it go (ex: landing page layout; Get Started CTA button).</p>
-          <hr class="line-padding grey-line">
+          <hr class="grey-line">
+            <p class="conclusion-header-margin font-bold">How will you use that information in the future?</p>
+            <p class="conclusion-sentence-margin">Learn to trust the research process. Sometimes you may have a strong opinion about a design, but it won’t work ultimately. You need to learn to let it go (ex: landing page layout; Get Started CTA button).</p>
         </div>
       </div>
-      <hr class="mt-20">
+      <hr class="final-line grey-line">
     </section>
 
 
-      <section class="main-container text-center py-10 lg:py-20">
-        <h1 class="thank-you text-xs md:text-sm lg:text-lg mb-0">Thank you for stopping by</h1>
-        <h2 class="work-together font-bold text-2xl md:text-3xl lg:text-4xl">Let's <span class="highlighted-text">work</span> together!</h2>
-        <a href="mailto:yjo0101@gmail.com"><button class="primary-button text-xs lg:text-sm py-4 px-6" type="button">Get in touch</button></a>
-      </section>
 
-      <footer class="main-container p-5 footer text-xs lg:text-sm text-right">
-        <div class="flex flex-row justify-between items-center p-5 max-w-5xl mx-auto">
-          <div class="flex flex-row justify-between items-center max-w-xs flex-1">
-            <a href="https://www.instagram.com/laurenoh/" target="_blank"><img src="images/instagram.svg" alt="instagram" width="20" height="20"></a>
-            <a href="https://github.com/laurenoh" target="_blank"><img src="images/github.svg" alt="github" width="20" height="20"></a>
-            <a href="https://www.linkedin.com/in/laurenyoh/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
-            <a href="mailto:yjo0101@gmail.com" target="_blank"><img src="images/email.svg" alt="email" width="27" height="27"></a>
-          </div>
-          <div>
-            <i class="ml-10 fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh
-          </div>
 
+
+
+
+
+    <section class="main-container thankyou-container">
+      <h1 class="thank-you">Thank you for stopping by</h1>
+      <h2 class="work-together larger-font">Let's <span class="highlighted-text">work</span> together!</h2>
+      <a href="mailto:yjo0101@gmail.com"><button class="primary-button" type="button">Get in touch</button></a>
+    </section>
+
+    <footer class="main-container footer">
+      <div class="footer-flex">
+        <div class="footer-items-flex flex-1">
+          <a href="https://www.instagram.com/laurenoh/" target="_blank"><img src="images/instagram.svg" alt="instagram" width="20" height="20"></a>
+          <a href="https://github.com/laurenoh" target="_blank"><img src="images/github.svg" alt="github" width="20" height="20"></a>
+          <a href="https://www.linkedin.com/in/laurenyoh/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
+          <a href="mailto:yjo0101@gmail.com" target="_blank"><img src="images/email.svg" alt="email" width="27" height="27"></a>
         </div>
-      </footer>
+        <div>
+          <i class="copyright fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh
+        </div>
+      </div>
+    </footer>
 
-        <script type="text/javascript" src="./main.js"></script>
+      <script type="text/javascript" src="./main.js"></script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFFGH9ZVQP"></script>
       <script>

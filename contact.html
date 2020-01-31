@@ -13,75 +13,74 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about-me.css">
     <link rel="stylesheet" href="styles/project.css">
-
+    <link rel="stylesheet" href="styles/contact.css">
   </head>
-    <!--Font Sizes
-    PARAGRAPH
-    Mobile(10)/Desktop(16)-> text-xs md:text-base lg:text-base
-    Mobile(12)/Desktop(20)-> text-xs md:text-xl lg:text-xl
-    Mobile(16)/Desktop(25)-> text-base md:text-2xl lg:text-2xl
 
-    HEADER
-    Mobile(18)/Desktop(30)-> text-lg md:text-3xl lg:text-3xl
-    Mobile(25)/Desktop(36)-> text-2xl md:text-4xl lg:text-4xl
-    Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
-    -->
   <body>
-
     <nav class="navbar-position">
-      <div class="flex flex-row items-center p-5 max-w-5xl mx-auto">
+      <div class="navbar-container">
         <a href="/index.html"><img src="images/logo_1.png" alt="logo" width="32" height="34"></a>
-        <div class="flex flex-row justify-between flex-1 ml-5 md:ml-64">
-          <a href="/index.html#work" class="navbar-sections text-sm md:text-xl lg:text-xl">work</a>
-          <a href="/about-me.html" class="navbar-sections text-sm md:text-xl lg:text-xl">about</a>
-          <a href="https://drive.google.com/file/d/1gZjAOkP_7k6shuqKEt2wgfoZ7Yxs1G2h/view?usp=sharing" class="navbar-sections text-sm md:text-xl lg:text-xl">resume</a>
-          <a href="/contact.html" class="navbar-sections text-sm md:text-xl lg:text-xl">contact</a>
+        <div class="navbar-section">
+          <a href="#work" class="navbar-word navbar-work">work</a>
+          <a href="/about-me.html" class="navbar-word">about</a>
+          <a href="https://drive.google.com/file/d/1gZjAOkP_7k6shuqKEt2wgfoZ7Yxs1G2h/view?usp=sharing" class="navbar-word">resume</a>
+          <a href="/contact.html" class="navbar-word">contact</a>
         </div>
       </div>
     </nav>
 
-    <section class="form_shell">
-      <form action="https://formspree.io/moqeoeba" method="POST" class="contact_form">
-        <div>
+    <section class="main-container form_shell">
+      <form class="form-shell-content" action="https://formspree.io/moqeoeba" method="POST" class="contact_form">
+        <div class="contact-form-row">
           <label for="name">Full Name</label>
-          <input type="text" id:"name"="" name:"user_name"="" placeholder="Enter your name">
+          <input type="text" name="user_name" placeholder="Enter your name">
         </div>
-        <div>
+        <div class="email-margin contact-form-row">
           <label for="mail">E-mail</label>
-          <input type="email" id:"mail"="" name:"user_mail"="" placeholder="username@email.com">
+          <input type="email" name="user_mail" placeholder="username@email.com">
         </div>
-        <div>
-          <label for="msg">Message</label>
-          <textarea id:"msg"="" name:"user_message"=""></textarea>
+        <div class="contact-form-row">
+          <label for="message">Message</label>
+          <textarea name="user_message"></textarea>
         </div>
-        <div class="button">
-          <button type="submit" class="form_btn primary_btn btn">Send Message</button>
+        <div class="message-container">
+          <button class="message-spacing primary-button" type="submit" class="">Send Message</button>
         </div>
       </form>
     </section>
 
-    <section class="main-container text-center py-10 lg:py-20">
-      <h1 class="thank-you text-xs md:text-sm lg:text-lg mb-0">Thank you for stopping by</h1>
-      <h2 class="work-together font-bold text-2xl md:text-3xl lg:text-4xl">Let's <span class="highlighted-text">work</span> together!</h2>
-      <a href="mailto:yjo0101@gmail.com"><button class="primary-button text-xs lg:text-sm py-4 px-6" type="button">Get in touch</button></a>
+    <hr class="line-margin grey-line">
+
+    <section class="main-container thankyou-container">
+      <h1 class="thank-you">Thank you for stopping by</h1>
+      <h2 class="work-together larger-font">Let's <span class="highlighted-text">work</span> together!</h2>
+      <a href="mailto:yjo0101@gmail.com"><button class="primary-button" type="button">Get in touch</button></a>
     </section>
 
-    <footer class="main-container p-5 footer text-xs lg:text-sm text-right">
-      <div class="flex flex-row justify-between items-center p-5 max-w-5xl mx-auto">
-        <div class="flex flex-row justify-between items-center max-w-xs flex-1">
+    <footer class="main-container footer">
+      <div class="footer-flex">
+        <div class="footer-items-flex flex-1">
           <a href="https://www.instagram.com/laurenoh/" target="_blank"><img src="images/instagram.svg" alt="instagram" width="20" height="20"></a>
           <a href="https://github.com/laurenoh" target="_blank"><img src="images/github.svg" alt="github" width="20" height="20"></a>
           <a href="https://www.linkedin.com/in/laurenyoh/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
           <a href="mailto:yjo0101@gmail.com" target="_blank"><img src="images/email.svg" alt="email" width="27" height="27"></a>
         </div>
         <div>
-          <i class="ml-10 fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh
+          <i class="copyright fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh
         </div>
       </div>
     </footer>
+
     <script type="text/javascript" src="./main.js"></script>
-  </body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFFGH9ZVQP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-
+      gtag('config', 'G-BFFGH9ZVQP');
+    </script>
+    </body>
 
 </html>

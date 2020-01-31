@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/about-me.css">
   <link rel="stylesheet" href="styles/project.css">
-  <link rel="stylesheet" href="styles/utilities.css">
+  <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <!--Font Sizes
@@ -28,7 +28,7 @@ Mobile(25)/Desktop(36)-> text-2xl md:text-4xl lg:text-4xl
 Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
 -->
 <body>
-  <nav class="#navbar-position">
+  <nav class="navbar-position">
     <div class="navbar-container">
       <a href="/index.html"><img src="images/logo_1.png" alt="logo" width="32" height="34"></a>
       <div class="navbar-section">
@@ -41,15 +41,15 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
   </nav>
   <section class="main-container info-section">
     <h1 class="intro-header">H E L L O !</h1>
-    <p class="intro-message">My name is   <a href="/about-me.html"><span class="highlighted-text">Lauren Oh</span></a>, and I'm a product designer based in San Francisco. I strive to find user-centric <span class="highlighted-text">solutions</span> while bridging the gap between <span class="highlighted-text">people and technology</span>.</p>
-    <a href="/project.html"><button class="primary-button" type="button">View work<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></button></a>
+    <p class="intro-message">My name is <a href="/about-me.html"><span class="highlighted-text">Lauren Oh</span></a>, and I'm a product designer based in San Francisco. I strive to find user-centric <span class="highlighted-text">solutions</span> while bridging the gap between <span class="highlighted-text">people</span> and <span class="highlighted-text">technology</span>.</p>
+    <a href="/project.html"><button class="primary-button" type="button">View work<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></a>
     <button class="arrow-box">
       <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
     </button>
   </section>
 
 
-<!--Font Sizes
+<!--
   <div class="profile-backdrop">
     <img class="profile-picture" src="images/profile-picture.jpg" alt="profile-picture">
     <a href="/about-me.html"><button class="primary-button text-xs lg:text-sm py-4 px-6 about-me-button" type="button">About me<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></button></a>
@@ -68,7 +68,7 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
         <h2 class="case-study-name">Bridge</h2><br>
         <p class="case-study-type1">Branding/<br>Prototyping</p><br>
         <div class="view-work">
-          <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
+          <i class="fa fa-long-arrow-right large-arrow-right" aria-hidden="true"></i>
           <a href="/project.html">View Work</a>
         </div>
       </div>
@@ -80,7 +80,7 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
         <h2 class="case-study-name">PWR</h2><br>
         <p class="case-study-type2">Branding/<br> Prototyping</p><br>
         <div class="view-work">
-          <i class="fa fa-long-arrow-right arrow-right" aria-hidden="true"></i>
+          <i class="fa fa-long-arrow-right large-arrow-right" aria-hidden="true"></i>
 
         </div>
       </div>
@@ -129,12 +129,12 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
   <section class="main-container mentor-container">
     <div class="mentor-box">
       <div class="mentor-text-alignment">
-        <h1 class="mentor-review font-bold text-2xl m-0">People I've worked with</h1><br>
-        <p class="mentor-sentences text-base">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer...</p>
+        <h1 class="mentor-review">People I've worked with</h1><br>
+        <p class="mentor-sentences">Product designer with a background in psychology and advertising. Years of working in healthcare and advertising taught me to be an empathetic designer...</p>
       </div>
-      <div class="flex justify-around flex-1">
-        <div class="my-10 text-xs text-center flex justify-center items-center flex-col">
-          <img class="mentor-picture mb-4" src="images/mentor-picture.jpg" alt="mentor-picture" width="70" height="70">
+      <div class="mentor-image-container flex-1">
+        <div class="mentor-image-items">
+          <img class="mentor-picture" src="images/mentor-picture.jpg" alt="mentor-picture" width="70" height="70">
           <p>Mike Dekker<br>Senior UX Designer</p>
         </div>
       </div>
@@ -143,26 +143,25 @@ Mobile(30)/Desktop(45)-> text-3xl md:text-5xl lg:text-5xl
 
 
 
-  <hr class="line-margin">
+  <hr class="line-padding grey-line">
 
-  <section class="main-container footer-container">
-    <h1 class="thank-you text-xs md:text-sm lg:text-lg mb-0">Thank you for stopping by</h1>
-    <h2 class="work-together font-bold text-2xl md:text-3xl lg:text-4xl">Let's <span class="highlighted-text">work</span> together!</h2>
-    <a href="mailto:yjo0101@gmail.com"><button class="primary-button text-xs lg:text-sm py-4 px-6" type="button">Get in touch</button></a>
+  <section class="main-container thankyou-container">
+    <h1 class="thank-you">Thank you for stopping by</h1>
+    <h2 class="work-together larger-font">Let's <span class="highlighted-text">work</span> together!</h2>
+    <a href="mailto:yjo0101@gmail.com"><button class="primary-button" type="button">Get in touch</button></a>
   </section>
 
-  <footer class="main-container footer text-xs lg:text-sm text-right">
-    <div class="flex flex-row justify-between items-center p-5 max-w-5xl mx-auto">
-      <div class="flex flex-row justify-between items-center max-w-xs flex-1">
+  <footer class="main-container footer">
+    <div class="footer-flex">
+      <div class="footer-items-flex flex-1">
         <a href="https://www.instagram.com/laurenoh/" target="_blank"><img src="images/instagram.svg" alt="instagram" width="20" height="20"></a>
         <a href="https://github.com/laurenoh" target="_blank"><img src="images/github.svg" alt="github" width="20" height="20"></a>
         <a href="https://www.linkedin.com/in/laurenyoh/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
         <a href="mailto:yjo0101@gmail.com" target="_blank"><img src="images/email.svg" alt="email" width="27" height="27"></a>
       </div>
       <div>
-        <i class="ml-10 fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh
+        <i class="copyright fa fa-copyright" aria-hidden="true"></i> 2019 Lauren Oh
       </div>
-
     </div>
   </footer>
 

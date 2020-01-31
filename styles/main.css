@@ -10,6 +10,41 @@
 
 h1, h2, h3, h4, li {
   font-weight: normal;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  line-height: 1.5;
+}
+
+a:link {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #4d4d4d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+img {
+  max-width: 100%
 }
 
 .main-container {
@@ -53,6 +88,9 @@ h1, h2, h3, h4, li {
 .navbar-word {
   color: #4d4d4d;
   font-size: .875rem;
+  font-family: Roboto, san-sans-serif;
+  letter-spacing: 0.08em;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -228,6 +266,7 @@ h1, h2, h3, h4, li {
 .case-study {
   color: #4d4d4d;
   font-size: .75rem;
+  margin: 0.67em 0;
 }
 
 .case-study-name {
@@ -248,7 +287,7 @@ h1, h2, h3, h4, li {
   font-size: 1.125rem;
 }
 
-.arrow-right {
+.large-arrow-right {
   color: #c4c4c4;
   font-size: 1.875rem;
 }
@@ -356,6 +395,9 @@ h1, h2, h3, h4, li {
 
 .skills-list-padding {
   padding-left: 0rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .language {
@@ -440,17 +482,41 @@ h1, h2, h3, h4, li {
 .mentor-review {
   color: #303030;
   font-family: PlayfairDisplay;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0rem;
 }
 
 .mentor-sentences {
   letter-spacing: .08em;
+  font-size: 1rem;
+}
+
+.mentor-image-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mentor-image-items {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-size: .75rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mentor-picture {
+  margin-bottom: 1rem;
 }
 
 .line-margin {
   margin: 2.5rem 1.25rem 0rem 1.25rem;
 }
 
-.footer-container {
+.thankyou-container {
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -458,6 +524,20 @@ h1, h2, h3, h4, li {
 
 .thank-you {
   color: #b2b2b2;
+  font-size: .75rem;
+  margin-bottom: 0rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .thank-you {
+  font-size: .875rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .thank-you {
+  font-size: 1.125rem;
+  }
 }
 
 .work-together {
@@ -471,4 +551,35 @@ h1, h2, h3, h4, li {
   background-color: #303030;
   color: #c4c4c4;
   padding: .75rem;
+  font-size: .75rem;
+  text-align: right;
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+  font-size: .875rem;
+  }
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-items-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 20rem;
+}
+
+.copyright {
+  margin-left: 2.5rem;
 }

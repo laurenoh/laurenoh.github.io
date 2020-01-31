@@ -13,10 +13,78 @@ h1, h2, h3, h4, li {
 }
 
 .form_shell{
-  background-color: rgba(243, 243, 243, 0.95);
+  background-color: #C2B2A4;
   font-family: Roboto, san-sans-serif;
   letter-spacing: 0.08em;
-  padding: 1.25rem;
+  padding: 5rem 1.25rem;
   font-size: .75rem;
-  max-width: 90rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.form-shell-content {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .form-shell {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-shell {
+    font-size: 1.25rem;
+  }
+}
+
+
+.contact-form-row {
+  display:flex;
+  flex-direction: column;
+}
+.contact-form-row > label {
+  height: 2rem;
+}
+
+.contact-form-row > input {
+  height: 2rem;
+}
+
+.contact-form-row > textarea {
+  border: none;
+  height: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-form-row {
+    flex-direction: row;
+  }
+  .contact-form-row > label {
+    flex: 1;
+  }
+
+  .contact-form-row > input {
+    flex: 3;
+  }
+
+  .contact-form-row > textarea {
+    flex: 3;
+  }
+}
+
+.email-margin {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.message-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.message-spacing {
+  margin-top: 5rem;
 }
