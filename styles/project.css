@@ -284,8 +284,14 @@ h1, h2, h3, h4, li {
 @media only screen and (min-width: 768px) {
   .landing-pg {
     margin-right: 0rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
     max-height: 60rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .landing-pg {
+    margin-left: 12rem;
   }
 }
 
@@ -453,15 +459,16 @@ h1, h2, h3, h4, li {
   align-items: center;
   justify-content: space-around;
   padding-top: 2rem;
+  padding-bottom: 5rem;
 }
 
 .cloud-flex {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .icon-spacing {
-  margin-bottom: 5rem;
   margin-left: 1rem;
 }
 
@@ -501,7 +508,6 @@ h1, h2, h3, h4, li {
  flex-direction: row;
  justify-content: space-between;
  margin-top: 1.25rem;
- margin-bottom: 1.25rem;
 }
 
 .persona-button-spacing {
@@ -510,6 +516,19 @@ h1, h2, h3, h4, li {
 
 .persona-padding {
   padding-left: 1.25rem;
+}
+
+.frustration {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+.motivation {
+  margin-bottom: .5rem;
+}
+
+.motivation-p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -602,23 +621,76 @@ h1, h2, h3, h4, li {
   }
 }
 
-.logos-list-image-spacing {
+.image-width {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-width {
+    width: 70%;
+  }
+}
+
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(207, 203, 203, 0.3);
+  padding: 1rem 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-flex {
+    margin-left: 1rem;
+  }
+}
+
+.list-bottom-line {
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: .0625rem solid gray;
+}
+
+.list-left-line {
+  border-left: .0625rem solid gray;
+}
+
+.list-padding-left {
+  padding-left: 1.25rem;
+}
+
+.list-padding-right {
+  padding-right: 1.25rem;
+}
+
+.list-text {
+  font-size: .75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-text  {
+    font-size: 1rem;
+  }
+}
+
+.logos-image-spacing {
   margin-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .logos-list-image-spacing {
+  .logos-image-spacing {
     margin-top: 0;
+    margin-left: 1rem;
   }
 }
 
 .moodboard-image {
   background-image: url("../images/moodboard.svg");
   background-size: contain;
-  height: 255px;
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 
@@ -626,11 +698,19 @@ h1, h2, h3, h4, li {
   .moodboard-image {
     background-image: url("../images/large-moodboard.svg");
     background-size: contain;
-    height: 750px;
+    height: 800px;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
   }
 }
+
+
+
+
+
+
+
 
 .font-flex {
   display: flex;
@@ -649,32 +729,37 @@ h1, h2, h3, h4, li {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-position: center;
+  width: 100%;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .palette-margin {
+    padding-left: 1rem;
+  }
+}
+
 
 .color-image {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin: 2rem 0rem 5rem 0rem;
   background-position: center;
+  width: 100%;
 }
 
-.wireframe-image {
-  background-image: url("../images/wireframes_2.png");
-  background-size: contain;
-  height: 255px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.wireframe-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .wireframe-image {
-    background-image: url("../images/wireframes_2.png");
-    background-size: contain;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
+  .wireframe-flex {
+    flex-direction: row;
   }
+}
+
+.wireframe1 {
+  width: 150%;
 }
 
 .wireframe-button {
@@ -686,6 +771,13 @@ h1, h2, h3, h4, li {
 
 .participant-width {
   max-width: 42rem;
+}
+
+
+.participant-image-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
 }
 
 .participant1 {
@@ -716,6 +808,12 @@ h1, h2, h3, h4, li {
 
 .block {
   display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .b-left-margin {
+    margin-left: 5rem;
+  }
 }
 
 .test3 {
@@ -873,6 +971,14 @@ h1, h2, h3, h4, li {
     width: 100%;
     margin-top: .75rem;
   }
+}
+
+.mobile-button {
+  margin-right: .75rem;
+}
+
+.desktop-button {
+  margin-left: .75rem;
 }
 
 .conclusion-width {
