@@ -973,6 +973,19 @@ h1, h2, h3, h4, li {
   }
 }
 
+
+.last-button-margin {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .last-button {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+}
+
 .mobile-button {
   margin-right: .75rem;
 }
