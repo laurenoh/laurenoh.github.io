@@ -931,7 +931,7 @@ h1, h2, h3, h4, li {
 }
 
 .final-line {
-  margin-top: 8rem;
+  margin: 8rem 1.25rem 0rem 1.25rem;
 }
 
 .final-prouduct-flex {

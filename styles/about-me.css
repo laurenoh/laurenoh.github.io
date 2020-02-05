@@ -22,7 +22,7 @@ h1, h2, h3, h4, li {
 
 .about-me-container{
   position: relative;
-  padding: 12.75rem 1.25rem;
+  padding: 4.25rem 1.25rem 25rem 1.25rem;
 }
 
 .about-me-container::after {
@@ -43,7 +43,23 @@ h1, h2, h3, h4, li {
 
 .about-me-box {
   max-width: 64rem;
+  margin: 0rem .5rem;
 }
+
+.lauren-header {
+  color: #4d4d4d;
+  margin-top: 0rem;
+}
+
+.lauren-large-header {
+  font-family: PlayfairDisplay;
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+}
+
+
+
+
 
 .small-header {
   color: #4d4d4d;
@@ -52,7 +68,7 @@ h1, h2, h3, h4, li {
 
 .large-header {
   font-family: PlayfairDisplay;
-  margin-top: .375rem;
+  margin-top: 0rem;
   margin-bottom: 5rem;
 }
 
