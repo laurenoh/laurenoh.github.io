@@ -1,9 +1,5 @@
 // from work page, clicking on work makes the pg scroll to recent work //
 
-
-const arrowBox = document.querySelector(".arrow-box");
-const projectContainer = document.querySelector(".project-container");
-
 if (window.location.href.includes("index.html")) {
   const workLinks = document.querySelectorAll('a[href*="#work"]')
   const target = document.querySelector(".recent-work-padding")
@@ -23,21 +19,26 @@ if (window.location.href.includes("index.html")) {
   })
 }
 
+if (window.location.href.includes("project.html")) {
+  const arrowBox = document.querySelector(".arrow-box");
+  const projectContainer = document.querySelector(".project-container");
 
-arrowBox.addEventListener("click", () => {
-  projectContainer.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+  arrowBox.addEventListener("click", () => {
+    projectContainer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
   })
-})
+}
 
 
 // from non-work pgs, scrolls down to recent work due to #work from URL//
-  window.onload = () => {
-    if (window.location.hash === "#work") {
-      target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-      })
-    }
+window.onload = () => {
+  const target = document.querySelector(".recent-work-padding")
+  if (window.location.hash === "#work") {
+    target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
   }
+}
