@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/about-me.css">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
   </head>
 
   <body>
@@ -42,7 +43,7 @@
       <form class="form-shell-content" action="https://formspree.io/moqeoeba" method="POST">
         <div class="contact-form-row">
           <label for="name">Full Name</label>
-          <input id="name" type="text" name="user_name" placeholder="Enter your name">
+          <input class="animated fadeIn" id="name" type="text" name="user_name" placeholder="Enter your name">
         </div>
         <div class="email-margin contact-form-row">
           <label for="mail">E-mail</label>
@@ -50,7 +51,7 @@
         </div>
         <div class="contact-form-row">
           <label for="message">Message</label>
-          <textarea id="message" name="user_message"></textarea>
+          <textarea id="message" name="user_message" placeholder="Type your message here"></textarea>
         </div>
         <div class="message-container">
           <button class="message-spacing primary-button" type="submit">Send Message</button>

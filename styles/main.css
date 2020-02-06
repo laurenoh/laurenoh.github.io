@@ -121,18 +121,19 @@ img {
 .intro-header {
   color: #4d4d4d;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
 }
 
 .intro-message {
   color: #303030;
   letter-spacing: 0em;
-  margin-bottom: 1rem;
+  margin-bottom: 3.5rem;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.625;
   max-width: 24rem;
+  animation-delay: 1s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -151,6 +152,11 @@ img {
 .highlighted-text {
   color: #A48863;
 }
+
+.fade-work {
+  animation-delay: 2s;
+}
+
 
 .primary-button {
   background-color: #4d4d4d;
@@ -232,6 +238,10 @@ img {
 
 .recent-arrow {
   padding-top: .75rem;
+}
+
+.fade-cs {
+  animation-delay: 3s;
 }
 
 .case-study-container {
