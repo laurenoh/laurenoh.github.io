@@ -39,9 +39,9 @@
     const arrowBox = document.querySelector('a[href^="#arrowBox"]')
     let target = document.querySelector(".plunge-paragraph")
 
-    workLink.addEventListener('click', (e)=> {
+    arrowBos.addEventListener('click', (e)=> {
       console.log("click")
-      let hashval = workLink.getAttribute('href')
+      let hashval = arrowBox.getAttribute('href')
 
       target.scrollIntoView({
           behavior: 'smooth',
