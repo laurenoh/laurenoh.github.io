@@ -54,7 +54,6 @@ img {
 }
 
 .navbar-position {
-  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   background-color: rgba(243, 243, 243, 0.95);
