@@ -39,7 +39,7 @@ h1, h2, h3, h4, li {
 }
 
 .font-bold {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 /*text-xs md:text-sm lg:text-base */
