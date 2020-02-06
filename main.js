@@ -4,7 +4,7 @@
 const arrowBox = document.querySelector(".arrow-box");
 const projectContainer = document.querySelector(".project-container");
 
-if (window.location.includes("index.html")) {
+if (window.location.href.includes("index.html")) {
   const workLinks = document.querySelectorAll('a[href*="#work"]')
   const target = document.querySelector(".recent-work-padding")
   workLinks.forEach(workLink => {
