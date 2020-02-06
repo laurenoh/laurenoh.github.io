@@ -1,20 +1,32 @@
 // from work page, clicking on work makes the pg scroll to recent work //
-  const workLink = document.querySelector('a[href^="#work"]')
-  let target = document.querySelector(".recent-work-padding")
+const workLinks = document.querySelectorAll('a[href*="#work"]')
+let target = document.querySelector(".recent-work-padding")
 
+const arrowBox = document.querySelector(".arrow-box");
+const projectContainer = document.querySelector(".project-container");
+
+workLinks.forEach(workLink => {
   workLink.addEventListener('click', (e)=> {
+    e.preventDefault()
     console.log("click")
     let hashval = workLink.getAttribute('href')
-
+    console.log("hashval", hashval)
     target.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     })
-// adds to history stack when you go back and forth between windows//
-
+    // adds to history stack when you go back and forth between windows
     history.pushState(null,null,hashval)
-    e.preventDefault()
   })
+})
+
+arrowBox.addEventListener("click", () => {
+  projectContainer.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+  })
+})
+
 
 // from non-work pgs, scrolls down to recent work due to #work from URL//
   window.onload = () => {
@@ -25,40 +37,3 @@
       })
     }
   }
-
-
-
-
-
-
-
-
-
-
-  // from work page, clicking on work makes the pg scroll to recent work //
-    const arrowBox = document.querySelector('a[href^="#arrowBox"]')
-    let target = document.querySelector(".plunge-paragraph")
-
-    arrowBox.addEventListener('click', (e)=> {
-      console.log("click")
-      let hashval = arrowBox.getAttribute('href')
-
-      target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-      })
-  // adds to history stack when you go back and forth between windows//
-
-      history.pushState(null,null,hashval)
-      e.preventDefault()
-    })
-
-  // from non-work pgs, scrolls down to recent work due to #work from URL//
-    window.onload = () => {
-      if (window.location.hash === "#arrowBox") {
-        target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-      }
-    }
