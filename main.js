@@ -39,7 +39,7 @@
     const arrowBox = document.querySelector('a[href^="#arrowBox"]')
     let target = document.querySelector(".plunge-paragraph")
 
-    arrowBos.addEventListener('click', (e)=> {
+    arrowBox.addEventListener('click', (e)=> {
       console.log("click")
       let hashval = arrowBox.getAttribute('href')
 
