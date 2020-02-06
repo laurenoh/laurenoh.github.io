@@ -6,9 +6,8 @@ if (window.location.href.includes("index.html")) {
   workLinks.forEach(workLink => {
     workLink.addEventListener('click', (e)=> {
       e.preventDefault()
-      console.log("click")
+
       let hashval = workLink.getAttribute('href')
-      console.log("hashval", hashval)
       target.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
@@ -31,12 +30,24 @@ if (window.location.href.includes("project.html")) {
   })
 }
 
+if (window.location.href.includes("about-me.html")) {
+  const arrowBox = document.querySelector(".arrow-box");
+  const plungeParagraph = document.querySelector(".plunge-paragraph");
+
+  arrowBox.addEventListener("click", () => {
+    plungeParagraph.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+  })
+}
+
 
 // from non-work pgs, scrolls down to recent work due to #work from URL//
 window.onload = () => {
   const target = document.querySelector(".recent-work-padding")
   if (window.location.hash === "#work") {
-    target.scrollIntoView({
+    target && target.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     })
