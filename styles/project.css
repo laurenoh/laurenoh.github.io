@@ -459,7 +459,7 @@ h1, h2, h3, h4, li {
   align-items: center;
   justify-content: space-around;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .cloud-flex {
@@ -470,6 +470,10 @@ h1, h2, h3, h4, li {
 
 .icon-spacing {
   margin-left: 1rem;
+}
+
+.findings {
+  padding-bottom: 5rem;
 }
 
 .user-persona-container {
@@ -621,7 +625,7 @@ h1, h2, h3, h4, li {
   }
 }
 
-.image-width {
+/* .image-width {
   width: 100%;
 }
 
@@ -629,7 +633,7 @@ h1, h2, h3, h4, li {
   .image-width {
     width: 70%;
   }
-}
+} */
 
 .list-flex {
   display: flex;
@@ -838,6 +842,14 @@ h1, h2, h3, h4, li {
 
 .center-alignment {
   margin-top: 2rem;
+  margin-left: 0rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .center-alignment {
+    margin-top: 0rem;
+    margin-left: 0em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -977,6 +989,12 @@ h1, h2, h3, h4, li {
 .last-button-margin {
   margin-top: 1rem;
 }
+
+.last-button {
+  display: flex;
+  justify-content: flex-start;
+}
+
 
 @media only screen and (min-width: 768px) {
   .last-button {
