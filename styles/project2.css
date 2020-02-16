@@ -1034,7 +1034,7 @@ h1, h2, h3, h4, li {
 
 @media only screen and (min-width: 768px) {
   .final-mobile {
-    background-image: url("../images2/mobile_prototype.jpg");
+    background-image: url("../images2/mobilePrototype.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 70%;
