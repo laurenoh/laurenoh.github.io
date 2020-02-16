@@ -17,9 +17,17 @@ h1, h2, h3, h4, li {
   padding-bottom: 1.25rem;
 }
 
+.mockup-paragraph-height {
+  height: 5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.margin0 {
+  margin: 0 0;
 }
 
 .flex-1 {
@@ -113,27 +121,27 @@ h1, h2, h3, h4, li {
   grid-area: buttons;
 }
 
-.cs-grid-layout  {
+.cs2-grid-layout  {
   max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .5fr 2fr .5fr;
+  grid-template-rows: .5fr 1fr .5fr;
   grid-template-areas:
   "cs-name dashboard"
   "summary summary"
-  "buttons buttons"
+  ". buttons"
 }
 
 
 @media only screen and (min-width: 768px) {
-  .cs-grid-layout  {
+  .cs2-grid-layout  {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .5fr 1fr .5fr;
     grid-template-areas:
-    "cs-name ."
+    "cs-name dashboard"
     "summary dashboard"
     "summary buttons"
   }
@@ -268,7 +276,7 @@ h1, h2, h3, h4, li {
 }
 
 .list-height {
-    line-height: 1.875rem;
+  line-height: 1.875rem;
 }
 
 .landing-pg-container {
@@ -477,42 +485,38 @@ h1, h2, h3, h4, li {
   padding-bottom: 5rem;
 }
 
-.user-persona-container {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  letter-spacing: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 768px) {
-  .user-persona-container {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
 
 .persona-box {
-  max-width: 20rem;
+  max-width: 30rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0;
 }
 
 @media only screen and (min-width: 1024px) {
   .persona-box {
-    max-width: 26rem;
+    max-width: 40rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .persona-image {
+    width: 240px;
+    height: 240px;
   }
 }
 
 .persona-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
+
 .persona-quote {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- margin-top: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.25rem;
 }
 
 .persona-button-spacing {
@@ -520,7 +524,7 @@ h1, h2, h3, h4, li {
 }
 
 .persona-padding {
-  padding-left: 1.25rem;
+  padding-left: 2rem;
 }
 
 .frustration {
@@ -536,11 +540,6 @@ h1, h2, h3, h4, li {
   margin-bottom: 1.25rem;
 }
 
-@media only screen and (min-width: 768px) {
-  .david-box {
-    margin-left: 1.25rem;
-  }
-}
 .persona-name {
   letter-spacing: 0.08em;
   font-weight: bold;
@@ -566,7 +565,7 @@ h1, h2, h3, h4, li {
 }
 
 .left-border {
-    border-left: .0625rem solid gray;
+  border-left: .0625rem solid gray;
 }
 
 @media only screen and (min-width: 768px) {
@@ -591,13 +590,13 @@ h1, h2, h3, h4, li {
 }
 
 .flow-image {
-    background-image: url("../images/user_flow.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 20rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+  background-image: url("../images2/pwr-flow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -613,28 +612,10 @@ h1, h2, h3, h4, li {
   align-content: flex-end;
 }
 
-.logos-list-spacing {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 
-@media only screen and (min-width: 768px) {
-  .logos-list-spacing {
-    flex-direction: row;
-  }
-}
 
-/* .image-width {
-  width: 100%;
-}
 
-@media only screen and (min-width: 768px) {
-  .image-width {
-    width: 70%;
-  }
-} */
+
 
 .list-flex {
   display: flex;
@@ -677,6 +658,33 @@ h1, h2, h3, h4, li {
   }
 }
 
+.logos-list-spacing2 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+  .logos-list-spacing2 {
+    flex-direction: row;
+  }
+}
+
+.logos-list-spacing3 {
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+  .logos-list-spacing3 {
+    margin-top: 2rem;
+    flex-direction: row;
+  }
+}
+
 .logos-image-spacing {
   margin-top: 2rem;
 }
@@ -688,33 +696,11 @@ h1, h2, h3, h4, li {
   }
 }
 
-.moodboard-image {
-  background-image: url("../images/moodboard.svg");
-  background-size: contain;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-position: center;
+.moodboard-image2 {
   margin-top: 1.5rem;
-  width: 100%;
+  margin-bottom: 1.5rem;
+
 }
-
-
-@media only screen and (min-width: 768px) {
-  .moodboard-image {
-    background-image: url("../images/large-moodboard.svg");
-    background-size: contain;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-  }
-}
-
-
-
-
-
-
 
 
 .font-flex {
@@ -754,17 +740,26 @@ h1, h2, h3, h4, li {
 .wireframe-flex {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0rem;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
   .wireframe-flex {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
-.wireframe1 {
-  width: 150%;
+.wireframe-spacing {
+  padding-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .wireframe-spacing {
+    padding-top: 0rem;
+    padding-left: 1rem;
+  }
 }
 
 .wireframe-button {
@@ -779,10 +774,32 @@ h1, h2, h3, h4, li {
 }
 
 
+
+
+
+
+
+
+
 .participant-image-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .participant-image-container {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .participant-image-spacing {
+    padding-top: 0rem;
+    padding-left: 1rem;
+  }
 }
 
 .participant1 {
@@ -792,6 +809,11 @@ h1, h2, h3, h4, li {
 .participant2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.highLocation-flex {
+  display: flex;
+  flex-direction:
 }
 
 .confusion-margin {
@@ -831,9 +853,11 @@ h1, h2, h3, h4, li {
   }
 }
 
-.landing-pg-heading {
-  padding-top: .5rem;
-}
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
   .normal-alignment {
@@ -860,6 +884,11 @@ h1, h2, h3, h4, li {
   }
 }
 
+
+
+
+
+
 @media only screen and (min-width: 768px) {
   .mockup-flex {
     display: flex;
@@ -870,21 +899,61 @@ h1, h2, h3, h4, li {
   padding-top: .5rem;
 }
 
-.alphabet-container {
+.alphabet-container2 {
   display: flex;
   flex-direction: column;
   margin-top: 1.25rem;
+  justify-content: center;
 }
 
 @media only screen and (min-width:640px) {
-  .alphabet-container {
+  .alphabet-container2 {
     flex-direction: row;
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .alphabet-container2-spacing {
+    padding-top: 0rem;
+    padding-left: 1rem;
+  }
+}
+
+.menu-row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-row {
+    flex-direction: row;
+  }
+}
+
+.menu-align {
+  align-items: center;
+}
+
+
+
+
+
+
+
 .before-after-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.before-after-spacing {
+  margin-top: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .before-after-spacing  {
+    margin-top: 1.25rem;
+  }
 }
 
 .before-text {
@@ -909,24 +978,23 @@ h1, h2, h3, h4, li {
   }
 }
 
-.before-after-spacing {
-  margin-top: .5rem;
-}
 
 @media only screen and (min-width: 768px) {
-  .before-after-spacing  {
-    margin-top: 1.25rem;
+  .fontsize-after-spacing {
+    margin-left: 10rem;
   }
 }
 
+
+
 .pt20 {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .text-test-spacing  {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -966,7 +1034,7 @@ h1, h2, h3, h4, li {
 
 @media only screen and (min-width: 768px) {
   .final-mobile {
-    background-image: url("../images/mobile_prototype.svg");
+    background-image: url("../images2/mobile_prototype.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 70%;
@@ -975,16 +1043,6 @@ h1, h2, h3, h4, li {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .final-desktop {
-    background-image: url("../images/desktop_prototype.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-top: 70%;
-    width: 100%;
-    margin-top: .75rem;
-  }
-}
 
 
 .last-button-margin {
