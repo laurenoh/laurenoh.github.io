@@ -274,6 +274,21 @@ img {
   margin-right: auto;
 }
 
+.case-study-box2 {
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
+  padding: 2rem 2rem;
+  background-color: #f3f3f3;
+  background-image: url("../images2/mobile-dashboard.svg");
+  background-position: right 30px center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 80px;
+}
+
 .case-study {
   color: #4d4d4d;
   font-size: .75rem;
