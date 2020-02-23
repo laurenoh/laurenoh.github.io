@@ -1033,7 +1033,7 @@ h1, h2, h3, h4, li {
 }
 
 @media only screen and (min-width: 768px) {
-  .final-mobile {
+  .final-mobile2 {
     background-image: url("../images2/mobilePrototype.jpg");
     background-size: contain;
     background-repeat: no-repeat;
