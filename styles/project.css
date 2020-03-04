@@ -966,7 +966,7 @@ h1, h2, h3, h4, li {
 
 @media only screen and (min-width: 768px) {
   .final-mobile {
-    background-image: url("../images/mobile_prototype.svg");
+    background-image: url("../images/mobile_prototype.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 70%;
@@ -977,7 +977,7 @@ h1, h2, h3, h4, li {
 
 @media only screen and (min-width: 768px) {
   .final-desktop {
-    background-image: url("../images/desktop_prototype.svg");
+    background-image: url("../images/desktop_prototype.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 70%;
