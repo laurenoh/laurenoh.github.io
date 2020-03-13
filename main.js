@@ -17,7 +17,7 @@ if (window.location.href.includes("index.html")) {
   })
 }
 
-if (window.location.href.includes("project.html")) {
+if (window.location.href.includes("project.html") || window.location.href.includes("project2.html")) {
   const arrowBox = document.querySelector(".arrow-box");
   const projectContainer = document.querySelector(".project-container");
 
