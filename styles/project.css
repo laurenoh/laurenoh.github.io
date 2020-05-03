@@ -97,46 +97,10 @@ h1, h2, h3, h4, li {
   }
 }
 
-.item-a {
-  grid-area: cs-name;
-}
-
-.item-b {
-  grid-area: dashboard;
-}
-
-.item-c {
-  grid-area: summary;
-}
-
-.item-d {
-  grid-area: buttons;
-}
-
 .cs-grid-layout  {
   max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: .5fr 2fr .5fr;
-  grid-template-areas:
-  "cs-name dashboard"
-  "summary summary"
-  "buttons buttons"
-}
-
-
-@media only screen and (min-width: 768px) {
-  .cs-grid-layout  {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 1fr .5fr;
-    grid-template-areas:
-    "cs-name ."
-    "summary dashboard"
-    "summary buttons"
-  }
 }
 
 .project-container {
@@ -193,20 +157,20 @@ h1, h2, h3, h4, li {
 }
 
 .summary-spacing {
-  padding-top: 2.5rem;
+  margin-top: 0rem;
 }
 
 @media only screen and (min-width: 768px) {
   .summary-spacing {
-    padding-top: 0rem;
+    margin-top: 2.5rem;
   }
 }
 
 .prototype-buttons {
   display: flex;
   flex-direction: row;
-  max-width: 48rem;
-  margin: auto;
+  max-width: 64rem;
+  justify-content: flex-end;
 }
 
 .secondary-button {
@@ -259,6 +223,12 @@ h1, h2, h3, h4, li {
 .overview-container {
   display: flex;
   flex-direction: column;
+  color: #303030;
+  padding: 8rem 1.25rem 0rem 1.25rem;
+  font-family: Roboto, san-sans-serif;
+  font-size: .75rem;
+  letter-spacing: 0.08em;
+  max-width: 100rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -277,21 +247,21 @@ h1, h2, h3, h4, li {
 
 .landing-pg {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  max-height: 60rem;
 }
 
 @media only screen and (min-width: 768px) {
   .landing-pg {
     margin-right: 0rem;
-    margin-left: 2rem;
-    max-height: 60rem;
+    margin-left: 0rem;
+    max-height: 100rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .landing-pg {
-    margin-left: 12rem;
+    max-height: 200rem;
   }
 }
 
@@ -478,7 +448,6 @@ h1, h2, h3, h4, li {
 }
 
 .user-persona-container {
-  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   letter-spacing: 0;
   display: flex;
@@ -494,6 +463,7 @@ h1, h2, h3, h4, li {
 
 .persona-box {
   max-width: 20rem;
+  margin-top: 0rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -536,9 +506,16 @@ h1, h2, h3, h4, li {
   margin-bottom: 1.25rem;
 }
 
+
+@media only screen and (min-width: 768px) {
+  .daniel-box {
+    margin-right: 2rem;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .david-box {
-    margin-left: 1.25rem;
+    margin-left: 2rem;
   }
 }
 .persona-name {
@@ -565,9 +542,6 @@ h1, h2, h3, h4, li {
   margin-bottom: .5rem;
 }
 
-.left-border {
-    border-left: .0625rem solid gray;
-}
 
 @media only screen and (min-width: 768px) {
   .mdpy20 {
