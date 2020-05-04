@@ -265,9 +265,10 @@ img {
   margin-bottom: 1.125rem;
   padding: 2rem 2rem;
   background-color: #f3f3f3;
-  background-image: url("../images/cut-dashboard.svg");
+  background-image: url("../images/cut-dashboard.png");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: 140px;
   width: 100%;
   max-width: 20rem;
   margin-left: auto;
