@@ -228,7 +228,7 @@ h1, h2, h3, h4, li {
   font-family: Roboto, san-sans-serif;
   font-size: .75rem;
   letter-spacing: 0.08em;
-  max-width: 100rem;
+  max-width: 64rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -662,32 +662,22 @@ h1, h2, h3, h4, li {
   }
 }
 
-.moodboard-image {
-  background-image: url("../images/moodboard.svg");
-  background-size: contain;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 1.5rem;
-  width: 100%;
+.moodboard-margin {
+  margin-top: 2rem;
 }
 
-
 @media only screen and (min-width: 768px) {
-  .moodboard-image {
-    background-image: url("../images/large-moodboard.svg");
-    background-size: contain;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
+  .moodboard-flex {
+    display: flex;
+    flex-direction: row;
   }
 }
 
-
-
-
-
+@media only screen and (min-width: 768px) {
+  .moodboard-leftMargin {
+    margin-left: 2rem;
+  }
+}
 
 
 
@@ -748,10 +738,6 @@ h1, h2, h3, h4, li {
   padding-bottom: 5rem;
 }
 
-.participant-width {
-  max-width: 42rem;
-}
-
 
 .participant-image-container {
   display: flex;
@@ -759,14 +745,7 @@ h1, h2, h3, h4, li {
   margin-top: 1.25rem;
 }
 
-.participant1 {
-  margin-top: 1.25rem;
-}
 
-.participant2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 
 .confusion-margin {
   margin-top: .5rem;

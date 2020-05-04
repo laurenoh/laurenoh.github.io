@@ -274,6 +274,12 @@ img {
   margin-right: auto;
 }
 
+.case-study-box:hover, .case-study-box2:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+  transition: background-color .125s;
+}
+
 .case-study-box2 {
   margin-top: 1.125rem;
   margin-bottom: 1.125rem;

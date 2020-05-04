@@ -50,3 +50,11 @@ window.onload = () => {
     })
   }
 }
+
+function viewPwr() {
+  window.location = "/project2.html"
+}
+
+function viewBridge() {
+  window.location = "/project.html"
+}

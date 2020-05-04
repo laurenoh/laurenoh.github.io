@@ -105,47 +105,7 @@ h1, h2, h3, h4, li {
   }
 }
 
-.item-a {
-  grid-area: cs-name;
-}
 
-.item-b {
-  grid-area: dashboard;
-}
-
-.item-c {
-  grid-area: summary;
-}
-
-.item-d {
-  grid-area: buttons;
-}
-
-.cs2-grid-layout  {
-  max-width: 64rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: .5fr 1fr .5fr;
-  grid-template-areas:
-  "cs-name dashboard"
-  "summary summary"
-  ". buttons"
-}
-
-
-@media only screen and (min-width: 768px) {
-  .cs2-grid-layout  {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 1fr .5fr;
-    grid-template-areas:
-    "cs-name dashboard"
-    "summary dashboard"
-    "summary buttons"
-  }
-}
 
 .project-container {
   color: #303030;
@@ -197,19 +157,25 @@ h1, h2, h3, h4, li {
 }
 
 .dashboard-margin {
-  margin: auto;
+  padding-left: 5rem;
 }
 
 .summary-spacing {
-  padding-top: 2.5rem;
+  margin-top: 0rem;
 }
 
 @media only screen and (min-width: 768px) {
   .summary-spacing {
-    padding-top: 0rem;
+    margin-top: 2.5rem;
   }
 }
 
+.prototype-buttons {
+  display: flex;
+  flex-direction: row;
+  max-width: 64rem;
+  justify-content: flex-end;
+}
 
 .secondary-button {
   background-color: #ffffff;
@@ -740,15 +706,6 @@ h1, h2, h3, h4, li {
   padding-bottom: 5rem;
 }
 
-.participant-width {
-  max-width: 42rem;
-}
-
-
-
-
-
-
 
 
 
@@ -793,6 +750,10 @@ h1, h2, h3, h4, li {
 
 .test1 {
   padding-top: .5rem;
+}
+
+.labels-padding {
+  padding: 0;
 }
 
 .a-items {
