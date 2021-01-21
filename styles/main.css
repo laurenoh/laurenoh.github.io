@@ -275,7 +275,7 @@ img {
   margin-right: auto;
 }
 
-.case-study-box:hover, .case-study-box2:hover {
+.case-study-box:hover, .case-study-box2:hover, .case-study-box3:hover {
   cursor: pointer;
   background-color: #e6e6e6;
   transition: background-color .125s;
@@ -287,6 +287,36 @@ img {
   padding: 2rem 2rem;
   background-color: #f3f3f3;
   background-image: url("../images2/mobile-dashboard.svg");
+  background-position: right 30px center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 80px;
+}
+
+.case-study-box3 {
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
+  padding: 2rem 2rem;
+  background-color: #f3f3f3;
+  background-image: url("../images/mazlow-dashboard.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 140px;
+  width: 100%;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study-box4 {
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
+  padding: 2rem 2rem;
+  background-color: #f3f3f3;
+  background-image: url("../images/apple-mobile.png");
   background-position: right 30px center;
   background-repeat: no-repeat;
   width: 100%;
@@ -320,6 +350,12 @@ img {
   font-size: 1.125rem;
 }
 
+.case-study-type3 {
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: .75rem;
+}
+
 .large-arrow-right {
   color: #c4c4c4;
   font-size: 1.875rem;
@@ -330,7 +366,6 @@ img {
   display:flex;
   justify-content: space-between;
 }
-
 
 
 .skills-container {
